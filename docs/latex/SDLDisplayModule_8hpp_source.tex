@@ -1,0 +1,39 @@
+\doxysection{SDLDisplay\+Module.\+hpp}
+\hypertarget{SDLDisplayModule_8hpp_source}{}\label{SDLDisplayModule_8hpp_source}\index{library/graphical/SDL2/include/SDLDisplayModule.hpp@{library/graphical/SDL2/include/SDLDisplayModule.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ DisplayModule}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}ADisplayModule.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}SDLWindow.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}SDLEvent.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}SDLSprite.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}SDLText.hpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}SDLButton.hpp"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDisplayModule}{DisplayModule}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1ADisplayModule}{EGE::ADisplayModule}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDisplayModule_a6e39f0daba38d7d919ebece3e85c24b1}{DisplayModule}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDisplayModule_a643d63e19aa6945d10f8ef61520c21ac}{\string~DisplayModule}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDisplayModule_a7619f791ae52aab1490fa6ec82d3410a}{init}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IDrawable}{EGE::IDrawable}}\ *\mbox{\hyperlink{classDisplayModule_a709b2c76c0f915c7b283c57dff763146}{createSprite}}(\mbox{\hyperlink{classEGE_1_1Ressource}{EGE::Ressource}}\ *ressource,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\&\ pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IText}{EGE::IText}}\ *\mbox{\hyperlink{classDisplayModule_a3bac5d1fc0a1948e37da005fae38a6e2}{createText}}(\textcolor{keyword}{const}\ std::string\ \&text,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\&\ pos,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Color}{EGE::Color}}\&\ color)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IButton}{EGE::IButton}}\ *\mbox{\hyperlink{classDisplayModule_a246d75ce6c56b7e9477f44ba844a895b}{createButton}}(\textcolor{keyword}{const}\ std::string\ \&text,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\&\ pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \};}
+
+\end{DoxyCode}

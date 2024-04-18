@@ -1,0 +1,230 @@
+\doxysection{Bitmapfont Class Reference}
+\hypertarget{classBitmapfont}{}\label{classBitmapfont}\index{Bitmapfont@{Bitmapfont}}
+
+
+SDL2 Bitmap\+Font implementation.  
+
+
+
+
+{\ttfamily \#include $<$SDLBitmapfont.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classBitmapfont_a3877eb236f9c498cf7a649bfcd8fe811}\label{classBitmapfont_a3877eb236f9c498cf7a649bfcd8fe811} 
+{\bfseries Bitmapfont} ()
+\begin{DoxyCompactList}\small\item\em Creates a Bitmap\+Font. \end{DoxyCompactList}\item 
+\Hypertarget{classBitmapfont_a42b153b8ec1c3f14e16a25f6d1618db5}\label{classBitmapfont_a42b153b8ec1c3f14e16a25f6d1618db5} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Bitmapfont} ()
+\begin{DoxyCompactList}\small\item\em Destructs a Bitmap\+Font. \end{DoxyCompactList}\item 
+\Hypertarget{classBitmapfont_a65f9dd88be023b637f6810b3edfab16b}\label{classBitmapfont_a65f9dd88be023b637f6810b3edfab16b} 
+int {\bfseries get\+Width} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the width of the font. \end{DoxyCompactList}\item 
+\Hypertarget{classBitmapfont_a737c600c221a20653d1917425f87c622}\label{classBitmapfont_a737c600c221a20653d1917425f87c622} 
+int {\bfseries get\+Height} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the height of the font. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBitmapfont_acd3d8e892018f2c1feeddf0e19e86ce0}{draw}} (\mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} \texorpdfstring{$\ast$}{*}window, char c, const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&pos)
+\begin{DoxyCompactList}\small\item\em Draws the font. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBitmapfont_a97e0b400608f8ea5ca29f6f0a1e86ffb}{set\+Color}} (const \mbox{\hyperlink{classEGE_1_1Color}{EGE\+::\+Color}} \&color)
+\begin{DoxyCompactList}\small\item\em Sets the font color. \end{DoxyCompactList}\item 
+\Hypertarget{classBitmapfont_a3877eb236f9c498cf7a649bfcd8fe811}\label{classBitmapfont_a3877eb236f9c498cf7a649bfcd8fe811} 
+{\bfseries Bitmapfont} ()
+\begin{DoxyCompactList}\small\item\em Creates a Bitmap\+Font. \end{DoxyCompactList}\item 
+\Hypertarget{classBitmapfont_a42b153b8ec1c3f14e16a25f6d1618db5}\label{classBitmapfont_a42b153b8ec1c3f14e16a25f6d1618db5} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Bitmapfont} ()
+\begin{DoxyCompactList}\small\item\em Destructs a Bitmap\+Font. \end{DoxyCompactList}\item 
+\Hypertarget{classBitmapfont_a79593a56889733aae377634b6ad07a5c}\label{classBitmapfont_a79593a56889733aae377634b6ad07a5c} 
+int {\bfseries get\+Width} () const
+\begin{DoxyCompactList}\small\item\em Returns the width of the font. \end{DoxyCompactList}\item 
+\Hypertarget{classBitmapfont_aa1cf09acfc58ce4e715c9f7a600fc86d}\label{classBitmapfont_aa1cf09acfc58ce4e715c9f7a600fc86d} 
+int {\bfseries get\+Height} () const
+\begin{DoxyCompactList}\small\item\em Returns the height of the font. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBitmapfont_acd3d8e892018f2c1feeddf0e19e86ce0}{draw}} (\mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} \texorpdfstring{$\ast$}{*}window, char c, const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&pos)
+\begin{DoxyCompactList}\small\item\em Draws the font. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBitmapfont_a97e0b400608f8ea5ca29f6f0a1e86ffb}{set\+Color}} (const \mbox{\hyperlink{classEGE_1_1Color}{EGE\+::\+Color}} \&color)
+\begin{DoxyCompactList}\small\item\em Sets the font color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ int $>$ \mbox{\hyperlink{classBitmapfont_a20d598298743e2dafbc95c3451f87230}{get\+Char\+Pos}} (char c)
+\begin{DoxyCompactList}\small\item\em Returns the position of the character. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ int $>$ $>$ \mbox{\hyperlink{classBitmapfont_a6bc5f7cd62b50f711af09d5262307226}{get\+String\+Pos}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Returns the string position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ int $>$ \mbox{\hyperlink{classBitmapfont_a20d598298743e2dafbc95c3451f87230}{get\+Char\+Pos}} (char c)
+\begin{DoxyCompactList}\small\item\em Returns the position of the character. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ int $>$ $>$ \mbox{\hyperlink{classBitmapfont_a6bc5f7cd62b50f711af09d5262307226}{get\+String\+Pos}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Returns the string position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classBitmapfont_ade55fb78f5ff19e9a182203b17b0f1fa}\label{classBitmapfont_ade55fb78f5ff19e9a182203b17b0f1fa} 
+std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ int $>$ $>$ {\bfseries \+\_\+char\+Pos}
+\item 
+\Hypertarget{classBitmapfont_ae88f1e901e3365cbac9dd83db2500ecd}\label{classBitmapfont_ae88f1e901e3365cbac9dd83db2500ecd} 
+\mbox{\hyperlink{classEGE_1_1Color}{EGE\+::\+Color}} {\bfseries \+\_\+color}
+\item 
+\Hypertarget{classBitmapfont_ada577262b483e41c080b376722a40a03}\label{classBitmapfont_ada577262b483e41c080b376722a40a03} 
+SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+sprite}
+\item 
+\Hypertarget{classBitmapfont_a028bcf5b978f679fd7a277325a9f32b8}\label{classBitmapfont_a028bcf5b978f679fd7a277325a9f32b8} 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+texture}
+\item 
+\Hypertarget{classBitmapfont_a10ea9c3527912db1c3a5a34ad762b55b}\label{classBitmapfont_a10ea9c3527912db1c3a5a34ad762b55b} 
+SDL\+\_\+\+Rect {\bfseries \+\_\+rect}
+\item 
+\Hypertarget{classBitmapfont_a41bd859f2a0f5fd480b1483d871e67b9}\label{classBitmapfont_a41bd859f2a0f5fd480b1483d871e67b9} 
+int {\bfseries \+\_\+width}
+\item 
+\Hypertarget{classBitmapfont_a33e6355919851c8dfe8978a240761421}\label{classBitmapfont_a33e6355919851c8dfe8978a240761421} 
+int {\bfseries \+\_\+height}
+\item 
+\Hypertarget{classBitmapfont_aac873682d3844016decd986f9183b635}\label{classBitmapfont_aac873682d3844016decd986f9183b635} 
+sf\+::\+Texture {\bfseries \+\_\+sf\+Texture}
+\item 
+\Hypertarget{classBitmapfont_a3b28b0491ab91c3b951e07c3e4ade274}\label{classBitmapfont_a3b28b0491ab91c3b951e07c3e4ade274} 
+sf\+::\+Sprite {\bfseries \+\_\+sf\+Sprite}
+\item 
+\Hypertarget{classBitmapfont_a9a35922c8677f19960b94e794a1a60ab}\label{classBitmapfont_a9a35922c8677f19960b94e794a1a60ab} 
+sf\+::\+Rect$<$ unsigned int $>$ {\bfseries \+\_\+sf\+Rect}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+SDL2 Bitmap\+Font implementation. 
+
+SFML Bitmap\+Font implementation. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBitmapfont_acd3d8e892018f2c1feeddf0e19e86ce0}\label{classBitmapfont_acd3d8e892018f2c1feeddf0e19e86ce0} 
+\index{Bitmapfont@{Bitmapfont}!draw@{draw}}
+\index{draw@{draw}!Bitmapfont@{Bitmapfont}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bitmapfont\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} \texorpdfstring{$\ast$}{*}}]{window,  }\item[{char}]{c,  }\item[{const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Draws the font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The window to draw the font on. \\
+\hline
+{\em c} & Char to draw. \\
+\hline
+{\em pos} & Position of the char. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBitmapfont_acd3d8e892018f2c1feeddf0e19e86ce0}\label{classBitmapfont_acd3d8e892018f2c1feeddf0e19e86ce0} 
+\index{Bitmapfont@{Bitmapfont}!draw@{draw}}
+\index{draw@{draw}!Bitmapfont@{Bitmapfont}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Bitmapfont\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} \texorpdfstring{$\ast$}{*}}]{window,  }\item[{char}]{c,  }\item[{const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Draws the font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The window to draw the font on. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBitmapfont_a20d598298743e2dafbc95c3451f87230}\label{classBitmapfont_a20d598298743e2dafbc95c3451f87230} 
+\index{Bitmapfont@{Bitmapfont}!getCharPos@{getCharPos}}
+\index{getCharPos@{getCharPos}!Bitmapfont@{Bitmapfont}}
+\doxysubsubsection{\texorpdfstring{getCharPos()}{getCharPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ int $>$ Bitmapfont\+::get\+Char\+Pos (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the position of the character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Char to get the position. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBitmapfont_a20d598298743e2dafbc95c3451f87230}\label{classBitmapfont_a20d598298743e2dafbc95c3451f87230} 
+\index{Bitmapfont@{Bitmapfont}!getCharPos@{getCharPos}}
+\index{getCharPos@{getCharPos}!Bitmapfont@{Bitmapfont}}
+\doxysubsubsection{\texorpdfstring{getCharPos()}{getCharPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ int $>$ Bitmapfont\+::get\+Char\+Pos (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the position of the character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Char to get the position. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBitmapfont_a6bc5f7cd62b50f711af09d5262307226}\label{classBitmapfont_a6bc5f7cd62b50f711af09d5262307226} 
+\index{Bitmapfont@{Bitmapfont}!getStringPos@{getStringPos}}
+\index{getStringPos@{getStringPos}!Bitmapfont@{Bitmapfont}}
+\doxysubsubsection{\texorpdfstring{getStringPos()}{getStringPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ int $>$ $>$ Bitmapfont\+::get\+String\+Pos (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the string position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to get the position. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBitmapfont_a6bc5f7cd62b50f711af09d5262307226}\label{classBitmapfont_a6bc5f7cd62b50f711af09d5262307226} 
+\index{Bitmapfont@{Bitmapfont}!getStringPos@{getStringPos}}
+\index{getStringPos@{getStringPos}!Bitmapfont@{Bitmapfont}}
+\doxysubsubsection{\texorpdfstring{getStringPos()}{getStringPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ int $>$ $>$ Bitmapfont\+::get\+String\+Pos (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the string position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to get the position. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBitmapfont_a97e0b400608f8ea5ca29f6f0a1e86ffb}\label{classBitmapfont_a97e0b400608f8ea5ca29f6f0a1e86ffb} 
+\index{Bitmapfont@{Bitmapfont}!setColor@{setColor}}
+\index{setColor@{setColor}!Bitmapfont@{Bitmapfont}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bitmapfont\+::set\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEGE_1_1Color}{EGE\+::\+Color}} \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the font color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Color to be set on the font. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBitmapfont_a97e0b400608f8ea5ca29f6f0a1e86ffb}\label{classBitmapfont_a97e0b400608f8ea5ca29f6f0a1e86ffb} 
+\index{Bitmapfont@{Bitmapfont}!setColor@{setColor}}
+\index{setColor@{setColor}!Bitmapfont@{Bitmapfont}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Bitmapfont\+::set\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEGE_1_1Color}{EGE\+::\+Color}} \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the font color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Color to be set on the font. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/graphical/\+SDL2/include/SDLBitmapfont.\+hpp\item 
+library/graphical/\+SFML/include/SFMLBitmapfont.\+hpp\item 
+library/graphical/\+SDL2/src/SDLBitmapfont.\+cpp\item 
+library/graphical/\+SFML/src/SFMLBitmapfont.\+cpp\end{DoxyCompactItemize}

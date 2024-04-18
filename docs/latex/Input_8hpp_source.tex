@@ -1,0 +1,45 @@
+\doxysection{Input.\+hpp}
+\hypertarget{Input_8hpp_source}{}\label{Input_8hpp_source}\index{library/engine/include/GUI/Input.hpp@{library/engine/include/GUI/Input.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Visual\ Studio\ Live\ Share\ (Workspace)}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Input}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ INPUT\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ INPUT\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}GUI/AGUI.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}GUI/AText.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}ADisplayModule.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }EGE\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1Input}{Input}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1AGUI}{AGUI}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Input}{Input}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *graphic,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\&\ pos);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Input}{\string~Input}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Input_a852f461f3977f530f48ad85bba07fa57}{addChar}}(\textcolor{keywordtype}{char}\ c);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Input_a5db552e7438e7b9628353ecb6beca4d7}{removeChar}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Input_a701691106de771631aa7b4be18945414}{draw}}(std::shared\_ptr<EGE::IWindow>\ window);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classEGE_1_1Input_adab682f70ff1c19b24fc918590314498}{getText}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Input_ad0019db92483b3f4cbe4ca53dcbb66df}{removeText}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Input_abe636e66b7b0ef73ee1bf744d0907fcd}{reload}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *graphic,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\&\ pos);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IText}{EGE::IText}}\ *\_text;\ \ \textcolor{comment}{//\ Text\ object\ contained\ in\ the\ field.}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \_input;\ \textcolor{comment}{//\ Content\ of\ the\ field.}}
+\DoxyCodeLine{00050\ \ \ \ \ \};}
+\DoxyCodeLine{00051\ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !INPUT\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

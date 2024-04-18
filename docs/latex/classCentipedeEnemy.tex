@@ -1,0 +1,265 @@
+\doxysection{Centipede\+Enemy Class Reference}
+\hypertarget{classCentipedeEnemy}{}\label{classCentipedeEnemy}\index{CentipedeEnemy@{CentipedeEnemy}}
+
+
+Enemy for Centipede game.  
+
+
+
+
+{\ttfamily \#include $<$Centipede\+Enemy.\+hpp$>$}
+
+Inheritance diagram for Centipede\+Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCentipedeEnemy}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCentipedeEnemy_a7bcf0bdbd3e03ae561fdb8d2625cf9f2}\label{classCentipedeEnemy_a7bcf0bdbd3e03ae561fdb8d2625cf9f2} 
+enum \mbox{\hyperlink{classCentipedeEnemy_a7bcf0bdbd3e03ae561fdb8d2625cf9f2}{Direction}} \{ {\bfseries LEFT}
+, {\bfseries RIGHT}
+, {\bfseries DOWN}
+, {\bfseries UP}
+ \}
+\begin{DoxyCompactList}\small\item\em Directions the enemy can take. \end{DoxyCompactList}\item 
+\Hypertarget{classCentipedeEnemy_acc7b247d5e3ddcdcafa48bc483e5bf39}\label{classCentipedeEnemy_acc7b247d5e3ddcdcafa48bc483e5bf39} 
+enum \mbox{\hyperlink{classCentipedeEnemy_acc7b247d5e3ddcdcafa48bc483e5bf39}{Type}} \{ {\bfseries HEAD}
+, {\bfseries BODY}
+ \}
+\begin{DoxyCompactList}\small\item\em Body part of the enemy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}\label{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7} 
+enum \mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Type}} \{ {\bfseries PLAYER}
+, {\bfseries ENEMY}
+, {\bfseries ENVIRONMENT}
+, {\bfseries OBJECT}
+ \}
+\begin{DoxyCompactList}\small\item\em All the types an entity can be. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCentipedeEnemy_a3723474141e57623108a7f7c6e62e857}{Centipede\+Enemy}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties, \mbox{\hyperlink{classCentipedeEnemy_acc7b247d5e3ddcdcafa48bc483e5bf39}{Type}} type=HEAD)
+\begin{DoxyCompactList}\small\item\em Create an enemy with the given properties and his body part. \end{DoxyCompactList}\item 
+\Hypertarget{classCentipedeEnemy_af5f6ed2290a700f79f8c52d371cb63f4}\label{classCentipedeEnemy_af5f6ed2290a700f79f8c52d371cb63f4} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Centipede\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipedeEnemy_ab03782a73c17858bae0cbccbcaab4283}{init}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)
+\begin{DoxyCompactList}\small\item\em Initialize the enemy ressources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipedeEnemy_a66311f591d1e584fe9e8438aaea01741}{reload}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module) override
+\begin{DoxyCompactList}\small\item\em Reload all the sprites off the enemy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipedeEnemy_abbea25ffae48a58c52c4841e5679dd1d}{update}} (std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&entities, \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module) override
+\begin{DoxyCompactList}\small\item\em Manage the state of the enemy (position, ...). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCentipedeEnemy_ab783f811871736aa24b0dcf349ab6a69}{is\+Colliding}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*}entity, \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)
+\begin{DoxyCompactList}\small\item\em Returns if the bullet is colliding with the given entity. \end{DoxyCompactList}\item 
+\Hypertarget{classCentipedeEnemy_a7aa97964987b683f27db963e9c5a15f3}\label{classCentipedeEnemy_a7aa97964987b683f27db963e9c5a15f3} 
+void {\bfseries move} ()
+\begin{DoxyCompactList}\small\item\em Move the enemy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipedeEnemy_aaabdda520c3bf728ed18801dfef6a6cf}{split}} (\mbox{\hyperlink{classCentipedeEnemy}{Centipede\+Enemy}} \texorpdfstring{$\ast$}{*}enemy, \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)
+\begin{DoxyCompactList}\small\item\em Split the enemy in 2 parts, a mandatory feature in Centipede game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipedeEnemy_a23eececbb70e13308f9a9168c72a904c}{draw}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module) override
+\begin{DoxyCompactList}\small\item\em Draws the enemy into the given {\ttfamily Display Module}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a84894fc95232c2dedd139bebfc280d23}{draw}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)
+\begin{DoxyCompactList}\small\item\em Draws the entity with the given {\ttfamily Display Module}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Entity_abf4236a0ca0dabd139d9564f056bb459}{set\+Position}} (const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \&position)
+\begin{DoxyCompactList}\small\item\em Sets the entity position to the given \`{}position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Entity_a42b2f7b47e2556fc2ca1021d408872be}{set\+Sprite}} (\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Sets a {\ttfamily sprite} to the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ {\bfseries get\+Position} () const
+\begin{DoxyCompactList}\small\item\em Returns the current {\ttfamily position} of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a71b9b27d7148903f6707e8237fdae4bd}{reload}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)
+\begin{DoxyCompactList}\small\item\em Reloads the entity with the given {\ttfamily Display Module}. Used when the {\ttfamily Display Module} changes and the {\ttfamily \doxylink{classCore}{Core}} reloads the games components. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1Entity_a428c011db3b44d5f8685a60e3281daee}{is\+Colliding}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \&other)
+\begin{DoxyCompactList}\small\item\em A simple and generic implementation of collision detection. Returns true if the {\ttfamily other} entity given is colliding with this entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a15a8c3e15d73e23304d727b0e242b2e4}{update}} (std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&entities, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)=0
+\begin{DoxyCompactList}\small\item\em An update {\ttfamily specific} for each {\ttfamily type} of entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a6fa7d742a1d9e1fbb1b0638ea63baf1a}{init}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)=0
+\begin{DoxyCompactList}\small\item\em Initialize the entity with his specified properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Sprite} () const
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily sprite} of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Entity\+::\+Type}} {\bfseries get\+Type} () const
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily type} of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCentipedeEnemy_a0232a0c8de3de4da0a1c6f81f648d31d}\label{classCentipedeEnemy_a0232a0c8de3de4da0a1c6f81f648d31d} 
+\mbox{\hyperlink{classCentipedeEnemy_a7bcf0bdbd3e03ae561fdb8d2625cf9f2}{Direction}} {\bfseries \+\_\+direction}
+\item 
+\Hypertarget{classCentipedeEnemy_a04a76681e7bd54a78c1ff6e90ac0c6b6}\label{classCentipedeEnemy_a04a76681e7bd54a78c1ff6e90ac0c6b6} 
+\mbox{\hyperlink{classCentipedeEnemy_a7bcf0bdbd3e03ae561fdb8d2625cf9f2}{Direction}} {\bfseries \+\_\+last\+Direction}
+\item 
+\Hypertarget{classCentipedeEnemy_ac80954e32db97839b7e620abfc0da644}\label{classCentipedeEnemy_ac80954e32db97839b7e620abfc0da644} 
+\mbox{\hyperlink{classCentipedeEnemy_acc7b247d5e3ddcdcafa48bc483e5bf39}{Centipede\+Enemy\+::\+Type}} {\bfseries \+\_\+enemy\+Type}
+\item 
+\Hypertarget{classCentipedeEnemy_aab665e63270498fcb4bd1b01f4ecbb35}\label{classCentipedeEnemy_aab665e63270498fcb4bd1b01f4ecbb35} 
+int {\bfseries \+\_\+size}
+\item 
+\Hypertarget{classCentipedeEnemy_a0e0b196e7fc8a6d46a638568f47af8fd}\label{classCentipedeEnemy_a0e0b196e7fc8a6d46a638568f47af8fd} 
+int {\bfseries \+\_\+current\+Size}
+\item 
+\Hypertarget{classCentipedeEnemy_a1ab93cbf91daa1ee15c0a98259f8b4db}\label{classCentipedeEnemy_a1ab93cbf91daa1ee15c0a98259f8b4db} 
+std\+::vector$<$ \mbox{\hyperlink{classCentipedeEnemy}{Centipede\+Enemy}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries \+\_\+body}
+\item 
+\Hypertarget{classCentipedeEnemy_ab36ca75b137dcce5b4d0edeaeac5db70}\label{classCentipedeEnemy_ab36ca75b137dcce5b4d0edeaeac5db70} 
+\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+display\+Module}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+sprite}
+\item 
+\mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Type}} {\bfseries \+\_\+type}
+\item 
+\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ {\bfseries \+\_\+position}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Ressource}{Ressource}} $>$ {\bfseries \+\_\+ressource}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Enemy for Centipede game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCentipedeEnemy_a3723474141e57623108a7f7c6e62e857}\label{classCentipedeEnemy_a3723474141e57623108a7f7c6e62e857} 
+\index{CentipedeEnemy@{CentipedeEnemy}!CentipedeEnemy@{CentipedeEnemy}}
+\index{CentipedeEnemy@{CentipedeEnemy}!CentipedeEnemy@{CentipedeEnemy}}
+\doxysubsubsection{\texorpdfstring{CentipedeEnemy()}{CentipedeEnemy()}}
+{\footnotesize\ttfamily Centipede\+Enemy\+::\+Centipede\+Enemy (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties,  }\item[{\mbox{\hyperlink{classCentipedeEnemy_acc7b247d5e3ddcdcafa48bc483e5bf39}{Type}}}]{type = {\ttfamily HEAD} }\end{DoxyParamCaption})}
+
+
+
+Create an enemy with the given properties and his body part. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Represents the properties of the entity (ressources, char associated, specific properties). \\
+\hline
+{\em type} & Body part of the enemy. If it is type of {\ttfamily BODY}, it will create a node which will be added the the \textquotesingle{}main\textquotesingle{} enemy. In the other case, it will create the \textquotesingle{}main\textquotesingle{} enemy. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCentipedeEnemy_a23eececbb70e13308f9a9168c72a904c}\label{classCentipedeEnemy_a23eececbb70e13308f9a9168c72a904c} 
+\index{CentipedeEnemy@{CentipedeEnemy}!draw@{draw}}
+\index{draw@{draw}!CentipedeEnemy@{CentipedeEnemy}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Centipede\+Enemy\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the enemy into the given {\ttfamily Display Module}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} to draw the enemy. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEGE_1_1Entity_a84894fc95232c2dedd139bebfc280d23}{EGE\+::\+Entity}}.
+
+\Hypertarget{classCentipedeEnemy_ab03782a73c17858bae0cbccbcaab4283}\label{classCentipedeEnemy_ab03782a73c17858bae0cbccbcaab4283} 
+\index{CentipedeEnemy@{CentipedeEnemy}!init@{init}}
+\index{init@{init}!CentipedeEnemy@{CentipedeEnemy}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Centipede\+Enemy\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initialize the enemy ressources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} where the enemy will be displayed. \\
+\hline
+{\em game\+Module} & {\ttfamily \doxylink{classGame}{Game} Module} where the enemy is created. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1Entity_a6fa7d742a1d9e1fbb1b0638ea63baf1a}{EGE\+::\+Entity}}.
+
+\Hypertarget{classCentipedeEnemy_ab783f811871736aa24b0dcf349ab6a69}\label{classCentipedeEnemy_ab783f811871736aa24b0dcf349ab6a69} 
+\index{CentipedeEnemy@{CentipedeEnemy}!isColliding@{isColliding}}
+\index{isColliding@{isColliding}!CentipedeEnemy@{CentipedeEnemy}}
+\doxysubsubsection{\texorpdfstring{isColliding()}{isColliding()}}
+{\footnotesize\ttfamily bool Centipede\+Enemy\+::is\+Colliding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*}}]{entity,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})}
+
+
+
+Returns if the bullet is colliding with the given entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to check. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCentipedeEnemy_a66311f591d1e584fe9e8438aaea01741}\label{classCentipedeEnemy_a66311f591d1e584fe9e8438aaea01741} 
+\index{CentipedeEnemy@{CentipedeEnemy}!reload@{reload}}
+\index{reload@{reload}!CentipedeEnemy@{CentipedeEnemy}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily void Centipede\+Enemy\+::reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reload all the sprites off the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} which displays the enemy. \\
+\hline
+{\em game\+Module} & {\ttfamily \doxylink{classGame}{Game} Module} where the enemy is created. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEGE_1_1Entity_a71b9b27d7148903f6707e8237fdae4bd}{EGE\+::\+Entity}}.
+
+\Hypertarget{classCentipedeEnemy_aaabdda520c3bf728ed18801dfef6a6cf}\label{classCentipedeEnemy_aaabdda520c3bf728ed18801dfef6a6cf} 
+\index{CentipedeEnemy@{CentipedeEnemy}!split@{split}}
+\index{split@{split}!CentipedeEnemy@{CentipedeEnemy}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily void Centipede\+Enemy\+::split (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCentipedeEnemy}{Centipede\+Enemy}} \texorpdfstring{$\ast$}{*}}]{enemy,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})}
+
+
+
+Split the enemy in 2 parts, a mandatory feature in Centipede game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Enemy to be split. \\
+\hline
+{\em game\+Module} & {\ttfamily \doxylink{classGame}{Game} Module} where the enemy is created. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCentipedeEnemy_abbea25ffae48a58c52c4841e5679dd1d}\label{classCentipedeEnemy_abbea25ffae48a58c52c4841e5679dd1d} 
+\index{CentipedeEnemy@{CentipedeEnemy}!update@{update}}
+\index{update@{update}!CentipedeEnemy@{CentipedeEnemy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Centipede\+Enemy\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&}]{entities,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Manage the state of the enemy (position, ...). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & All the entities in the game. \\
+\hline
+{\em game\+Module} & {\ttfamily \doxylink{classGame}{Game} Module} where the enemy is created. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/game/\+Centipede/include/Centipede\+Enemy.\+hpp\item 
+library/game/\+Centipede/src/Centipede\+Enemy.\+cpp\end{DoxyCompactItemize}

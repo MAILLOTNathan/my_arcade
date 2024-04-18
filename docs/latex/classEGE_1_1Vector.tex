@@ -1,0 +1,129 @@
+\doxysection{EGE\+::Vector\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classEGE_1_1Vector}{}\label{classEGE_1_1Vector}\index{EGE::Vector$<$ T $>$@{EGE::Vector$<$ T $>$}}
+
+
+Generic \doxylink{classEGE_1_1Vector}{Vector} implementation.  
+
+
+
+
+{\ttfamily \#include $<$Vector.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEGE_1_1Vector_a168218b66c5a0545e54c8871e195e6d1}{Vector}} (T x, T y)
+\begin{DoxyCompactList}\small\item\em Constructor of a vector. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Vector_a72621265883742575e2d260448956e5a}\label{classEGE_1_1Vector_a72621265883742575e2d260448956e5a} 
+{\bfseries Vector} ()
+\begin{DoxyCompactList}\small\item\em Constructor of a vector with x = 0 and y = 0. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Vector_a68502040f413a80a28c5f19ecd7de342}\label{classEGE_1_1Vector_a68502040f413a80a28c5f19ecd7de342} 
+T {\bfseries getX} () const
+\begin{DoxyCompactList}\small\item\em Get the x value of the vector. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Vector_aa28944d79044e2955c3df9d7e9e358fa}\label{classEGE_1_1Vector_aa28944d79044e2955c3df9d7e9e358fa} 
+T {\bfseries getY} () const
+\begin{DoxyCompactList}\small\item\em Get the y value of the vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Vector_a3af398d4dfa7f366d2045ecbc3bfe3f1}{setX}} (T x)
+\begin{DoxyCompactList}\small\item\em Set the x value of the vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Vector_aa9b3a4622e5d385c54783738821b4437}{setY}} (T y)
+\begin{DoxyCompactList}\small\item\em Set the y value of the vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ T $>$ \mbox{\hyperlink{classEGE_1_1Vector_a98ce7c9281cfac1e2d0ac52092f80770}{operator+}} (const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ T $>$ \&v) const
+\begin{DoxyCompactList}\small\item\em Overload operator {\ttfamily +}, increment a vector by another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1Vector_a010de4879c8b37484954f3387506bf3e}\label{classEGE_1_1Vector_a010de4879c8b37484954f3387506bf3e} 
+T {\bfseries \+\_\+x}
+\item 
+\Hypertarget{classEGE_1_1Vector_a90138cfff2ecffc70d5521e2b86e6a01}\label{classEGE_1_1Vector_a90138cfff2ecffc70d5521e2b86e6a01} 
+T {\bfseries \+\_\+y}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class EGE\+::\+Vector$<$ T $>$}
+Generic \doxylink{classEGE_1_1Vector}{Vector} implementation. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Unit of the dimensions. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEGE_1_1Vector_a168218b66c5a0545e54c8871e195e6d1}\label{classEGE_1_1Vector_a168218b66c5a0545e54c8871e195e6d1} 
+\index{EGE::Vector$<$ T $>$@{EGE::Vector$<$ T $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!EGE::Vector$<$ T $>$@{EGE::Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ T $>$\+::\+Vector (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of a vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position in x. \\
+\hline
+{\em y} & Position in y. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1Vector_a98ce7c9281cfac1e2d0ac52092f80770}\label{classEGE_1_1Vector_a98ce7c9281cfac1e2d0ac52092f80770} 
+\index{EGE::Vector$<$ T $>$@{EGE::Vector$<$ T $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!EGE::Vector$<$ T $>$@{EGE::Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ T $>$ \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ T $>$ \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload operator {\ttfamily +}, increment a vector by another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \doxylink{classEGE_1_1Vector}{Vector} to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1Vector_a3af398d4dfa7f366d2045ecbc3bfe3f1}\label{classEGE_1_1Vector_a3af398d4dfa7f366d2045ecbc3bfe3f1} 
+\index{EGE::Vector$<$ T $>$@{EGE::Vector$<$ T $>$}!setX@{setX}}
+\index{setX@{setX}!EGE::Vector$<$ T $>$@{EGE::Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ T $>$\+::setX (\begin{DoxyParamCaption}\item[{T}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the x value of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position in x. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1Vector_aa9b3a4622e5d385c54783738821b4437}\label{classEGE_1_1Vector_aa9b3a4622e5d385c54783738821b4437} 
+\index{EGE::Vector$<$ T $>$@{EGE::Vector$<$ T $>$}!setY@{setY}}
+\index{setY@{setY}!EGE::Vector$<$ T $>$@{EGE::Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ T $>$\+::setY (\begin{DoxyParamCaption}\item[{T}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the y value of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & Position in y. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/\+Maths/Vector.\+hpp\end{DoxyCompactItemize}

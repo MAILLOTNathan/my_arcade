@@ -1,0 +1,32 @@
+\doxysection{Snake\+Object.\+hpp}
+\hypertarget{SnakeObject_8hpp_source}{}\label{SnakeObject_8hpp_source}\index{library/game/Snake/include/SnakeObject.hpp@{library/game/Snake/include/SnakeObject.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ SnakeObject}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Entity.hpp"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSnakeObject}{SnakeObject}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSnakeObject}{SnakeObject}}(std::map<std::string,\ std::string>\ \&properties);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSnakeObject_a393b2bcd33969f75a79d8204b44a80a2}{\string~SnakeObject}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeObject_a587f4397d5cf28fcf02c165a98e438e1}{init}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeObject_ad367ee0c16bca815507934f053f7f56c}{update}}(std::vector<EGE::Entity\ *>\ \&entities,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeObject_a06c792504c22132da2f195de901433c4}{setRandomPosition}}(std::vector<EGE::Entity\ *>\ \&entities);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeObject_a06c792504c22132da2f195de901433c4}{setRandomPosition}}(\textcolor{keywordtype}{size\_t}\ minX,\ \textcolor{keywordtype}{size\_t}\ maxX,\ \textcolor{keywordtype}{size\_t}\ minY,\ \textcolor{keywordtype}{size\_t}\ maxY,\ std::vector<EGE::Entity\ *>\ \&entities);}
+\DoxyCodeLine{00040\ \};}
+
+\end{DoxyCode}

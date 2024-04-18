@@ -1,0 +1,38 @@
+\doxysection{NCURSESprite.\+hpp}
+\hypertarget{NCURSESprite_8hpp_source}{}\label{NCURSESprite_8hpp_source}\index{library/graphical/NCURSE/include/NCURSESprite.hpp@{library/graphical/NCURSE/include/NCURSESprite.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ NCURSESprite}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}ASprite.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}NCURSEWindow.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}Ressource.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSprite}{Sprite}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1ASprite}{EGE::ASprite}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSprite}{Sprite}}(\mbox{\hyperlink{classEGE_1_1Ressource}{EGE::Ressource}}\ *ressource,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \&pos);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSprite_a8accab430f9d90ae5117b57d67e32b84}{\string~Sprite}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_afeab7fb6e9778135bae97b200029d816}{draw}}(std::shared\_ptr<EGE::IWindow>\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_a23072078d8d05ecb3af9c9027f3aef42}{setPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\&\ pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_a23072078d8d05ecb3af9c9027f3aef42}{setPosition}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ std::string\ \_sprite;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ path\ to\ the\ sprite.}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \_oldPos;\ \ \ \textcolor{comment}{//\ The\ old\ position\ of\ the\ sprite.}}
+\DoxyCodeLine{00044\ \};}
+
+\end{DoxyCode}

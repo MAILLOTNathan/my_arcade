@@ -1,0 +1,47 @@
+\doxysection{Vector.\+hpp}
+\hypertarget{Vector_8hpp_source}{}\label{Vector_8hpp_source}\index{library/engine/include/Maths/Vector.hpp@{library/engine/include/Maths/Vector.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Vector}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }EGE\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Vector_a168218b66c5a0545e54c8871e195e6d1}{Vector}}(T\ x,\ T\ y)\ :\ \_x(x),\ \_y(y)\ \{\};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Vector_a72621265883742575e2d260448956e5a}{Vector}}()\ :\ \_x(0),\ \_y(0)\ \{\};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Vector}{\string~Vector}}()\ \{\};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{classEGE_1_1Vector_a68502040f413a80a28c5f19ecd7de342}{getX}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_x;\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{classEGE_1_1Vector_aa28944d79044e2955c3df9d7e9e358fa}{getY}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_y;\ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Vector_a3af398d4dfa7f366d2045ecbc3bfe3f1}{setX}}(T\ x)\ \{\ this-\/>\_x\ =\ x;\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Vector_aa9b3a4622e5d385c54783738821b4437}{setY}}(T\ y)\ \{\ this-\/>\_y\ =\ y;\ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Vector}{Vector<T>}}\ \mbox{\hyperlink{classEGE_1_1Vector_a98ce7c9281cfac1e2d0ac52092f80770}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{Vector<T>}}\ \&v)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00044\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classEGE_1_1Vector}{Vector<T>}}(this-\/>\_x\ +\ v.\_x,\ this-\/>\_y\ +\ v.\_y);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \_x;\ \ \ \textcolor{comment}{//\ Position\ in\ x.}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \_y;\ \ \ \textcolor{comment}{//\ Position\ in\ y.}}
+\DoxyCodeLine{00051\ \ \ \ \ \};}
+\DoxyCodeLine{00052\ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \&rect,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \&other);}
+
+\end{DoxyCode}

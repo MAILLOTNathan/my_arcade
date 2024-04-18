@@ -1,0 +1,380 @@
+\doxysection{Game Class Reference}
+\hypertarget{classGame}{}\label{classGame}\index{Game@{Game}}
+
+
+{\ttfamily \doxylink{classGame}{Game} Module} class of Centipede \doxylink{classGame}{Game}.  
+
+
+
+
+{\ttfamily \#include $<$Centipede\+Game.\+hpp$>$}
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classGame}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65} 
+{\bfseries Game} ()
+\begin{DoxyCompactList}\small\item\em Create the Centipede {\ttfamily \doxylink{classGame}{Game} Module}. \end{DoxyCompactList}\item 
+\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Game} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGame_a1507f2da83bf542c2068df102c943d3d}{load}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module) override
+\begin{DoxyCompactList}\small\item\em Load Centipede \doxylink{classGame}{Game} from the configuration files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a1930a05f23f7560dbeaaae876b7a7bd2}{get\+Next\+Frame}} () override
+\begin{DoxyCompactList}\small\item\em Displays the next frame of the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_a881f8ed99be99173c74cfa32d468f302}{create\+Player}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties) override
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \doxylink{classCentipedePlayer}{Centipede\+Player}} from {\ttfamily properties} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_ad735ed8979d8890445b40637bc995ead}{create\+Enemy}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties) override
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \doxylink{classCentipedeEnemy}{Centipede\+Enemy}} from {\ttfamily properties} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_a686a5688766c4f2ab75886ffb4bad59b}{create\+Object}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties) override
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \doxylink{classCentipedeObject}{Centipede\+Object}} from {\ttfamily properties} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_af36ebf04bce8cd42306863f5dd9d1980}{create\+Environment}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties) override
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \doxylink{classCentipedeEnvironment}{Centipede\+Environment}} from {\ttfamily properties} \end{DoxyCompactList}\item 
+\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65} 
+{\bfseries Game} ()
+\begin{DoxyCompactList}\small\item\em Create the Snake {\ttfamily \doxylink{classGame}{Game} Module}. \end{DoxyCompactList}\item 
+\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Game} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a1930a05f23f7560dbeaaae876b7a7bd2}{get\+Next\+Frame}} () override
+\begin{DoxyCompactList}\small\item\em Displays the next frame of the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGame_a5395b5555dbfef1534fd14732d1914ab}{load}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module) override
+\begin{DoxyCompactList}\small\item\em Load Snake \doxylink{classGame}{Game} from the configuration files. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_a881f8ed99be99173c74cfa32d468f302}{create\+Player}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties) override
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \doxylink{classSnakePlayer}{Snake\+Player}} from {\ttfamily properties} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_ad735ed8979d8890445b40637bc995ead}{create\+Enemy}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties) override
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \doxylink{classSnakeEnemy}{Snake\+Enemy}} from {\ttfamily properties} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_a686a5688766c4f2ab75886ffb4bad59b}{create\+Object}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties) override
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \doxylink{classSnakeObject}{Snake\+Object}} from {\ttfamily properties} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_af36ebf04bce8cd42306863f5dd9d1980}{create\+Environment}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties) override
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \doxylink{classSnakeEnvironment}{Snake\+Environment}} from {\ttfamily properties} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEGE_1_1AGameModule}{EGE\+::\+AGame\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AGameModule_a5693f5fe815cd36e4f690739b6496840}{get\+Next\+Frame}} () override
+\begin{DoxyCompactList}\small\item\em Displays the next frame of the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AGameModule_a29d8247a446f7d522caf9cb8dfb9d41d}{load}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)=0
+\begin{DoxyCompactList}\small\item\em Load a {\ttfamily Display Module} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1AGameModule_a44aef1764ee1dbdd80ac10af3dc820ae}{create\+Player}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create a player entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1AGameModule_a21304e75166ae30ba29c8c344bd61578}{create\+Enemy}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create an enemy entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1AGameModule_abe60f11b742978a16f500df0e3cb1aba}{create\+Environment}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create an environement entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1AGameModule_ab2f2ca8a8b146682c3d5df88c90af9e1}{create\+Object}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create an object entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1AGameModule_af5b0b06912cdae043a35e29794ab2ec9}{reload}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module) override
+\begin{DoxyCompactList}\small\item\em Reload the entity from the new {\ttfamily Display Module} given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1AGameModule_a62823344b8e9a50c77e0c30cd9d1d87a}{init}} (const std\+::string \&game\+Folder) override
+\begin{DoxyCompactList}\small\item\em Initialize the {\ttfamily \doxylink{classGame}{Game} Module} from the given {\ttfamily game\+Folder}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AGameModule_a9a7830f221549182d83751a27d270f37}{add\+Entity}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*}entity) override
+\begin{DoxyCompactList}\small\item\em Add the given {\ttfamily entity} to the container of the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AGameModule_a5f494fd9d2645d0f2d996b208e47ecc4}{remove\+Entity}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*}entity) override
+\begin{DoxyCompactList}\small\item\em Remove the given {\ttfamily entity} from the container of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1AGameModule_a28a0bcecdbc699e135d1dde2e4c256b3}{set\+Score}} (int score) override
+\begin{DoxyCompactList}\small\item\em Change the score value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEGE_1_1AGameModule_aa9ab5148aec7c42b38f99506859e36c0}{get\+Score}} () override
+\begin{DoxyCompactList}\small\item\em Returns the score value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1AGameModule_a8e5fc8c43d6b2a2f846edc1a876188c5}{set\+State}} (\mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}} state)
+\begin{DoxyCompactList}\small\item\em Change the state of the game to the given value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}} \mbox{\hyperlink{classEGE_1_1AGameModule_a21006244250787c2d1b266137ae43957}{get\+Stats}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the current state of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a50235ece60286ee003c23b3dc4298c06}{get\+Next\+Frame}} ()=0
+\begin{DoxyCompactList}\small\item\em Displays the next frame of the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a771b4637b57c7f4daed5d2d5a24d425b}{load}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)=0
+\begin{DoxyCompactList}\small\item\em Load a {\ttfamily Display Module} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_ac39ab01e65d0f42539e8c00cd3248d14}{reload}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)=0
+\begin{DoxyCompactList}\small\item\em Reload the entity from the new {\ttfamily Display Module} given. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a96923b0b5a87ae336d04bef6fc5df60a}{init}} (const std\+::string \&game\+Folder)=0
+\begin{DoxyCompactList}\small\item\em Initialize the {\ttfamily \doxylink{classGame}{Game} Module} from the given {\ttfamily game\+Folder}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IGameModule_a4dc4ccf6208be389f07eb2caa716b9e8}{create\+Player}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create a player entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IGameModule_a51bbaa0de489ef18984066a1cc29e405}{create\+Enemy}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create an enemy entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IGameModule_ac334c16b9c421df05ba8b099a83b761d}{create\+Environment}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create an environement entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IGameModule_ae23bfdacf3a581b5d3e830feff7abc9c}{create\+Object}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create an object entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a488c1bf1dc9519e232e7be59c5695904}{add\+Entity}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*}entity)=0
+\begin{DoxyCompactList}\small\item\em Add the given {\ttfamily entity} to the container of the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_adf1b78a66698c60bcd9985a17872d2f3}{remove\+Entity}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*}entity)=0
+\begin{DoxyCompactList}\small\item\em Remove the given {\ttfamily entity} from the container of the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a48a7d0c8abdd7c3165cfbcb433227f06}{set\+Score}} (int score)=0
+\begin{DoxyCompactList}\small\item\em Change the score value. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classEGE_1_1IGameModule_accc516bc5a041eb96783cac3b6827ff5}{get\+Score}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the score value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a62615a55b5a314d7e1ac0732c0f766be}{set\+State}} (\mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}} state)=0
+\begin{DoxyCompactList}\small\item\em Change the state of the game to the given value. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}} \mbox{\hyperlink{classEGE_1_1IGameModule_abfa0b5499db16c0a1118336fefafd676}{get\+Stats}} (void)=0
+\begin{DoxyCompactList}\small\item\em Returns the current state of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}\label{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da} 
+enum \mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}} \{ {\bfseries LOSE}
+, {\bfseries WIN}
+, {\bfseries RUN}
+ \}
+\begin{DoxyCompactList}\small\item\em All the state a game can be. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEGE_1_1AGameModule}{EGE\+::\+AGame\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+display}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries \+\_\+entities}
+\item 
+std\+::vector$<$ std\+::map$<$ std\+::string, std\+::string $>$ $>$ {\bfseries \+\_\+model}
+\item 
+std\+::string {\bfseries \+\_\+savegame}
+\item 
+\mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}} {\bfseries \+\_\+state}
+\item 
+int {\bfseries \+\_\+score}
+\item 
+\mbox{\hyperlink{classEGE_1_1IText}{EGE\+::\+IText}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+score\+Text}
+\item 
+\mbox{\hyperlink{classEGE_1_1IText}{EGE\+::\+IText}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+msg\+End}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \doxylink{classGame}{Game} Module} class of Centipede \doxylink{classGame}{Game}. 
+
+{\ttfamily \doxylink{classGame}{Game} Module} class of Snake \doxylink{classGame}{Game}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGame_ad735ed8979d8890445b40637bc995ead}\label{classGame_ad735ed8979d8890445b40637bc995ead} 
+\index{Game@{Game}!createEnemy@{createEnemy}}
+\index{createEnemy@{createEnemy}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createEnemy()}{createEnemy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} Game\+::create\+Enemy (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a {\ttfamily \doxylink{classCentipedeEnemy}{Centipede\+Enemy}} from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of the {\ttfamily \doxylink{classCentipedeEnemy}{Centipede\+Enemy}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AGameModule_a21304e75166ae30ba29c8c344bd61578}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_ad735ed8979d8890445b40637bc995ead}\label{classGame_ad735ed8979d8890445b40637bc995ead} 
+\index{Game@{Game}!createEnemy@{createEnemy}}
+\index{createEnemy@{createEnemy}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createEnemy()}{createEnemy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} Game\+::create\+Enemy (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a {\ttfamily \doxylink{classSnakeEnemy}{Snake\+Enemy}} from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of the {\ttfamily \doxylink{classSnakeEnemy}{Snake\+Enemy}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AGameModule_a21304e75166ae30ba29c8c344bd61578}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_af36ebf04bce8cd42306863f5dd9d1980}\label{classGame_af36ebf04bce8cd42306863f5dd9d1980} 
+\index{Game@{Game}!createEnvironment@{createEnvironment}}
+\index{createEnvironment@{createEnvironment}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createEnvironment()}{createEnvironment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} Game\+::create\+Environment (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a {\ttfamily \doxylink{classCentipedeEnvironment}{Centipede\+Environment}} from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of the {\ttfamily \doxylink{classCentipedeEnvironment}{Centipede\+Environment}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AGameModule_abe60f11b742978a16f500df0e3cb1aba}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_af36ebf04bce8cd42306863f5dd9d1980}\label{classGame_af36ebf04bce8cd42306863f5dd9d1980} 
+\index{Game@{Game}!createEnvironment@{createEnvironment}}
+\index{createEnvironment@{createEnvironment}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createEnvironment()}{createEnvironment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} Game\+::create\+Environment (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a {\ttfamily \doxylink{classSnakeEnvironment}{Snake\+Environment}} from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of the {\ttfamily \doxylink{classSnakeEnvironment}{Snake\+Environment}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AGameModule_abe60f11b742978a16f500df0e3cb1aba}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_a686a5688766c4f2ab75886ffb4bad59b}\label{classGame_a686a5688766c4f2ab75886ffb4bad59b} 
+\index{Game@{Game}!createObject@{createObject}}
+\index{createObject@{createObject}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createObject()}{createObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} Game\+::create\+Object (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a {\ttfamily \doxylink{classCentipedeObject}{Centipede\+Object}} from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of the {\ttfamily \doxylink{classCentipedeObject}{Centipede\+Object}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AGameModule_ab2f2ca8a8b146682c3d5df88c90af9e1}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_a686a5688766c4f2ab75886ffb4bad59b}\label{classGame_a686a5688766c4f2ab75886ffb4bad59b} 
+\index{Game@{Game}!createObject@{createObject}}
+\index{createObject@{createObject}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createObject()}{createObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} Game\+::create\+Object (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a {\ttfamily \doxylink{classSnakeObject}{Snake\+Object}} from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of the {\ttfamily \doxylink{classSnakeObject}{Snake\+Object}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AGameModule_ab2f2ca8a8b146682c3d5df88c90af9e1}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_a881f8ed99be99173c74cfa32d468f302}\label{classGame_a881f8ed99be99173c74cfa32d468f302} 
+\index{Game@{Game}!createPlayer@{createPlayer}}
+\index{createPlayer@{createPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createPlayer()}{createPlayer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} Game\+::create\+Player (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a {\ttfamily \doxylink{classCentipedePlayer}{Centipede\+Player}} from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of the {\ttfamily \doxylink{classCentipedePlayer}{Centipede\+Player}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AGameModule_a44aef1764ee1dbdd80ac10af3dc820ae}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_a881f8ed99be99173c74cfa32d468f302}\label{classGame_a881f8ed99be99173c74cfa32d468f302} 
+\index{Game@{Game}!createPlayer@{createPlayer}}
+\index{createPlayer@{createPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{createPlayer()}{createPlayer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} Game\+::create\+Player (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a {\ttfamily \doxylink{classSnakePlayer}{Snake\+Player}} from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of the {\ttfamily \doxylink{classSnakePlayer}{Snake\+Player}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AGameModule_a44aef1764ee1dbdd80ac10af3dc820ae}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_a1930a05f23f7560dbeaaae876b7a7bd2}\label{classGame_a1930a05f23f7560dbeaaae876b7a7bd2} 
+\index{Game@{Game}!getNextFrame@{getNextFrame}}
+\index{getNextFrame@{getNextFrame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getNextFrame()}{getNextFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+::get\+Next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the next frame of the game. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classEGE_1_1AGameModule_a5693f5fe815cd36e4f690739b6496840}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_a1930a05f23f7560dbeaaae876b7a7bd2}\label{classGame_a1930a05f23f7560dbeaaae876b7a7bd2} 
+\index{Game@{Game}!getNextFrame@{getNextFrame}}
+\index{getNextFrame@{getNextFrame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getNextFrame()}{getNextFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+::get\+Next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the next frame of the game. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classEGE_1_1AGameModule_a5693f5fe815cd36e4f690739b6496840}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_a1507f2da83bf542c2068df102c943d3d}\label{classGame_a1507f2da83bf542c2068df102c943d3d} 
+\index{Game@{Game}!load@{load}}
+\index{load@{load}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Load Centipede \doxylink{classGame}{Game} from the configuration files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} currently used by this game instance. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AGameModule_a29d8247a446f7d522caf9cb8dfb9d41d}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classGame_a5395b5555dbfef1534fd14732d1914ab}\label{classGame_a5395b5555dbfef1534fd14732d1914ab} 
+\index{Game@{Game}!load@{load}}
+\index{load@{load}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Game\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Load Snake \doxylink{classGame}{Game} from the configuration files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} currently used by this game instance. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AGameModule_a29d8247a446f7d522caf9cb8dfb9d41d}{EGE\+::\+AGame\+Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/game/\+Centipede/include/Centipede\+Game.\+hpp\item 
+library/game/\+Snake/include/Game.\+hpp\item 
+library/game/\+Centipede/src/Centipede\+Game.\+cpp\item 
+library/game/\+Snake/src/Game.\+cpp\end{DoxyCompactItemize}

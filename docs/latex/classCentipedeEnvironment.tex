@@ -1,0 +1,142 @@
+\doxysection{Centipede\+Environment Class Reference}
+\hypertarget{classCentipedeEnvironment}{}\label{classCentipedeEnvironment}\index{CentipedeEnvironment@{CentipedeEnvironment}}
+
+
+Environment objects in Centipede game.  
+
+
+
+
+{\ttfamily \#include $<$Centipede\+Environment.\+hpp$>$}
+
+Inheritance diagram for Centipede\+Environment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCentipedeEnvironment}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCentipedeEnvironment_aa1a40aad888ab41960b4978f5244a149}{Centipede\+Environment}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)
+\begin{DoxyCompactList}\small\item\em Create an environement object in Centipede game. \end{DoxyCompactList}\item 
+\Hypertarget{classCentipedeEnvironment_a67514f3b7ac1c26b015e9b484e8d875e}\label{classCentipedeEnvironment_a67514f3b7ac1c26b015e9b484e8d875e} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Centipede\+Environment} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipedeEnvironment_ab3468f3a58e84a1d989e7de55b2e5b87}{init}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)
+\begin{DoxyCompactList}\small\item\em Initialize the environment object ressources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipedeEnvironment_ace2db7d2e5dc4f6446bf4dafb9a676a3}{update}} (std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&entities, \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module) override
+\begin{DoxyCompactList}\small\item\em Manage the state of the environment object (position, ...). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a84894fc95232c2dedd139bebfc280d23}{draw}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)
+\begin{DoxyCompactList}\small\item\em Draws the entity with the given {\ttfamily Display Module}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Entity_abf4236a0ca0dabd139d9564f056bb459}{set\+Position}} (const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \&position)
+\begin{DoxyCompactList}\small\item\em Sets the entity position to the given \`{}position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Entity_a42b2f7b47e2556fc2ca1021d408872be}{set\+Sprite}} (\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Sets a {\ttfamily sprite} to the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ {\bfseries get\+Position} () const
+\begin{DoxyCompactList}\small\item\em Returns the current {\ttfamily position} of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a71b9b27d7148903f6707e8237fdae4bd}{reload}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)
+\begin{DoxyCompactList}\small\item\em Reloads the entity with the given {\ttfamily Display Module}. Used when the {\ttfamily Display Module} changes and the {\ttfamily \doxylink{classCore}{Core}} reloads the games components. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1Entity_a428c011db3b44d5f8685a60e3281daee}{is\+Colliding}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \&other)
+\begin{DoxyCompactList}\small\item\em A simple and generic implementation of collision detection. Returns true if the {\ttfamily other} entity given is colliding with this entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a15a8c3e15d73e23304d727b0e242b2e4}{update}} (std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&entities, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)=0
+\begin{DoxyCompactList}\small\item\em An update {\ttfamily specific} for each {\ttfamily type} of entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a6fa7d742a1d9e1fbb1b0638ea63baf1a}{init}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)=0
+\begin{DoxyCompactList}\small\item\em Initialize the entity with his specified properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Sprite} () const
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily sprite} of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Entity\+::\+Type}} {\bfseries get\+Type} () const
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily type} of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}\label{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7} 
+enum \mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Type}} \{ {\bfseries PLAYER}
+, {\bfseries ENEMY}
+, {\bfseries ENVIRONMENT}
+, {\bfseries OBJECT}
+ \}
+\begin{DoxyCompactList}\small\item\em All the types an entity can be. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+sprite}
+\item 
+\mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Type}} {\bfseries \+\_\+type}
+\item 
+\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ {\bfseries \+\_\+position}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Ressource}{Ressource}} $>$ {\bfseries \+\_\+ressource}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Environment objects in Centipede game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCentipedeEnvironment_aa1a40aad888ab41960b4978f5244a149}\label{classCentipedeEnvironment_aa1a40aad888ab41960b4978f5244a149} 
+\index{CentipedeEnvironment@{CentipedeEnvironment}!CentipedeEnvironment@{CentipedeEnvironment}}
+\index{CentipedeEnvironment@{CentipedeEnvironment}!CentipedeEnvironment@{CentipedeEnvironment}}
+\doxysubsubsection{\texorpdfstring{CentipedeEnvironment()}{CentipedeEnvironment()}}
+{\footnotesize\ttfamily Centipede\+Environment\+::\+Centipede\+Environment (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})}
+
+
+
+Create an environement object in Centipede game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Represents the properties of the entity (ressources, char associated, specific properties). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCentipedeEnvironment_ab3468f3a58e84a1d989e7de55b2e5b87}\label{classCentipedeEnvironment_ab3468f3a58e84a1d989e7de55b2e5b87} 
+\index{CentipedeEnvironment@{CentipedeEnvironment}!init@{init}}
+\index{init@{init}!CentipedeEnvironment@{CentipedeEnvironment}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Centipede\+Environment\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initialize the environment object ressources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} where the environment object will be displayed. \\
+\hline
+{\em game\+Module} & {\ttfamily \doxylink{classGame}{Game} Module} where the environment object is created. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1Entity_a6fa7d742a1d9e1fbb1b0638ea63baf1a}{EGE\+::\+Entity}}.
+
+\Hypertarget{classCentipedeEnvironment_ace2db7d2e5dc4f6446bf4dafb9a676a3}\label{classCentipedeEnvironment_ace2db7d2e5dc4f6446bf4dafb9a676a3} 
+\index{CentipedeEnvironment@{CentipedeEnvironment}!update@{update}}
+\index{update@{update}!CentipedeEnvironment@{CentipedeEnvironment}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Centipede\+Environment\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&}]{entities,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Manage the state of the environment object (position, ...). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & All the entities in the game. \\
+\hline
+{\em game\+Module} & {\ttfamily \doxylink{classGame}{Game} Module} where the environment object is created. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/game/\+Centipede/include/Centipede\+Environment.\+hpp\item 
+library/game/\+Centipede/src/Centipede\+Environment.\+cpp\end{DoxyCompactItemize}

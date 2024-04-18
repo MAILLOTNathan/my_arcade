@@ -1,0 +1,64 @@
+\doxysection{EGE\+::IGUI Class Reference}
+\hypertarget{classEGE_1_1IGUI}{}\label{classEGE_1_1IGUI}\index{EGE::IGUI@{EGE::IGUI}}
+
+
+Interface for Graphical User Interface objects.  
+
+
+
+
+{\ttfamily \#include $<$IGUI.\+hpp$>$}
+
+Inheritance diagram for EGE\+::IGUI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classEGE_1_1IGUI}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGUI_a56dcb498a6898a6f75b4fef79b0d3057}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the GUI object in the given {\ttfamily window}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ADrawable_a74ebf5583e9147331f28bc39edda350c}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IDrawable_a36e7317ed65af6d19a323e991249ffef}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for Graphical User Interface objects. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1IGUI_a56dcb498a6898a6f75b4fef79b0d3057}\label{classEGE_1_1IGUI_a56dcb498a6898a6f75b4fef79b0d3057} 
+\index{EGE::IGUI@{EGE::IGUI}!draw@{draw}}
+\index{draw@{draw}!EGE::IGUI@{EGE::IGUI}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IGUI\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draws the GUI object in the given {\ttfamily window}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \doxylink{classWindow}{Window} where the GUI object will be drawn. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1ADrawable_a74ebf5583e9147331f28bc39edda350c}{EGE\+::\+ADrawable}}.
+
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1Input_a701691106de771631aa7b4be18945414}{EGE\+::\+Input}}, \mbox{\hyperlink{classEGE_1_1AButton_a172ddc65f32f391fdb09f98ee53f77eb}{EGE\+::\+AButton}}, \mbox{\hyperlink{classEGE_1_1AGUI_af3df66fef03c90f1098982e0391358a2}{EGE\+::\+AGUI}}, \mbox{\hyperlink{classEGE_1_1AText_a798033c1589a616dd66698d13202e1d7}{EGE\+::\+AText}}, \mbox{\hyperlink{classEGE_1_1IButton_ad7c7d9b61f99e72867713fd793f8a9e5}{EGE\+::\+IButton}}, and \mbox{\hyperlink{classEGE_1_1IText_aa67902f2155d35487e49da1b3a62b624}{EGE\+::\+IText}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/\+GUI/IGUI.\+hpp\end{DoxyCompactItemize}

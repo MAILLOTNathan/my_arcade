@@ -1,0 +1,98 @@
+\doxysection{Utils Class Reference}
+\hypertarget{classUtils}{}\label{classUtils}\index{Utils@{Utils}}
+
+
+Utility functions.  
+
+
+
+
+{\ttfamily \#include $<$Utils.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classUtils_a59051cb7916386335e7873e348bd22c9}{get\+Content\+Folder}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Get the content of a folder. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classUtils_ac03e1d349be2e8e93060543a8f0bc33f}{my\+Str\+To\+Word\+Vector\+Sep}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Split a string into a container of strings separated by \textquotesingle{}~\newline
+\textquotesingle{}. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classUtils_ac41fae708830e7abd063e7d58eab9d45}{my\+Str\+To\+Word\+Vector\+Sep}} (const std\+::string \&str, char sep)
+\begin{DoxyCompactList}\small\item\em Split a string into a container of strings separated by the char passed as param. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classUtils_aed8daf2d521b9259c9e401643715f342}{get\+File\+Content}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Get the content of a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility functions. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUtils_a59051cb7916386335e7873e348bd22c9}\label{classUtils_a59051cb7916386335e7873e348bd22c9} 
+\index{Utils@{Utils}!getContentFolder@{getContentFolder}}
+\index{getContentFolder@{getContentFolder}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{getContentFolder()}{getContentFolder()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Utils\+::get\+Content\+Folder (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the content of a folder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the folder. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUtils_aed8daf2d521b9259c9e401643715f342}\label{classUtils_aed8daf2d521b9259c9e401643715f342} 
+\index{Utils@{Utils}!getFileContent@{getFileContent}}
+\index{getFileContent@{getFileContent}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{getFileContent()}{getFileContent()}}
+{\footnotesize\ttfamily std\+::string Utils\+::get\+File\+Content (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the content of a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path to the file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUtils_ac03e1d349be2e8e93060543a8f0bc33f}\label{classUtils_ac03e1d349be2e8e93060543a8f0bc33f} 
+\index{Utils@{Utils}!myStrToWordVectorSep@{myStrToWordVectorSep}}
+\index{myStrToWordVectorSep@{myStrToWordVectorSep}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{myStrToWordVectorSep()}{myStrToWordVectorSep()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Utils\+::my\+Str\+To\+Word\+Vector\+Sep (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Split a string into a container of strings separated by \textquotesingle{}~\newline
+\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to be splitted. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUtils_ac41fae708830e7abd063e7d58eab9d45}\label{classUtils_ac41fae708830e7abd063e7d58eab9d45} 
+\index{Utils@{Utils}!myStrToWordVectorSep@{myStrToWordVectorSep}}
+\index{myStrToWordVectorSep@{myStrToWordVectorSep}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{myStrToWordVectorSep()}{myStrToWordVectorSep()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Utils\+::my\+Str\+To\+Word\+Vector\+Sep (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str,  }\item[{char}]{sep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Split a string into a container of strings separated by the char passed as param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to be splitted. \\
+\hline
+{\em sep} & Character interpreted as a separator. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/Utils.\+hpp\item 
+library/engine/src/Utils.\+cpp\end{DoxyCompactItemize}

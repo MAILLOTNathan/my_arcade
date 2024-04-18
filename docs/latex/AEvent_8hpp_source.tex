@@ -1,0 +1,73 @@
+\doxysection{AEvent.\+hpp}
+\hypertarget{AEvent_8hpp_source}{}\label{AEvent_8hpp_source}\index{library/engine/include/AEvent.hpp@{library/engine/include/AEvent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Visual\ Studio\ Live\ Share\ (Workspace)}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ AEvent}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AEVENT\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ AEVENT\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}IEvent.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }EGE\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1AEvent}{AEvent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1IEvent}{IEvent}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1AEvent}{\string~AEvent}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_af98cddd931e582611f74f463fdf8e5e4}{setKeyboardEnabled}}(\textcolor{keywordtype}{bool}\ enabled)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_a7704a307fdd35f8745468b09451dc934}{setMouseEnabled}}(\textcolor{keywordtype}{bool}\ enabled)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_a8dbef8e0df4c4c9fb989ff111b942585}{setMouseHidden}}(\textcolor{keywordtype}{bool}\ hidden)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEGE_1_1AEvent_a99f08b298cbc875b296dfaa2aeb9ebe0}{isKeyboardEnabled}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEGE_1_1AEvent_aa157e0e7cf4db463abc29427f3900d98}{isMouseEnabled}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEGE_1_1AEvent_a511f67478c8070403c9bc68395f7c739}{isMouseHidden}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_ac705ac861ee4188fd8e08548a0484aa0}{bindKey}}(std::shared\_ptr<\mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE::Event::Trigger<EGE::Event::Keyboard>}}>\ trigger,\ std::function<\textcolor{keywordtype}{void}(\textcolor{keywordtype}{void})>\ func)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_a99b74fabb18b46aecd4629d1b904b77c}{bindMouse}}(std::shared\_ptr<\mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE::Event::Trigger<EGE::Event::Mouse>}}>\ trigger,\ std::function<\textcolor{keywordtype}{void}(\textcolor{keywordtype}{void})>\ func)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_a457db40c75b5a06e0aa17ef814f78a8e}{unbindKey}}(std::shared\_ptr<\mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE::Event::Trigger<EGE::Event::Keyboard>}}>\ trigger)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_ae8d4f44ffaef4462a0110993de51296f}{unbindMouse}}(std::shared\_ptr<\mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE::Event::Trigger<EGE::Event::Mouse>}}>\ trigger)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_a60c66fb52353f13390f31da5ae730d93}{unbindMouseScroll}}(\textcolor{keywordtype}{void})\ =\ 0;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::uint32\_t\ \mbox{\hyperlink{classEGE_1_1AEvent_a15eddbf48f3f28bc3eb1bf79a0ce934b}{keyboardTranslate}}(EGE::Event::Keyboard\ trigger)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::uint32\_t\ \mbox{\hyperlink{classEGE_1_1AEvent_a253399a3b9b7d64c9e847711b19c0502}{mouseTranslate}}(EGE::Event::Mouse\ trigger)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_a849c1c53807eabbd46927191785c5cad}{manageKeyboardEvent}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window)\ =\ 0;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_a3fe565befd2d9c39a42447ebca5b610e}{manageMouseEvent}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window)\ =\ 0;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AEvent_ac4269be1d2fae1b4fc8b47c19b4512da}{manageEvent}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window)\ =\ 0;}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_mouseEnabled;\ \ \ \ \ \textcolor{comment}{//\ State\ of\ mouse:\ enabled\ or\ disabled.}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_mouseHidden;\ \ \ \ \ \ \textcolor{comment}{//\ State\ of\ mouse:\ hidden\ or\ visible.}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_keyboardEnabled;\ \ \textcolor{comment}{//\ State\ of\ keyboard:\ enabled\ or\ disabled.}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ std::map<std::shared\_ptr<EGE::Event::Trigger<EGE::Event::Keyboard>>,\ std::function<void(\textcolor{keywordtype}{void})>>\ \_keyMap;\ \ \ \ \textcolor{comment}{//\ Map\ of\ key\ linked\ to\ their\ actions.}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ std::map<std::shared\_ptr<EGE::Event::Trigger<EGE::Event::Mouse>>,\ std::function<void(\textcolor{keywordtype}{void})>>\ \_mouseMap;\ \ \ \ \ \textcolor{comment}{//\ Map\ of\ mouse\ events\ linked\ to\ their\ actions.}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ std::map<EGE::Event::Keyboard,\ std::uint32\_t>\ \_keyboardTranslate;\ \ \ \textcolor{comment}{//\ Translations\ between\ \`{}Keys`\ and\ \`{}Values`}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ std::map<EGE::Event::Mouse,\ std::uint32\_t>\ \_mouseTranslate;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Translations\ between\ \`{}Mouse\ events`\ and\ \`{}Values`}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00094\ \ \ \ \ \};}
+\DoxyCodeLine{00095\ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AEVENT\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

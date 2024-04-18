@@ -1,0 +1,175 @@
+\doxysection{EGE\+::Rect\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classEGE_1_1Rect}{}\label{classEGE_1_1Rect}\index{EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}}
+
+
+Generic Rectangle implementation.  
+
+
+
+
+{\ttfamily \#include $<$Rect.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEGE_1_1Rect_ac634075b63b8dea7953f3ca3e10f10dc}{Rect}} (T x, T y, T width, T height)
+\begin{DoxyCompactList}\small\item\em Constructor of a rectangle. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Rect_ad5f69a3111198b65d434837cc0736ef2}\label{classEGE_1_1Rect_ad5f69a3111198b65d434837cc0736ef2} 
+{\bfseries Rect} ()
+\begin{DoxyCompactList}\small\item\em Constructor of a rectangle (set all the values to 0). \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Rect_a033280e5d5e4afe263e4e0ba56f80e73}\label{classEGE_1_1Rect_a033280e5d5e4afe263e4e0ba56f80e73} 
+T {\bfseries getX} () const
+\begin{DoxyCompactList}\small\item\em Get the x position of the rectangle. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Rect_a6ba43962789fffc5b690d742713229d5}\label{classEGE_1_1Rect_a6ba43962789fffc5b690d742713229d5} 
+T {\bfseries getY} () const
+\begin{DoxyCompactList}\small\item\em Get the y position of the rectangle. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Rect_a0741bea58726ac165846951df0f3815f}\label{classEGE_1_1Rect_a0741bea58726ac165846951df0f3815f} 
+T {\bfseries get\+Width} () const
+\begin{DoxyCompactList}\small\item\em Get the width of the rectangle. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Rect_a5e7566e1553a7442a166aeb3f3f4a11b}\label{classEGE_1_1Rect_a5e7566e1553a7442a166aeb3f3f4a11b} 
+T {\bfseries get\+Height} () const
+\begin{DoxyCompactList}\small\item\em Get the height of the rectangle. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Rect_a641fd4beb8113b4441b3f5ab797efca9}\label{classEGE_1_1Rect_a641fd4beb8113b4441b3f5ab797efca9} 
+void {\bfseries setX} (T x)
+\begin{DoxyCompactList}\small\item\em Set the x position of the rectangle. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Rect_ad39ff47d97570d3399e1205a089349e9}\label{classEGE_1_1Rect_ad39ff47d97570d3399e1205a089349e9} 
+void {\bfseries setY} (T y)
+\begin{DoxyCompactList}\small\item\em Set the y position of the rectangle. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Rect_a19096fc37185bd64e4fe84d59761fa42}\label{classEGE_1_1Rect_a19096fc37185bd64e4fe84d59761fa42} 
+void {\bfseries set\+Width} (T width)
+\begin{DoxyCompactList}\small\item\em Set the width of the rectangle. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Rect_a27dbd7c7c412a67621056cee4b21a2d5}\label{classEGE_1_1Rect_a27dbd7c7c412a67621056cee4b21a2d5} 
+void {\bfseries set\+Height} (T height)
+\begin{DoxyCompactList}\small\item\em Set the height of the rectangle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEGE_1_1Rect_a504e6cef29589440ebd4d6f4bd7e6467}{contains}} (\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ T $>$ point)
+\begin{DoxyCompactList}\small\item\em Return if a rectangle contains a point. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEGE_1_1Rect_a62f1f6c173db9d7b6d197123dd7c7673}{intersects}} (const \mbox{\hyperlink{classEGE_1_1Rect}{Rect}}$<$ T $>$ \&rect)
+\begin{DoxyCompactList}\small\item\em Return if a rectangle contains another rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Rect_a68df7d0b8eaa890125ce70660e26082d}{operator=}} (const \mbox{\hyperlink{classEGE_1_1Rect}{Rect}}$<$ T $>$ \&rect)
+\begin{DoxyCompactList}\small\item\em Overload of {\ttfamily =} operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEGE_1_1Rect_a6789fda732020a272965eafdb275fe1e}{operator==}} (const \mbox{\hyperlink{classEGE_1_1Rect}{Rect}}$<$ T $>$ \&rect)
+\begin{DoxyCompactList}\small\item\em Overload of {\ttfamily ==} operator, return if a rectangle as the same properties than another rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1Rect_a542d2ed9f436708ed2697ae5c9e0520e}\label{classEGE_1_1Rect_a542d2ed9f436708ed2697ae5c9e0520e} 
+T {\bfseries \+\_\+x}
+\item 
+\Hypertarget{classEGE_1_1Rect_aa4701178482b58b2755d17f836c6d6b1}\label{classEGE_1_1Rect_aa4701178482b58b2755d17f836c6d6b1} 
+T {\bfseries \+\_\+y}
+\item 
+\Hypertarget{classEGE_1_1Rect_afcb6f81c2988b7933934e90f39f8fd5b}\label{classEGE_1_1Rect_afcb6f81c2988b7933934e90f39f8fd5b} 
+T {\bfseries \+\_\+width}
+\item 
+\Hypertarget{classEGE_1_1Rect_aa1925c1fb2e4a66e19b1318d4f96b7ab}\label{classEGE_1_1Rect_aa1925c1fb2e4a66e19b1318d4f96b7ab} 
+T {\bfseries \+\_\+height}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class EGE\+::\+Rect$<$ T $>$}
+Generic Rectangle implementation. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Unit of the rectangle dimensions. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEGE_1_1Rect_ac634075b63b8dea7953f3ca3e10f10dc}\label{classEGE_1_1Rect_ac634075b63b8dea7953f3ca3e10f10dc} 
+\index{EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}!Rect@{Rect}}
+\index{Rect@{Rect}!EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Rect()}{Rect()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ T $>$\+::\+Rect (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y,  }\item[{T}]{width,  }\item[{T}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position in x. \\
+\hline
+{\em y} & Position in y. \\
+\hline
+{\em width} & Width of the rectangle. \\
+\hline
+{\em height} & Height of the rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1Rect_a504e6cef29589440ebd4d6f4bd7e6467}\label{classEGE_1_1Rect_a504e6cef29589440ebd4d6f4bd7e6467} 
+\index{EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}!contains@{contains}}
+\index{contains@{contains}!EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ T $>$\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ T $>$}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return if a rectangle contains a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Point to check into the rectangle. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1Rect_a62f1f6c173db9d7b6d197123dd7c7673}\label{classEGE_1_1Rect_a62f1f6c173db9d7b6d197123dd7c7673} 
+\index{EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}!intersects@{intersects}}
+\index{intersects@{intersects}!EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ T $>$\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEGE_1_1Rect}{Rect}}$<$ T $>$ \&}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return if a rectangle contains another rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & Rectangle to check into the current rectangle. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1Rect_a68df7d0b8eaa890125ce70660e26082d}\label{classEGE_1_1Rect_a68df7d0b8eaa890125ce70660e26082d} 
+\index{EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEGE_1_1Rect}{Rect}}$<$ T $>$ \&}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of {\ttfamily =} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & \doxylink{classEGE_1_1Rect}{Rect} value to be assign to the current rectangle. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1Rect_a6789fda732020a272965eafdb275fe1e}\label{classEGE_1_1Rect_a6789fda732020a272965eafdb275fe1e} 
+\index{EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!EGE::Rect$<$ T $>$@{EGE::Rect$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classEGE_1_1Rect}{EGE\+::\+Rect}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEGE_1_1Rect}{Rect}}$<$ T $>$ \&}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overload of {\ttfamily ==} operator, return if a rectangle as the same properties than another rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & Rectangle to check properties. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/\+Maths/Rect.\+hpp\end{DoxyCompactItemize}

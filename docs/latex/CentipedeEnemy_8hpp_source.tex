@@ -1,0 +1,59 @@
+\doxysection{Centipede\+Enemy.\+hpp}
+\hypertarget{CentipedeEnemy_8hpp_source}{}\label{CentipedeEnemy_8hpp_source}\index{library/game/Centipede/include/CentipedeEnemy.hpp@{library/game/Centipede/include/CentipedeEnemy.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ CentipedeEnemy}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Entity.hpp"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCentipedeEnemy}{CentipedeEnemy}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{classCentipedeEnemy_a7bcf0bdbd3e03ae561fdb8d2625cf9f2}{Direction}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ LEFT,\ \ \ \textcolor{comment}{//\ Enemy\ going\ left.}}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ RIGHT,\ \ \textcolor{comment}{//\ Enemy\ going\ right.}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ DOWN,\ \ \ \textcolor{comment}{//\ Enemy\ going\ down.}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ UP\ \ \ \ \ \ \textcolor{comment}{//\ Enemy\ going\ up.}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{classCentipedeEnemy_acc7b247d5e3ddcdcafa48bc483e5bf39}{Type}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ HEAD,\ \ \ \textcolor{comment}{//\ Head\ of\ enemy.}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ BODY\ \ \ \ \textcolor{comment}{//\ Body\ of\ enemy.}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedeEnemy}{CentipedeEnemy}}(std::map<std::string,\ std::string>\ \&properties,\ \mbox{\hyperlink{classCentipedeEnemy_acc7b247d5e3ddcdcafa48bc483e5bf39}{Type}}\ type\ =\ HEAD);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedeEnemy_af5f6ed2290a700f79f8c52d371cb63f4}{\string~CentipedeEnemy}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeEnemy_ab03782a73c17858bae0cbccbcaab4283}{init}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeEnemy_a66311f591d1e584fe9e8438aaea01741}{reload}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeEnemy_abbea25ffae48a58c52c4841e5679dd1d}{update}}(std::vector<EGE::Entity\ *>\ \&entities,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCentipedeEnemy_ab783f811871736aa24b0dcf349ab6a69}{isColliding}}(\mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ *entity,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeEnemy_a7aa97964987b683f27db963e9c5a15f3}{move}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeEnemy_aaabdda520c3bf728ed18801dfef6a6cf}{split}}(\mbox{\hyperlink{classCentipedeEnemy}{CentipedeEnemy}}\ *enemy,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeEnemy_a23eececbb70e13308f9a9168c72a904c}{draw}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedeEnemy_a7bcf0bdbd3e03ae561fdb8d2625cf9f2}{Direction}}\ \_direction;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Direction\ of\ the\ enemy\ is\ going\ to.}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedeEnemy_a7bcf0bdbd3e03ae561fdb8d2625cf9f2}{Direction}}\ \_lastDirection;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Last\ direction\ taken\ by\ the\ enemy.}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedeEnemy_acc7b247d5e3ddcdcafa48bc483e5bf39}{CentipedeEnemy::Type}}\ \_enemyType;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Type\ of\ enemy\ (`BODY`\ or\ \`{}HEAD`).}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_size;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Size\ of\ the\ enemy.}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_currentSize;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ size\ of\ the\ enemy.}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ std::vector<CentipedeEnemy\ *>\ \_body;\ \ \ \ \textcolor{comment}{//\ All\ body\ parts\ of\ the\ enemy.}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *\_displayModule;\ \ \ \ \textcolor{comment}{//\ Current\ diplay\ module\ used.}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00078\ \};}
+
+\end{DoxyCode}

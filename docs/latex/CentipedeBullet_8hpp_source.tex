@@ -1,0 +1,47 @@
+\doxysection{Centipede\+Bullet.\+hpp}
+\hypertarget{CentipedeBullet_8hpp_source}{}\label{CentipedeBullet_8hpp_source}\index{library/game/Centipede/include/CentipedeBullet.hpp@{library/game/Centipede/include/CentipedeBullet.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Visual\ Studio\ Live\ Share\ (Workspace)}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ CentipedeBullet}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ CENTIPEDEBULLET\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ CENTIPEDEBULLET\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Entity.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCentipedePlayer}{CentipedePlayer}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCentipedeBullet}{CentipedeBullet}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedeBullet}{CentipedeBullet}}(\mbox{\hyperlink{classCentipedePlayer}{CentipedePlayer}}\ *\_player);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedeBullet_ab739b703897beebc7296ec2f5fb9246d}{\string~CentipedeBullet}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeBullet_a4d87a7daf65538e4db1c5184512407d5}{update}}(std::vector<EGE::Entity\ *>\ \&entities,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeBullet_ad2028d8e9a7a95f1b9611b7155ce8f4e}{init}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeBullet_a0822c7ae52273f0e4b745112326e8109}{draw}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeBullet_ad73530d767f99d3c6fc7f84bf0d4ce4f}{reload}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCentipedeBullet_a7213c61b1754a53ec021f5e636244f64}{isColliding}}(\mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ \&entity);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedeBullet_a928c638653fe45a8eeb4c0319b5d6c30}{setShooting}}(\textcolor{keywordtype}{bool}\ shooting)\ \{\ \_shooting\ =\ shooting;\ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCentipedeBullet_a95036c4fb28b0ebb038787623c6b9fd3}{isShooting}}()\ \{\ \textcolor{keywordflow}{return}\ \_shooting;\ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedePlayer}{CentipedePlayer}}\ *\_player;\ \ \ \textcolor{comment}{//\ The\ player\ how\ shoot\ the\ bullet.}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_shooting;\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ State\ of\ the\ bullet\ (thrown\ or\ not).}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !CENTIPEDEBULLET\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

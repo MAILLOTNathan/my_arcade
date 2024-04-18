@@ -1,0 +1,15 @@
+char:P
+sprite:library/game/Snake/config/assets/player.png
+type:PLAYER
+#
+char:E
+sprite:library/game/Snake/config/assets/enemy.png
+type:ENEMY
+#
+char:W
+sprite:library/game/Snake/config/assets/wall.png
+type:ENVIRONMENT
+#
+char:A
+sprite:library/game/Snake/config/assets/apple.png
+type:OBJECT

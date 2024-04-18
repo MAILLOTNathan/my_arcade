@@ -1,0 +1,45 @@
+\doxysection{SDLEvent.\+hpp}
+\hypertarget{SDLEvent_8hpp_source}{}\label{SDLEvent_8hpp_source}\index{library/graphical/SDL2/include/SDLEvent.hpp@{library/graphical/SDL2/include/SDLEvent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Event}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ EVENT\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ EVENT\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}AEvent.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}SDLWindow.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEvent}{Event}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1AEvent}{EGE::AEvent}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEvent_a5a40dd4708297f7031e29b39e039ae10}{Event}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEvent_a7704ec01ce91e673885792054214b3d2}{\string~Event}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEvent_a1447cd3e7179a6a5b1641773eb0ad46a}{bindMouseScroll}}(std::unique\_ptr<EGE::IWindow>\ window,\ std::function<\textcolor{keywordtype}{void}(std::double\_t,\ std::double\_t)>\ func)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEvent_a9398ddcd5d663171ee05e24f31134ad9}{unbindMouseScroll}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEvent_ab98f02d2159418812c3c225ad538a1a6}{manageKeyboardEvent}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEvent_af81c27211ad25ab711ef2d8a68221f79}{manageMouseEvent}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEvent_a5880bc809f0a095f8ce874dd86117fd0}{manageEvent}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_initKeyboardTranslate(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ SDL\_Event\ event;\ }
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !EVENT\_HPP\_\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00053\ }
+
+\end{DoxyCode}

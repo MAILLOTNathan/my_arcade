@@ -1,0 +1,402 @@
+\doxysection{Window Class Reference}
+\hypertarget{classWindow}{}\label{classWindow}\index{Window@{Window}}
+
+
+NCURSE \doxylink{classWindow}{Window} implementation.  
+
+
+
+
+{\ttfamily \#include $<$NCURSEWindow.\+hpp$>$}
+
+Inheritance diagram for Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classWindow}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWindow_a5638d4d95f1f9b64882f1f4cd405b831}{Window}} (const std\+::string \&title, unsigned int x, unsigned int y)
+\begin{DoxyCompactList}\small\item\em Creates a NCURSE window. \end{DoxyCompactList}\item 
+\Hypertarget{classWindow_a245d821e6016fa1f6970ccbbedd635f6}\label{classWindow_a245d821e6016fa1f6970ccbbedd635f6} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destroys a NCURSE window. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWindow_af968006adea3059a48fe6bf910edd1a6}{is\+Open}} () const override
+\begin{DoxyCompactList}\small\item\em Checks if the window is open. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_a19c59b1b8329e87fca420c4c3aaf55ae}{clear}} () override
+\begin{DoxyCompactList}\small\item\em Clears the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_a3cb3508dd29a9f2cef44d5c903f5bd05}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_a5300767b36301835bb7aac0713e7efb2}{close}} () override
+\begin{DoxyCompactList}\small\item\em Closes the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_aae07e27fc09bfb0ee31f3a7802b6644c}{poll\+Event}} () override
+\begin{DoxyCompactList}\small\item\em Polls the events. \end{DoxyCompactList}\item 
+\Hypertarget{classWindow_a2e6394e11544805125a628ff3e53cd67}\label{classWindow_a2e6394e11544805125a628ff3e53cd67} 
+WINDOW \texorpdfstring{$\ast$}{*} {\bfseries get\+Window} () const
+\begin{DoxyCompactList}\small\item\em Returns the window stored. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWindow_a5638d4d95f1f9b64882f1f4cd405b831}{Window}} (const std\+::string \&title, unsigned int x, unsigned int y)
+\begin{DoxyCompactList}\small\item\em Creates a new window. \end{DoxyCompactList}\item 
+\Hypertarget{classWindow_a245d821e6016fa1f6970ccbbedd635f6}\label{classWindow_a245d821e6016fa1f6970ccbbedd635f6} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destroys the window. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWindow_af968006adea3059a48fe6bf910edd1a6}{is\+Open}} () const override
+\begin{DoxyCompactList}\small\item\em Returns whether the window is currently open or closed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_a19c59b1b8329e87fca420c4c3aaf55ae}{clear}} () override
+\begin{DoxyCompactList}\small\item\em Clears the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_a3cb3508dd29a9f2cef44d5c903f5bd05}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_a5300767b36301835bb7aac0713e7efb2}{close}} () override
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_aae07e27fc09bfb0ee31f3a7802b6644c}{poll\+Event}} () override
+\begin{DoxyCompactList}\small\item\em {\ttfamily Catches} and {\ttfamily manages} events. \end{DoxyCompactList}\item 
+\Hypertarget{classWindow_acf146679abf09abf89941b1882fc92dc}\label{classWindow_acf146679abf09abf89941b1882fc92dc} 
+SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} {\bfseries get\+Window} () const
+\begin{DoxyCompactList}\small\item\em Returns the SDL window stored. \end{DoxyCompactList}\item 
+\Hypertarget{classWindow_a588e12babb4f4c8a5eccaa3fbe46e66c}\label{classWindow_a588e12babb4f4c8a5eccaa3fbe46e66c} 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} {\bfseries get\+Renderer} () const
+\begin{DoxyCompactList}\small\item\em Returns the SDL renderer stored. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWindow_a5638d4d95f1f9b64882f1f4cd405b831}{Window}} (const std\+::string \&title, unsigned int x, unsigned int y)
+\begin{DoxyCompactList}\small\item\em Creates a new window. \end{DoxyCompactList}\item 
+\Hypertarget{classWindow_a245d821e6016fa1f6970ccbbedd635f6}\label{classWindow_a245d821e6016fa1f6970ccbbedd635f6} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destroys the window. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWindow_af968006adea3059a48fe6bf910edd1a6}{is\+Open}} () const override
+\begin{DoxyCompactList}\small\item\em Returns whether the window is currently open or closed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_a19c59b1b8329e87fca420c4c3aaf55ae}{clear}} () override
+\begin{DoxyCompactList}\small\item\em Clears the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_a3cb3508dd29a9f2cef44d5c903f5bd05}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_a5300767b36301835bb7aac0713e7efb2}{close}} () override
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWindow_aae07e27fc09bfb0ee31f3a7802b6644c}{poll\+Event}} () override
+\begin{DoxyCompactList}\small\item\em {\ttfamily Catches} and {\ttfamily manages} events. \end{DoxyCompactList}\item 
+\Hypertarget{classWindow_a2e6394e11544805125a628ff3e53cd67}\label{classWindow_a2e6394e11544805125a628ff3e53cd67} 
+sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*} {\bfseries get\+Window} () const
+\begin{DoxyCompactList}\small\item\em Returns the SFML window stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEGE_1_1AWindow}{EGE\+::\+AWindow}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1AWindow_aa8ccdaa9c69ab0bf796d5ea56e6b656a}{is\+Open}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns whether the window is currently open or closed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AWindow_ae0e1b7324ab8b3d900d91ca132e91362}{clear}} ()=0
+\begin{DoxyCompactList}\small\item\em Clears the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AWindow_ae747adbfa6c227e9f8548e77a1b7031f}{display}} ()=0
+\begin{DoxyCompactList}\small\item\em Displays the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AWindow_a4b1a0229853cd07e801abb2972a33ab1}{close}} ()=0
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AWindow_a358f3f2ecc45099d39f55f06662af165}{poll\+Event}} ()=0
+\begin{DoxyCompactList}\small\item\em {\ttfamily Catches} and {\ttfamily manages} events. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IEvent}{EGE\+::\+IEvent}} $>$ \& \mbox{\hyperlink{classEGE_1_1AWindow_a43ac00db652914fa688d1f2632930979}{get\+Event}} () override
+\begin{DoxyCompactList}\small\item\em Returns the current event caught ({\ttfamily \+\_\+event}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1IWindow_a32a6a261b6a0ae6d4493a5f3879a0a2b}{is\+Open}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns whether the window is currently open or closed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IWindow_a5bfbb0dd5442a78421f79d6166c387ea}{clear}} ()=0
+\begin{DoxyCompactList}\small\item\em Clears the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IWindow_a63fefe99e9dfe1a4135f18252d3b3340}{display}} ()=0
+\begin{DoxyCompactList}\small\item\em Displays the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IWindow_a9ca168d5e99ddc9c31ab0b6564f40bf9}{close}} ()=0
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IWindow_a533714241f03bb18a47bc82fcd4d434c}{poll\+Event}} ()=0
+\begin{DoxyCompactList}\small\item\em {\ttfamily Catches} and {\ttfamily manages} events. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IEvent}{EGE\+::\+IEvent}} $>$ \& \mbox{\hyperlink{classEGE_1_1IWindow_a32ae79aaec9c394a98fb01d2c1e513e4}{get\+Event}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the current event caught ({\ttfamily \+\_\+event}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEGE_1_1AWindow}{EGE\+::\+AWindow}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IEvent}{EGE\+::\+IEvent}} $>$ {\bfseries \+\_\+event}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+NCURSE \doxylink{classWindow}{Window} implementation. 
+
+Class representing a window in SFML.
+
+Class representing a window in SDL2. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classWindow_a5638d4d95f1f9b64882f1f4cd405b831}\label{classWindow_a5638d4d95f1f9b64882f1f4cd405b831} 
+\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Window\+::\+Window (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{unsigned int}]{x,  }\item[{unsigned int}]{y }\end{DoxyParamCaption})}
+
+
+
+Creates a NCURSE window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Title of the window. \\
+\hline
+{\em x} & Width of the window. \\
+\hline
+{\em y} & Height of the window. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classWindow_a5638d4d95f1f9b64882f1f4cd405b831}\label{classWindow_a5638d4d95f1f9b64882f1f4cd405b831} 
+\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Window\+::\+Window (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{unsigned int}]{x,  }\item[{unsigned int}]{y }\end{DoxyParamCaption})}
+
+
+
+Creates a new window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Title of the window. \\
+\hline
+{\em x} & Width of the window. \\
+\hline
+{\em y} & Height of the window. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classWindow_a5638d4d95f1f9b64882f1f4cd405b831}\label{classWindow_a5638d4d95f1f9b64882f1f4cd405b831} 
+\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Window\+::\+Window (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{unsigned int}]{x,  }\item[{unsigned int}]{y }\end{DoxyParamCaption})}
+
+
+
+Creates a new window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Title of the window. \\
+\hline
+{\em x} & Width of the window. \\
+\hline
+{\em y} & Height of the window. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classWindow_a19c59b1b8329e87fca420c4c3aaf55ae}\label{classWindow_a19c59b1b8329e87fca420c4c3aaf55ae} 
+\index{Window@{Window}!clear@{clear}}
+\index{clear@{clear}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Window\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clears the window. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_ae0e1b7324ab8b3d900d91ca132e91362}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_a19c59b1b8329e87fca420c4c3aaf55ae}\label{classWindow_a19c59b1b8329e87fca420c4c3aaf55ae} 
+\index{Window@{Window}!clear@{clear}}
+\index{clear@{clear}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Window\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clears the window. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_ae0e1b7324ab8b3d900d91ca132e91362}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_a19c59b1b8329e87fca420c4c3aaf55ae}\label{classWindow_a19c59b1b8329e87fca420c4c3aaf55ae} 
+\index{Window@{Window}!clear@{clear}}
+\index{clear@{clear}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Window\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clears the window. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_ae0e1b7324ab8b3d900d91ca132e91362}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_a5300767b36301835bb7aac0713e7efb2}\label{classWindow_a5300767b36301835bb7aac0713e7efb2} 
+\index{Window@{Window}!close@{close}}
+\index{close@{close}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Window\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Closes the window. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_a4b1a0229853cd07e801abb2972a33ab1}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_a5300767b36301835bb7aac0713e7efb2}\label{classWindow_a5300767b36301835bb7aac0713e7efb2} 
+\index{Window@{Window}!close@{close}}
+\index{close@{close}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Window\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Close the window. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_a4b1a0229853cd07e801abb2972a33ab1}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_a5300767b36301835bb7aac0713e7efb2}\label{classWindow_a5300767b36301835bb7aac0713e7efb2} 
+\index{Window@{Window}!close@{close}}
+\index{close@{close}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Window\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Close the window. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_a4b1a0229853cd07e801abb2972a33ab1}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_a3cb3508dd29a9f2cef44d5c903f5bd05}\label{classWindow_a3cb3508dd29a9f2cef44d5c903f5bd05} 
+\index{Window@{Window}!display@{display}}
+\index{display@{display}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Window\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the window. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_ae747adbfa6c227e9f8548e77a1b7031f}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_a3cb3508dd29a9f2cef44d5c903f5bd05}\label{classWindow_a3cb3508dd29a9f2cef44d5c903f5bd05} 
+\index{Window@{Window}!display@{display}}
+\index{display@{display}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Window\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the window. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_ae747adbfa6c227e9f8548e77a1b7031f}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_a3cb3508dd29a9f2cef44d5c903f5bd05}\label{classWindow_a3cb3508dd29a9f2cef44d5c903f5bd05} 
+\index{Window@{Window}!display@{display}}
+\index{display@{display}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Window\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the window. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_ae747adbfa6c227e9f8548e77a1b7031f}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_af968006adea3059a48fe6bf910edd1a6}\label{classWindow_af968006adea3059a48fe6bf910edd1a6} 
+\index{Window@{Window}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Window\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the window is open. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_aa8ccdaa9c69ab0bf796d5ea56e6b656a}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_af968006adea3059a48fe6bf910edd1a6}\label{classWindow_af968006adea3059a48fe6bf910edd1a6} 
+\index{Window@{Window}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Window\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns whether the window is currently open or closed. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_aa8ccdaa9c69ab0bf796d5ea56e6b656a}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_af968006adea3059a48fe6bf910edd1a6}\label{classWindow_af968006adea3059a48fe6bf910edd1a6} 
+\index{Window@{Window}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Window\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns whether the window is currently open or closed. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_aa8ccdaa9c69ab0bf796d5ea56e6b656a}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_aae07e27fc09bfb0ee31f3a7802b6644c}\label{classWindow_aae07e27fc09bfb0ee31f3a7802b6644c} 
+\index{Window@{Window}!pollEvent@{pollEvent}}
+\index{pollEvent@{pollEvent}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{pollEvent()}{pollEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Window\+::poll\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Polls the events. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_a358f3f2ecc45099d39f55f06662af165}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_aae07e27fc09bfb0ee31f3a7802b6644c}\label{classWindow_aae07e27fc09bfb0ee31f3a7802b6644c} 
+\index{Window@{Window}!pollEvent@{pollEvent}}
+\index{pollEvent@{pollEvent}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{pollEvent()}{pollEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Window\+::poll\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+{\ttfamily Catches} and {\ttfamily manages} events. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_a358f3f2ecc45099d39f55f06662af165}{EGE\+::\+AWindow}}.
+
+\Hypertarget{classWindow_aae07e27fc09bfb0ee31f3a7802b6644c}\label{classWindow_aae07e27fc09bfb0ee31f3a7802b6644c} 
+\index{Window@{Window}!pollEvent@{pollEvent}}
+\index{pollEvent@{pollEvent}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{pollEvent()}{pollEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Window\+::poll\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+{\ttfamily Catches} and {\ttfamily manages} events. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1AWindow_a358f3f2ecc45099d39f55f06662af165}{EGE\+::\+AWindow}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/graphical/\+NCURSE/include/NCURSEWindow.\+hpp\item 
+library/graphical/\+SDL2/include/SDLWindow.\+hpp\item 
+library/graphical/\+SFML/include/SFMLWindow.\+hpp\item 
+library/graphical/\+NCURSE/src/NCURSEWindow.\+cpp\item 
+library/graphical/\+SDL2/src/SDLWindow.\+cpp\item 
+library/graphical/\+SFML/src/SFMLWindow.\+cpp\end{DoxyCompactItemize}

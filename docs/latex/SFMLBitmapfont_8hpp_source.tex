@@ -1,0 +1,49 @@
+\doxysection{SFMLBitmapfont.\+hpp}
+\hypertarget{SFMLBitmapfont_8hpp_source}{}\label{SFMLBitmapfont_8hpp_source}\index{library/graphical/SFML/include/SFMLBitmapfont.hpp@{library/graphical/SFML/include/SFMLBitmapfont.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Bitmapfont}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}SFMLWindow.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Maths/Vector.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Maths/Rect.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}GUI/Color.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBitmapfont}{Bitmapfont}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBitmapfont_a3877eb236f9c498cf7a649bfcd8fe811}{Bitmapfont}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBitmapfont_a42b153b8ec1c3f14e16a25f6d1618db5}{\string~Bitmapfont}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classBitmapfont_a79593a56889733aae377634b6ad07a5c}{getWidth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classBitmapfont_aa1cf09acfc58ce4e715c9f7a600fc86d}{getHeight}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBitmapfont_acd3d8e892018f2c1feeddf0e19e86ce0}{draw}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window,\ \textcolor{keywordtype}{char}\ c,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\&\ pos);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBitmapfont_a97e0b400608f8ea5ca29f6f0a1e86ffb}{setColor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Color}{EGE::Color}}\&\ color);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Rect}{EGE::Rect<int>}}\ \mbox{\hyperlink{classBitmapfont_a20d598298743e2dafbc95c3451f87230}{getCharPos}}(\textcolor{keywordtype}{char}\ c);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::vector<EGE::Rect<int>>\ \mbox{\hyperlink{classBitmapfont_a6bc5f7cd62b50f711af09d5262307226}{getStringPos}}(\textcolor{keyword}{const}\ std::string\&\ str);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ std::vector<EGE::Rect<int>>\ \_charPos;\ \textcolor{comment}{//\ All\ characters\ positions.}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Color}{EGE::Color}}\ \_color;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Color\ of\ the\ text.}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ sf::Texture\ \_sfTexture;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Texture\ of\ the\ font.}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ sf::Sprite\ \_sfSprite;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Sprite\ of\ the\ font.}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ sf::Rect<unsigned\ int>\ \_sfRect;\ \textcolor{comment}{//\ Rect\ of\ the\ font.}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_width;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Width\ of\ the\ font.}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_height;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Height\ of\ the\ font.}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00056\ \};}
+
+\end{DoxyCode}

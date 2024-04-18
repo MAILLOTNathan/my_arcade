@@ -1,0 +1,42 @@
+\doxysection{AText.\+hpp}
+\hypertarget{AText_8hpp_source}{}\label{AText_8hpp_source}\index{library/engine/include/GUI/AText.hpp@{library/engine/include/GUI/AText.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ AText}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}GUI/IText.hpp"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }EGE\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1AText}{AText}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1IText}{EGE::IText}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1AText}{\string~AText}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AText_a798033c1589a616dd66698d13202e1d7}{draw}}(std::shared\_ptr<EGE::IWindow>\ window)\ =\ 0;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AText_a76fc41b14975f27ca0cb9e6deaf04142}{setText}}(\textcolor{keyword}{const}\ std::string\&\ text)\ =\ 0;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classEGE_1_1AText_adc8b1000cba19147b4a8a9ee7f1ee5f9}{getText}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AText_aa450fc5ff69e67f5339146a335c046dd}{setPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{Vector<int>}}\&\ position)\ =\ 0;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1Vector}{Vector<int>}}\ \mbox{\hyperlink{classEGE_1_1AText_abe21cf555d6c9c2ac8ef2259c1d8d99e}{getPosition}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AText_a11d3a81b65c162fbd529c65633c13afc}{setColor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Color}{Color}}\&\ color)\ =\ 0;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1Color}{Color}}\ \mbox{\hyperlink{classEGE_1_1AText_a14af7d7ab05c3b8c90bc68c15506e128}{getColor}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \_text;\ \ \ \ \ \ \textcolor{comment}{//\ \`{}Content`\ of\ the\ text.}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Vector}{Vector<int>}}\ \_position;\ \ \textcolor{comment}{//\ \`{}Position`\ of\ the\ text.}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Color}{Color}}\ \_color;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \`{}Color`\ of\ the\ text.}}
+\DoxyCodeLine{00047\ \ \ \ \ \};}
+\DoxyCodeLine{00048\ \}}
+
+\end{DoxyCode}

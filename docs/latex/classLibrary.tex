@@ -1,0 +1,178 @@
+\doxysection{Library Class Reference}
+\hypertarget{classLibrary}{}\label{classLibrary}\index{Library@{Library}}
+
+
+Class which load and store libraries from {\ttfamily .so} files.  
+
+
+
+
+{\ttfamily \#include $<$Library.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classLibrary_a6d65e228824a688887c80c8114a26722}\label{classLibrary_a6d65e228824a688887c80c8114a26722} 
+{\bfseries Library} (\mbox{\hyperlink{classLibrary}{Library}} \&other)=delete
+\item 
+\Hypertarget{classLibrary_a5fdad6b008e6bb1548683b696ee0c2ee}\label{classLibrary_a5fdad6b008e6bb1548683b696ee0c2ee} 
+void {\bfseries operator=} (const \mbox{\hyperlink{classLibrary}{Library}} \&)=delete
+\item 
+\Hypertarget{classLibrary_a11f071719b9dd34aa87807f1e8727562}\label{classLibrary_a11f071719b9dd34aa87807f1e8727562} 
+\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*} {\bfseries create\+Display\+Module} ()
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily Display Module} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLibrary_a08349d2ec4ad9a8dd253464f05a71315}{destroy\+Display\+Module}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)
+\begin{DoxyCompactList}\small\item\em Destroy the display module passed as param. \end{DoxyCompactList}\item 
+\Hypertarget{classLibrary_ad3f5049fb2dab8e4c44d3c01e06dbaf5}\label{classLibrary_ad3f5049fb2dab8e4c44d3c01e06dbaf5} 
+\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*} {\bfseries create\+Game\+Module} ()
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \doxylink{classGame}{Game} Module} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLibrary_a080211b064a2b94f89bfe8b0c0d6708b}{destroy\+Game\+Module}} (\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)
+\begin{DoxyCompactList}\small\item\em Destroy the game module passed as param. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLibrary_a36b747b8ae2256ee369ded3b66155d3b}{set\+Current\+Lib}} (const std\+::string \&lib)
+\begin{DoxyCompactList}\small\item\em Set the current instance of the {\ttfamily graphical library} loaded from the {\ttfamily path}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLibrary_a9389863454c05c9a223a3bfa3cf28671}{set\+Current\+Game\+Lib}} (const std\+::string \&lib)
+\begin{DoxyCompactList}\small\item\em Set the current instance of the {\ttfamily game library} loaded from the {\ttfamily path}. \end{DoxyCompactList}\item 
+\Hypertarget{classLibrary_a80821f367bc6905d0301587ac682024c}\label{classLibrary_a80821f367bc6905d0301587ac682024c} 
+std\+::vector$<$ std\+::string $>$ {\bfseries get\+Libs} () const
+\begin{DoxyCompactList}\small\item\em Return all the {\ttfamily graphical libraries} loaded in current context. \end{DoxyCompactList}\item 
+\Hypertarget{classLibrary_a42142438bde0c2e7749aaeb2e0171afa}\label{classLibrary_a42142438bde0c2e7749aaeb2e0171afa} 
+std\+::map$<$ std\+::string, std\+::function$<$ \mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}()$>$ $>$ {\bfseries get\+Functions} () const
+\begin{DoxyCompactList}\small\item\em Return a {\ttfamily map} which contains the graphical libraries {\ttfamily names} with the assiociated creators {\ttfamily functions}. \end{DoxyCompactList}\item 
+\Hypertarget{classLibrary_ad27054b189b650e51ece161262dc0af6}\label{classLibrary_ad27054b189b650e51ece161262dc0af6} 
+std\+::map$<$ std\+::string, std\+::function$<$ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}()$>$ $>$ {\bfseries get\+Game\+Functions} () const
+\begin{DoxyCompactList}\small\item\em Return a {\ttfamily map} which contains the game libraries {\ttfamily names} with the assiociated creators {\ttfamily functions}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classLibrary}{Library}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classLibrary_a76aa65bf0c61ae5f5c1a2a099bdd5ee6}{get\+Instance}} (const std\+::string \&path, bool force=false)
+\begin{DoxyCompactList}\small\item\em Return current instance of the library loaded from the {\ttfamily path}. \end{DoxyCompactList}\item 
+\Hypertarget{classLibrary_aaea5fd339ab67340f24270f7fcfee3a6}\label{classLibrary_aaea5fd339ab67340f24270f7fcfee3a6} 
+static \mbox{\hyperlink{classLibrary}{Library}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Return current instance of the library loaded from the {\ttfamily path}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classLibrary_ab6b7928b97da80095578a78f1db14259}\label{classLibrary_ab6b7928b97da80095578a78f1db14259} 
+{\bfseries Library} (const std\+::string \&path)
+\item 
+\Hypertarget{classLibrary_a8e2619be8398b39f813a6f9d9d3fd324}\label{classLibrary_a8e2619be8398b39f813a6f9d9d3fd324} 
+void {\bfseries init} ()
+\begin{DoxyCompactList}\small\item\em Initialize the libraries from the {\ttfamily ./lib} directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classLibrary_a035fbf150277d619e69788a7166598e0}\label{classLibrary_a035fbf150277d619e69788a7166598e0} 
+std\+::map$<$ std\+::string, void \texorpdfstring{$\ast$}{*} $>$ {\bfseries \+\_\+handles}
+\item 
+\Hypertarget{classLibrary_ab168a9564a4fcff6ef049e31bdd1af00}\label{classLibrary_ab168a9564a4fcff6ef049e31bdd1af00} 
+std\+::string {\bfseries \+\_\+current\+Lib}
+\item 
+\Hypertarget{classLibrary_a2d19e202fc8fa9210f00c332898f1d6d}\label{classLibrary_a2d19e202fc8fa9210f00c332898f1d6d} 
+std\+::string {\bfseries \+\_\+current\+Game\+Lib}
+\item 
+\Hypertarget{classLibrary_a61082ab8cd354ccb7d7303535d636e77}\label{classLibrary_a61082ab8cd354ccb7d7303535d636e77} 
+std\+::vector$<$ std\+::string $>$ {\bfseries \+\_\+libs}
+\item 
+\Hypertarget{classLibrary_a6136e877730c5bb4a2e342d4b9877b05}\label{classLibrary_a6136e877730c5bb4a2e342d4b9877b05} 
+std\+::vector$<$ std\+::string $>$ {\bfseries \+\_\+game\+Libs}
+\item 
+\Hypertarget{classLibrary_a4f0787b5e322b7cea11dc725900dbcc3}\label{classLibrary_a4f0787b5e322b7cea11dc725900dbcc3} 
+std\+::map$<$ std\+::string, std\+::function$<$ \mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}()$>$ $>$ {\bfseries \+\_\+create\+Functions}
+\item 
+\Hypertarget{classLibrary_a2c09d96556abb74c4b064693b8471558}\label{classLibrary_a2c09d96556abb74c4b064693b8471558} 
+std\+::map$<$ std\+::string, std\+::function$<$ void(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*})$>$ $>$ {\bfseries \+\_\+destroy\+Functions}
+\item 
+\Hypertarget{classLibrary_a15fa83930f970383091c7fb14b68c707}\label{classLibrary_a15fa83930f970383091c7fb14b68c707} 
+std\+::map$<$ std\+::string, std\+::function$<$ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}()$>$ $>$ {\bfseries \+\_\+create\+Game\+Functions}
+\item 
+\Hypertarget{classLibrary_a76ef65d3b88c761cac233245a52b16b8}\label{classLibrary_a76ef65d3b88c761cac233245a52b16b8} 
+std\+::map$<$ std\+::string, std\+::function$<$ void(\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*})$>$ $>$ {\bfseries \+\_\+destroy\+Game\+Functions}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class which load and store libraries from {\ttfamily .so} files. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLibrary_a08349d2ec4ad9a8dd253464f05a71315}\label{classLibrary_a08349d2ec4ad9a8dd253464f05a71315} 
+\index{Library@{Library}!destroyDisplayModule@{destroyDisplayModule}}
+\index{destroyDisplayModule@{destroyDisplayModule}!Library@{Library}}
+\doxysubsubsection{\texorpdfstring{destroyDisplayModule()}{destroyDisplayModule()}}
+{\footnotesize\ttfamily void Library\+::destroy\+Display\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module }\end{DoxyParamCaption})}
+
+
+
+Destroy the display module passed as param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & Display module to destroy. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLibrary_a080211b064a2b94f89bfe8b0c0d6708b}\label{classLibrary_a080211b064a2b94f89bfe8b0c0d6708b} 
+\index{Library@{Library}!destroyGameModule@{destroyGameModule}}
+\index{destroyGameModule@{destroyGameModule}!Library@{Library}}
+\doxysubsubsection{\texorpdfstring{destroyGameModule()}{destroyGameModule()}}
+{\footnotesize\ttfamily void Library\+::destroy\+Game\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})}
+
+
+
+Destroy the game module passed as param. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Module} & \doxylink{classGame}{Game} module to destroy. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLibrary_a76aa65bf0c61ae5f5c1a2a099bdd5ee6}\label{classLibrary_a76aa65bf0c61ae5f5c1a2a099bdd5ee6} 
+\index{Library@{Library}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Library@{Library}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classLibrary}{Library}} \texorpdfstring{$\ast$}{*} Library\+::get\+Instance (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{bool}]{force = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return current instance of the library loaded from the {\ttfamily path}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the library you want to get. \\
+\hline
+{\em force} & Indicate if you want to change the current library used. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLibrary_a9389863454c05c9a223a3bfa3cf28671}\label{classLibrary_a9389863454c05c9a223a3bfa3cf28671} 
+\index{Library@{Library}!setCurrentGameLib@{setCurrentGameLib}}
+\index{setCurrentGameLib@{setCurrentGameLib}!Library@{Library}}
+\doxysubsubsection{\texorpdfstring{setCurrentGameLib()}{setCurrentGameLib()}}
+{\footnotesize\ttfamily void Library\+::set\+Current\+Game\+Lib (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib }\end{DoxyParamCaption})}
+
+
+
+Set the current instance of the {\ttfamily game library} loaded from the {\ttfamily path}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib} & A path to the game library you want to load. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLibrary_a36b747b8ae2256ee369ded3b66155d3b}\label{classLibrary_a36b747b8ae2256ee369ded3b66155d3b} 
+\index{Library@{Library}!setCurrentLib@{setCurrentLib}}
+\index{setCurrentLib@{setCurrentLib}!Library@{Library}}
+\doxysubsubsection{\texorpdfstring{setCurrentLib()}{setCurrentLib()}}
+{\footnotesize\ttfamily void Library\+::set\+Current\+Lib (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib }\end{DoxyParamCaption})}
+
+
+
+Set the current instance of the {\ttfamily graphical library} loaded from the {\ttfamily path}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib} & A path to the graphical library you want to load. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Library.\+hpp\end{DoxyCompactItemize}

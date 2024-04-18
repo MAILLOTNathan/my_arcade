@@ -1,0 +1,207 @@
+\doxysection{EGE\+::Entity Class Reference}
+\hypertarget{classEGE_1_1Entity}{}\label{classEGE_1_1Entity}\index{EGE::Entity@{EGE::Entity}}
+
+
+Generic implementation of \doxylink{classEGE_1_1Entity}{Entity} into a game.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+hpp$>$}
+
+Inheritance diagram for EGE\+::Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{classEGE_1_1Entity}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}\label{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7} 
+enum \mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Type}} \{ {\bfseries PLAYER}
+, {\bfseries ENEMY}
+, {\bfseries ENVIRONMENT}
+, {\bfseries OBJECT}
+ \}
+\begin{DoxyCompactList}\small\item\em All the types an entity can be. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a84894fc95232c2dedd139bebfc280d23}{draw}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)
+\begin{DoxyCompactList}\small\item\em Draws the entity with the given {\ttfamily Display Module}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Entity_abf4236a0ca0dabd139d9564f056bb459}{set\+Position}} (const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \&position)
+\begin{DoxyCompactList}\small\item\em Sets the entity position to the given \`{}position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Entity_a42b2f7b47e2556fc2ca1021d408872be}{set\+Sprite}} (\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Sets a {\ttfamily sprite} to the entity. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Entity_a53c06a02d598801efd3a93ab68139cb3}\label{classEGE_1_1Entity_a53c06a02d598801efd3a93ab68139cb3} 
+\mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ {\bfseries get\+Position} () const
+\begin{DoxyCompactList}\small\item\em Returns the current {\ttfamily position} of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a71b9b27d7148903f6707e8237fdae4bd}{reload}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)
+\begin{DoxyCompactList}\small\item\em Reloads the entity with the given {\ttfamily Display Module}. Used when the {\ttfamily Display Module} changes and the {\ttfamily \doxylink{classCore}{Core}} reloads the games components. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1Entity_a428c011db3b44d5f8685a60e3281daee}{is\+Colliding}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \&other)
+\begin{DoxyCompactList}\small\item\em A simple and generic implementation of collision detection. Returns true if the {\ttfamily other} entity given is colliding with this entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a15a8c3e15d73e23304d727b0e242b2e4}{update}} (std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&entities, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)=0
+\begin{DoxyCompactList}\small\item\em An update {\ttfamily specific} for each {\ttfamily type} of entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a6fa7d742a1d9e1fbb1b0638ea63baf1a}{init}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)=0
+\begin{DoxyCompactList}\small\item\em Initialize the entity with his specified properties. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Entity_ac216716ebe18ee53a2501e2a7b28925d}\label{classEGE_1_1Entity_ac216716ebe18ee53a2501e2a7b28925d} 
+\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Sprite} () const
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily sprite} of the entity. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Entity_a9661fea4e5de3ba77a96b78dac1a663c}\label{classEGE_1_1Entity_a9661fea4e5de3ba77a96b78dac1a663c} 
+\mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Entity\+::\+Type}} {\bfseries get\+Type} () const
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily type} of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1Entity_a0f142767abb0c1af48d7eefd9f0df03b}\label{classEGE_1_1Entity_a0f142767abb0c1af48d7eefd9f0df03b} 
+\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+sprite}
+\item 
+\Hypertarget{classEGE_1_1Entity_a46a27b59154b1a32dba19007bcc7671b}\label{classEGE_1_1Entity_a46a27b59154b1a32dba19007bcc7671b} 
+\mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Type}} {\bfseries \+\_\+type}
+\item 
+\Hypertarget{classEGE_1_1Entity_a6b22c60d05926173fd8afcc1fd5dba10}\label{classEGE_1_1Entity_a6b22c60d05926173fd8afcc1fd5dba10} 
+\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ {\bfseries \+\_\+position}
+\item 
+\Hypertarget{classEGE_1_1Entity_a1ed1b641283ca69c7277b40c87f70645}\label{classEGE_1_1Entity_a1ed1b641283ca69c7277b40c87f70645} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Ressource}{Ressource}} $>$ {\bfseries \+\_\+ressource}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic implementation of \doxylink{classEGE_1_1Entity}{Entity} into a game. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1Entity_a84894fc95232c2dedd139bebfc280d23}\label{classEGE_1_1Entity_a84894fc95232c2dedd139bebfc280d23} 
+\index{EGE::Entity@{EGE::Entity}!draw@{draw}}
+\index{draw@{draw}!EGE::Entity@{EGE::Entity}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void EGE\+::\+Entity\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws the entity with the given {\ttfamily Display Module}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & Module to draw the entity. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classSnakePlayer_a4824a00b523b827e834559d812070ac0}{Snake\+Player}}, \mbox{\hyperlink{classCentipedeBullet_a0822c7ae52273f0e4b745112326e8109}{Centipede\+Bullet}}, \mbox{\hyperlink{classCentipedeEnemy_a23eececbb70e13308f9a9168c72a904c}{Centipede\+Enemy}}, and \mbox{\hyperlink{classCentipedePlayer_a6f4cc32f9638c05f32ef7362522f1055}{Centipede\+Player}}.
+
+\Hypertarget{classEGE_1_1Entity_a6fa7d742a1d9e1fbb1b0638ea63baf1a}\label{classEGE_1_1Entity_a6fa7d742a1d9e1fbb1b0638ea63baf1a} 
+\index{EGE::Entity@{EGE::Entity}!init@{init}}
+\index{init@{init}!EGE::Entity@{EGE::Entity}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+Entity\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initialize the entity with his specified properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} which loads graphics stuff for the entity. \\
+\hline
+{\em game\+Module} & {\ttfamily \doxylink{classGame}{Game} Module} where the entity belongs to. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCentipedeEnemy_ab03782a73c17858bae0cbccbcaab4283}{Centipede\+Enemy}}, \mbox{\hyperlink{classCentipedeEnvironment_ab3468f3a58e84a1d989e7de55b2e5b87}{Centipede\+Environment}}, \mbox{\hyperlink{classCentipedeObject_a08c6069ac393fd540c36a13f2daba1b6}{Centipede\+Object}}, \mbox{\hyperlink{classCentipedePlayer_aea297bc1576ed63a360bc38b7590c323}{Centipede\+Player}}, \mbox{\hyperlink{classSnakeEnvironment_a92b281bc79b89abe95e7d43074310e74}{Snake\+Environment}}, \mbox{\hyperlink{classSnakeObject_a587f4397d5cf28fcf02c165a98e438e1}{Snake\+Object}}, \mbox{\hyperlink{classCentipedeBullet_ad2028d8e9a7a95f1b9611b7155ce8f4e}{Centipede\+Bullet}}, \mbox{\hyperlink{classSnakeEnemy_ac65b91af6a778797bc2a1cf89cfc8141}{Snake\+Enemy}}, and \mbox{\hyperlink{classSnakePlayer_a1e686559c304c5c2356bfcca0991f9b0}{Snake\+Player}}.
+
+\Hypertarget{classEGE_1_1Entity_a428c011db3b44d5f8685a60e3281daee}\label{classEGE_1_1Entity_a428c011db3b44d5f8685a60e3281daee} 
+\index{EGE::Entity@{EGE::Entity}!isColliding@{isColliding}}
+\index{isColliding@{isColliding}!EGE::Entity@{EGE::Entity}}
+\doxysubsubsection{\texorpdfstring{isColliding()}{isColliding()}}
+{\footnotesize\ttfamily bool EGE\+::\+Entity\+::is\+Colliding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A simple and generic implementation of collision detection. Returns true if the {\ttfamily other} entity given is colliding with this entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another entity to collide with. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classCentipedeBullet_a7213c61b1754a53ec021f5e636244f64}{Centipede\+Bullet}}, \mbox{\hyperlink{classCentipedePlayer_a16fc2474bd2891ad4c9d9f31d9fd7497}{Centipede\+Player}}, and \mbox{\hyperlink{classSnakePlayer_a9f92a11044620ac78a0510af05b17dbb}{Snake\+Player}}.
+
+\Hypertarget{classEGE_1_1Entity_a71b9b27d7148903f6707e8237fdae4bd}\label{classEGE_1_1Entity_a71b9b27d7148903f6707e8237fdae4bd} 
+\index{EGE::Entity@{EGE::Entity}!reload@{reload}}
+\index{reload@{reload}!EGE::Entity@{EGE::Entity}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily void EGE\+::\+Entity\+::reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reloads the entity with the given {\ttfamily Display Module}. Used when the {\ttfamily Display Module} changes and the {\ttfamily \doxylink{classCore}{Core}} reloads the games components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} which reloads the entity sprite. \\
+\hline
+{\em game\+Module} & {\ttfamily \doxylink{classGame}{Game} Module} where the entity belongs to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classCentipedeBullet_ad73530d767f99d3c6fc7f84bf0d4ce4f}{Centipede\+Bullet}}, \mbox{\hyperlink{classCentipedeEnemy_a66311f591d1e584fe9e8438aaea01741}{Centipede\+Enemy}}, and \mbox{\hyperlink{classCentipedePlayer_a45d0bb6369c84cbd687d41a16d70ec27}{Centipede\+Player}}.
+
+\Hypertarget{classEGE_1_1Entity_abf4236a0ca0dabd139d9564f056bb459}\label{classEGE_1_1Entity_abf4236a0ca0dabd139d9564f056bb459} 
+\index{EGE::Entity@{EGE::Entity}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!EGE::Entity@{EGE::Entity}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void EGE\+::\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \&}]{position }\end{DoxyParamCaption})}
+
+
+
+Sets the entity position to the given \`{}position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Position to be set to the entity. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1Entity_a42b2f7b47e2556fc2ca1021d408872be}\label{classEGE_1_1Entity_a42b2f7b47e2556fc2ca1021d408872be} 
+\index{EGE::Entity@{EGE::Entity}!setSprite@{setSprite}}
+\index{setSprite@{setSprite}!EGE::Entity@{EGE::Entity}}
+\doxysubsubsection{\texorpdfstring{setSprite()}{setSprite()}}
+{\footnotesize\ttfamily void EGE\+::\+Entity\+::set\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*}}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Sets a {\ttfamily sprite} to the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \doxylink{classSprite}{Sprite} to be set to the entity. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1Entity_a15a8c3e15d73e23304d727b0e242b2e4}\label{classEGE_1_1Entity_a15a8c3e15d73e23304d727b0e242b2e4} 
+\index{EGE::Entity@{EGE::Entity}!update@{update}}
+\index{update@{update}!EGE::Entity@{EGE::Entity}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+Entity\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&}]{entities,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+An update {\ttfamily specific} for each {\ttfamily type} of entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & All the other entities in the game, with which we can interact with. \\
+\hline
+{\em game\+Module} & The current {\ttfamily \doxylink{classGame}{Game} Module}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/Entity.\+hpp\item 
+library/engine/src/Entity.\+cpp\end{DoxyCompactItemize}

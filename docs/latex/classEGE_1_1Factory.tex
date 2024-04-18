@@ -1,0 +1,45 @@
+\doxysection{EGE\+::Factory Class Reference}
+\hypertarget{classEGE_1_1Factory}{}\label{classEGE_1_1Factory}\index{EGE::Factory@{EGE::Factory}}
+
+
+Simple factory to simplify creation of entities while parsing the configuration files of a game.  
+
+
+
+
+{\ttfamily \#include $<$Factory.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1Factory_a765581dadacb065491c36eb55da1af2f}{create\+Entity}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties, \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}module)
+\begin{DoxyCompactList}\small\item\em Creates an entity by the given {\ttfamily properties} and the current given {\ttfamily \doxylink{classGame}{Game} Module}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simple factory to simplify creation of entities while parsing the configuration files of a game. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1Factory_a765581dadacb065491c36eb55da1af2f}\label{classEGE_1_1Factory_a765581dadacb065491c36eb55da1af2f} 
+\index{EGE::Factory@{EGE::Factory}!createEntity@{createEntity}}
+\index{createEntity@{createEntity}!EGE::Factory@{EGE::Factory}}
+\doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} EGE\+::\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates an entity by the given {\ttfamily properties} and the current given {\ttfamily \doxylink{classGame}{Game} Module}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Represents the properties of the entity (ressources, char associated, specific properties) \\
+\hline
+{\em module} & {\ttfamily \doxylink{classGame}{Game} Module} to be used to create the entity. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/Factory.\+hpp\item 
+library/engine/src/Factory.\+cpp\end{DoxyCompactItemize}

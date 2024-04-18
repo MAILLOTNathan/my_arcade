@@ -1,0 +1,63 @@
+\doxysection{Entity.\+hpp}
+\hypertarget{Entity_8hpp_source}{}\label{Entity_8hpp_source}\index{library/engine/include/Entity.hpp@{library/engine/include/Entity.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Entity}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}IDisplayModule.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}ISprite.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Maths/Vector.hpp"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}Ressource.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ MANDATORY\_PROPS\ std::vector<std::string>\{"{}char"{}},\ "{}type"{},\ "{}sprite"{}\}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{namespace\ }EGE\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{class\ }IGameModule;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1Entity}{Entity}}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Entity_a84894fc95232c2dedd139bebfc280d23}{draw}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplayModule}}\ *displayModule);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Entity_abf4236a0ca0dabd139d9564f056bb459}{setPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{Vector<int>}}\ \&position);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Entity_a42b2f7b47e2556fc2ca1021d408872be}{setSprite}}(\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}}\ *sprite);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \mbox{\hyperlink{classEGE_1_1Entity_a53c06a02d598801efd3a93ab68139cb3}{getPosition}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_position;\ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Entity_a71b9b27d7148903f6707e8237fdae4bd}{reload}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplayModule}}\ *displayModule,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{IGameModule}}\ *gameModule);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEGE_1_1Entity_a428c011db3b44d5f8685a60e3281daee}{isColliding}}(\mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ \&other);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Entity_a15a8c3e15d73e23304d727b0e242b2e4}{update}}(std::vector<EGE::Entity\ *>\ \&entities,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{IGameModule}}\ *gameModule)\ =\ 0;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Entity_a6fa7d742a1d9e1fbb1b0638ea63baf1a}{init}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplayModule}}\ *displayModule,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{IGameModule}}\ *gameModule)\ =\ 0;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}}\ *\mbox{\hyperlink{classEGE_1_1Entity_ac216716ebe18ee53a2501e2a7b28925d}{getSprite}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_sprite;\ \}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Type}}\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PLAYER,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ A\ Player\ entity\ (controlled\ by\ the\ user).}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ENEMY,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ A\ Enemy\ entity\ (managed\ through\ the\ game\ mechanic).}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ENVIRONMENT,\ \ \ \ \textcolor{comment}{//\ A\ Static\ entity\ (walls,\ etc).}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ OBJECT,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ An\ object\ entity\ (can\ be\ anything).}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Entity::Type}}\ \mbox{\hyperlink{classEGE_1_1Entity_a9661fea4e5de3ba77a96b78dac1a663c}{getType}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_type;\ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}}\ *\_sprite;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ A\ way\ of\ representing\ graphically\ an\ entity.}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Type}}\ \_type;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Indicator\ of\ the\ type\ of\ the\ entity.}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Vector}{Vector<int>}}\ \_position;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Position\ of\ the\ entity.}}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<Ressource>\ \_ressource;\ \ \textcolor{comment}{//\ A\ reference\ to\ the\ ressource\ loaded\ and\ used\ by\ the\ entity.\ (used\ for\ the\ sprite\ especially)}}
+\DoxyCodeLine{00079\ \ \ \ \ \};}
+\DoxyCodeLine{00080\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,158 @@
+\doxysection{EGE\+::Event\+::Trigger\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classEGE_1_1Event_1_1Trigger}{}\label{classEGE_1_1Event_1_1Trigger}\index{EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}}
+
+
+Generic implementation of triggers.  
+
+
+
+
+{\ttfamily \#include $<$Trigger.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_acbcda069f7cf5f996f02d9b3f5bb30d1}{Trigger}} (T trigger, std\+::uint8\+\_\+t type, std\+::int8\+\_\+t joystick\+Id=-\/1)
+\begin{DoxyCompactList}\small\item\em Creates a \doxylink{classEGE_1_1Event_1_1Trigger}{Trigger} by his library dependency, his type and his ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_a9303e9c64635f195fd28d54091e486ec}{set\+Trigger}} (T trigger)
+\begin{DoxyCompactList}\small\item\em Sets the trigger to the specified value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_a6b33b65b95738ffb5244047eedae878a}{set\+Joystick\+Id}} (std\+::uint8\+\_\+t joystick\+Id)
+\begin{DoxyCompactList}\small\item\em Sets the joystick ID to the specified value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_acdfa7167f2044b7fc254d16fad9df9d2}{set\+Pressed}} (bool pressed)
+\begin{DoxyCompactList}\small\item\em Sets the joystick position to the specified value. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Event_1_1Trigger_a83187d2b701999a076b382abb9900de9}\label{classEGE_1_1Event_1_1Trigger_a83187d2b701999a076b382abb9900de9} 
+bool {\bfseries is\+Pressed} (void)
+\begin{DoxyCompactList}\small\item\em Returns the joystick position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_a7799f242350eabc2e67ed710204177db}{set\+Type}} (std\+::uint8\+\_\+t type)
+\begin{DoxyCompactList}\small\item\em Sets the joystick type to the specified value. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Event_1_1Trigger_adf25f7b66f79dbe9b0126fda73c6e5f4}\label{classEGE_1_1Event_1_1Trigger_adf25f7b66f79dbe9b0126fda73c6e5f4} 
+T {\bfseries get\+Trigger} (void)
+\begin{DoxyCompactList}\small\item\em Returns {\ttfamily Graphical} type of the trigger. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Event_1_1Trigger_a933392e32c5ffa4551a8ea9732647b63}\label{classEGE_1_1Event_1_1Trigger_a933392e32c5ffa4551a8ea9732647b63} 
+std\+::int8\+\_\+t {\bfseries get\+Joystick\+Id} (void)
+\begin{DoxyCompactList}\small\item\em Returns Joystick\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+\Hypertarget{classEGE_1_1Event_1_1Trigger_a311637b40d30f9bc961ad2ae9e7d76d4}\label{classEGE_1_1Event_1_1Trigger_a311637b40d30f9bc961ad2ae9e7d76d4} 
+std\+::uint8\+\_\+t {\bfseries get\+Type} (void)
+\begin{DoxyCompactList}\small\item\em Returns type of the trigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1Event_1_1Trigger_aa6b50b2cbb646b9f25f8e92ebecd9a11}\label{classEGE_1_1Event_1_1Trigger_aa6b50b2cbb646b9f25f8e92ebecd9a11} 
+T {\bfseries \+\_\+trigger}
+\item 
+\Hypertarget{classEGE_1_1Event_1_1Trigger_ae9b83859e38f56035c614c54ac230e7b}\label{classEGE_1_1Event_1_1Trigger_ae9b83859e38f56035c614c54ac230e7b} 
+std\+::int8\+\_\+t {\bfseries \+\_\+joystick\+Id}
+\item 
+\Hypertarget{classEGE_1_1Event_1_1Trigger_a68b29335ee65a3edf63d34c8d8c1e952}\label{classEGE_1_1Event_1_1Trigger_a68b29335ee65a3edf63d34c8d8c1e952} 
+std\+::uint8\+\_\+t {\bfseries \+\_\+type}
+\item 
+\Hypertarget{classEGE_1_1Event_1_1Trigger_ab85700966a1636ef7629fc2d84e7e50b}\label{classEGE_1_1Event_1_1Trigger_ab85700966a1636ef7629fc2d84e7e50b} 
+bool {\bfseries \+\_\+pressed}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class EGE\+::\+Event\+::\+Trigger$<$ T $>$}
+Generic implementation of triggers. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of trigger (depends on graphical library used). \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEGE_1_1Event_1_1Trigger_acbcda069f7cf5f996f02d9b3f5bb30d1}\label{classEGE_1_1Event_1_1Trigger_acbcda069f7cf5f996f02d9b3f5bb30d1} 
+\index{EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}!Trigger@{Trigger}}
+\index{Trigger@{Trigger}!EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Trigger()}{Trigger()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ T $>$\+::\+Trigger (\begin{DoxyParamCaption}\item[{T}]{trigger,  }\item[{std\+::uint8\+\_\+t}]{type,  }\item[{std\+::int8\+\_\+t}]{joystick\+Id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \doxylink{classEGE_1_1Event_1_1Trigger}{Trigger} by his library dependency, his type and his ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger} & {\ttfamily Graphical} Type \\
+\hline
+{\em type} & Type \\
+\hline
+{\em joystick\+Id} & ID \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1Event_1_1Trigger_a6b33b65b95738ffb5244047eedae878a}\label{classEGE_1_1Event_1_1Trigger_a6b33b65b95738ffb5244047eedae878a} 
+\index{EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}!setJoystickId@{setJoystickId}}
+\index{setJoystickId@{setJoystickId}!EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setJoystickId()}{setJoystickId()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ T $>$\+::set\+Joystick\+Id (\begin{DoxyParamCaption}\item[{std\+::uint8\+\_\+t}]{joystick\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the joystick ID to the specified value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joystick\+Id} & Value to be set as new joystick ID. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1Event_1_1Trigger_acdfa7167f2044b7fc254d16fad9df9d2}\label{classEGE_1_1Event_1_1Trigger_acdfa7167f2044b7fc254d16fad9df9d2} 
+\index{EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}!setPressed@{setPressed}}
+\index{setPressed@{setPressed}!EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setPressed()}{setPressed()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ T $>$\+::set\+Pressed (\begin{DoxyParamCaption}\item[{bool}]{pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the joystick position to the specified value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pressed} & Value to be set as new joystick position. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1Event_1_1Trigger_a9303e9c64635f195fd28d54091e486ec}\label{classEGE_1_1Event_1_1Trigger_a9303e9c64635f195fd28d54091e486ec} 
+\index{EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}!setTrigger@{setTrigger}}
+\index{setTrigger@{setTrigger}!EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setTrigger()}{setTrigger()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ T $>$\+::set\+Trigger (\begin{DoxyParamCaption}\item[{T}]{trigger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the trigger to the specified value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger} & Value to be set as new trigger value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1Event_1_1Trigger_a7799f242350eabc2e67ed710204177db}\label{classEGE_1_1Event_1_1Trigger_a7799f242350eabc2e67ed710204177db} 
+\index{EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}!setType@{setType}}
+\index{setType@{setType}!EGE::Event::Trigger$<$ T $>$@{EGE::Event::Trigger$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ T $>$\+::set\+Type (\begin{DoxyParamCaption}\item[{std\+::uint8\+\_\+t}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the joystick type to the specified value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Value to be set as new joystick type. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/Trigger.\+hpp\end{DoxyCompactItemize}

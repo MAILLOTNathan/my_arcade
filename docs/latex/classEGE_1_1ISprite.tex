@@ -1,0 +1,124 @@
+\doxysection{EGE\+::ISprite Class Reference}
+\hypertarget{classEGE_1_1ISprite}{}\label{classEGE_1_1ISprite}\index{EGE::ISprite@{EGE::ISprite}}
+
+
+Interface for Srites objects.  
+
+
+
+
+{\ttfamily \#include $<$ISprite.\+hpp$>$}
+
+Inheritance diagram for EGE\+::ISprite\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classEGE_1_1ISprite}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ISprite_a9862b213f68fdf8b2bb85468e98c2375}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the sprite to the specified {\ttfamily window}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ISprite_a13c22d15cbe1b37e1088593509e678e6}{set\+Position}} (const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \&pos)=0
+\begin{DoxyCompactList}\small\item\em Sets the sprite position to the specified {\ttfamily positions}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ISprite_a77d1b7d716abd2bb185bf2e43943733e}{set\+Position}} (int x, int y)=0
+\begin{DoxyCompactList}\small\item\em Sets the sprite position to the specified {\ttfamily positions}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \mbox{\hyperlink{classEGE_1_1ISprite_aaccb6c79e5feb2b2e32e0740330d7b54}{get\+Position}} () const =0
+\begin{DoxyCompactList}\small\item\em Return the sprite\textquotesingle{}s position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ADrawable_a74ebf5583e9147331f28bc39edda350c}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IDrawable_a36e7317ed65af6d19a323e991249ffef}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for Srites objects. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1ISprite_a9862b213f68fdf8b2bb85468e98c2375}\label{classEGE_1_1ISprite_a9862b213f68fdf8b2bb85468e98c2375} 
+\index{EGE::ISprite@{EGE::ISprite}!draw@{draw}}
+\index{draw@{draw}!EGE::ISprite@{EGE::ISprite}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+ISprite\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draws the sprite to the specified {\ttfamily window}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \doxylink{classWindow}{Window} to draw the sprite \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1ADrawable_a74ebf5583e9147331f28bc39edda350c}{EGE\+::\+ADrawable}}.
+
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1ASprite_a0ec02ffbc05030e923ad98f370f8c6d3}{EGE\+::\+ASprite}}.
+
+\Hypertarget{classEGE_1_1ISprite_aaccb6c79e5feb2b2e32e0740330d7b54}\label{classEGE_1_1ISprite_aaccb6c79e5feb2b2e32e0740330d7b54} 
+\index{EGE::ISprite@{EGE::ISprite}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!EGE::ISprite@{EGE::ISprite}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ EGE\+::\+ISprite\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the sprite\textquotesingle{}s position. 
+
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1ASprite_ac4552fc451bf7019cc812f54cec3da50}{EGE\+::\+ASprite}}.
+
+\Hypertarget{classEGE_1_1ISprite_a13c22d15cbe1b37e1088593509e678e6}\label{classEGE_1_1ISprite_a13c22d15cbe1b37e1088593509e678e6} 
+\index{EGE::ISprite@{EGE::ISprite}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!EGE::ISprite@{EGE::ISprite}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void EGE\+::\+ISprite\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the sprite position to the specified {\ttfamily positions}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position to be set to the sprite. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSprite_a23072078d8d05ecb3af9c9027f3aef42}{Sprite}}, \mbox{\hyperlink{classSprite_a23072078d8d05ecb3af9c9027f3aef42}{Sprite}}, \mbox{\hyperlink{classSprite_a23072078d8d05ecb3af9c9027f3aef42}{Sprite}}, and \mbox{\hyperlink{classEGE_1_1ASprite_a16a78d29cf6fef757b102bb154cc431e}{EGE\+::\+ASprite}}.
+
+\Hypertarget{classEGE_1_1ISprite_a77d1b7d716abd2bb185bf2e43943733e}\label{classEGE_1_1ISprite_a77d1b7d716abd2bb185bf2e43943733e} 
+\index{EGE::ISprite@{EGE::ISprite}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!EGE::ISprite@{EGE::ISprite}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void EGE\+::\+ISprite\+::set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the sprite position to the specified {\ttfamily positions}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position to be set to the sprite in x coordinates. \\
+\hline
+{\em y} & Position to be set to the sprite in y coordinates. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classSprite_a301a409782a76446f7bad63886b48c3c}{Sprite}}, \mbox{\hyperlink{classSprite_a301a409782a76446f7bad63886b48c3c}{Sprite}}, \mbox{\hyperlink{classSprite_a301a409782a76446f7bad63886b48c3c}{Sprite}}, and \mbox{\hyperlink{classEGE_1_1ASprite_a467b7d6c1a22b41b5b3fc68ee45839e9}{EGE\+::\+ASprite}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/ISprite.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\doxysection{NCURSEEvent.\+hpp}
+\hypertarget{NCURSEEvent_8hpp_source}{}\label{NCURSEEvent_8hpp_source}\index{library/graphical/NCURSE/include/NCURSEEvent.hpp@{library/graphical/NCURSE/include/NCURSEEvent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ NCURSEEvent}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}AEvent.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}NCURSEWindow.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEvent}{Event}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1AEvent}{EGE::AEvent}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEvent_a5a40dd4708297f7031e29b39e039ae10}{Event}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEvent_a7704ec01ce91e673885792054214b3d2}{\string~Event}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEvent_ae4a29a1d4582e8865c06032c12fdc7f5}{bindMouseScroll}}(std::unique\_ptr<EGE::IWindow>\ window,\ std::function<\textcolor{keywordtype}{void}(std::double\_t,\ std::double\_t)>\ func)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEvent_a9398ddcd5d663171ee05e24f31134ad9}{unbindMouseScroll}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEvent_a2eff79589cec998867982695223317fe}{manageKeyboardEvent}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEvent_a821bd4e323183498f3b42973fed44544}{manageMouseEvent}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEvent_a00a31ccf0cfa871b4147f42cc182fbff}{manageEvent}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::uint32\_t\ \mbox{\hyperlink{classEvent_adc3f5de91f8b85873f922db33ff933ed}{keyboardTranslate}}(EGE::Event::Keyboard\ button)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::uint32\_t\ \mbox{\hyperlink{classEvent_a134ca27dcb01509d4d075fa0001cffde}{mouseTranslate}}(EGE::Event::Mouse\ button)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_initKeyboardTranslate();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ std::function<void(std::double\_t,\ std::double\_t)>\ \_mouseScrollFunc;\ \textcolor{comment}{//\ Function\ assiociated\ to\ mouse\ scroll.}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_event;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ NCURSE\ event.}}
+\DoxyCodeLine{00059\ \};}
+
+\end{DoxyCode}

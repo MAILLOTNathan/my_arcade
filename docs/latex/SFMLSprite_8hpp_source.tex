@@ -1,0 +1,39 @@
+\doxysection{SFMLSprite.\+hpp}
+\hypertarget{SFMLSprite_8hpp_source}{}\label{SFMLSprite_8hpp_source}\index{library/graphical/SFML/include/SFMLSprite.hpp@{library/graphical/SFML/include/SFMLSprite.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ SFMLSprite}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}ASprite.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}SFMLWindow.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}Ressource.hpp"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSprite}{Sprite}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1ASprite}{EGE::ASprite}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSprite_a93fcf29ff390247e76fd52163983068a}{Sprite}}(\mbox{\hyperlink{classEGE_1_1Ressource}{EGE::Ressource}}\ *ressource,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \&pos);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classSprite_a964466a1ef24b7c336074ab1a8d44901}{\string~Sprite}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_afeab7fb6e9778135bae97b200029d816}{draw}}(std::shared\_ptr<EGE::IWindow>\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_a23072078d8d05ecb3af9c9027f3aef42}{setPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\&\ pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_a301a409782a76446f7bad63886b48c3c}{setPosition}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ sf::Sprite\ \_sprite;\ \ \ \ \ \textcolor{comment}{//\ The\ sf::Sprite\ of\ this\ sprite.}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ sf::Texture\ \_texture;\ \ \ \textcolor{comment}{//\ The\ texture\ of\ the\ sf::Sprite.}}
+\DoxyCodeLine{00045\ \};}
+
+\end{DoxyCode}

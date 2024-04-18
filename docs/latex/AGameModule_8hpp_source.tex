@@ -1,0 +1,85 @@
+\doxysection{AGame\+Module.\+hpp}
+\hypertarget{AGameModule_8hpp_source}{}\label{AGameModule_8hpp_source}\index{library/engine/include/AGameModule.hpp@{library/engine/include/AGameModule.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ AGameModule}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AGAMEMODULE\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ AGAMEMODULE\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}IGameModule.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Utils.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}Error.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}Factory.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }EGE\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1AGameModuleException}{AGameModuleException}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classError}{Error}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1AGameModuleException}{AGameModuleException}}(\textcolor{keyword}{const}\ std::string\ \&message)\ :\ \mbox{\hyperlink{classError}{Error}}(message)\ \{\}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1AGameModuleException}{\string~AGameModuleException}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00023\ \ \ \ \ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1AGameModule}{AGameModule}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1IGameModule}{IGameModule}}\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1AGameModule}{\string~AGameModule}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AGameModule_a5693f5fe815cd36e4f690739b6496840}{getNextFrame}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AGameModule_a29d8247a446f7d522caf9cb8dfb9d41d}{load}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule)\ =\ 0;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ *\mbox{\hyperlink{classEGE_1_1AGameModule_a44aef1764ee1dbdd80ac10af3dc820ae}{createPlayer}}(std::map<std::string,\ std::string>\ \&properties)\ =\ 0;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ *\mbox{\hyperlink{classEGE_1_1AGameModule_a21304e75166ae30ba29c8c344bd61578}{createEnemy}}(std::map<std::string,\ std::string>\ \&properties)\ =\ 0;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ *\mbox{\hyperlink{classEGE_1_1AGameModule_abe60f11b742978a16f500df0e3cb1aba}{createEnvironment}}(std::map<std::string,\ std::string>\ \&properties)\ =\ 0;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ *\mbox{\hyperlink{classEGE_1_1AGameModule_ab2f2ca8a8b146682c3d5df88c90af9e1}{createObject}}(std::map<std::string,\ std::string>\ \&properties)\ =\ 0;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AGameModule_af5b0b06912cdae043a35e29794ab2ec9}{reload}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AGameModule_a62823344b8e9a50c77e0c30cd9d1d87a}{init}}(\textcolor{keyword}{const}\ std::string\ \&gameFolder)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AGameModule_a9a7830f221549182d83751a27d270f37}{addEntity}}(\mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ *entity)\textcolor{keyword}{\ override\ }\{\ this-\/>\_entities.push\_back(entity);\ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AGameModule_a5f494fd9d2645d0f2d996b208e47ecc4}{removeEntity}}(\mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ *entity)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_entities.erase(std::remove(this-\/>\_entities.begin(),\ this-\/>\_entities.end(),\ entity),\ this-\/>\_entities.end());}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AGameModule_a28a0bcecdbc699e135d1dde2e4c256b3}{setScore}}(\textcolor{keywordtype}{int}\ score)\textcolor{keyword}{\ override\ }\{\ this-\/>\_score\ =\ score;\ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEGE_1_1AGameModule_aa9ab5148aec7c42b38f99506859e36c0}{getScore}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_score;\ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AGameModule_a8e5fc8c43d6b2a2f846edc1a876188c5}{setState}}(\mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\_GAME}}\ state)\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_state\ =\ state;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\_GAME}}\ \mbox{\hyperlink{classEGE_1_1AGameModule_a21006244250787c2d1b266137ae43957}{getStats}}(\textcolor{keywordtype}{void})\ \{\ \textcolor{keywordflow}{return}\ this-\/>\_state;\ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *\_display;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \`{}Display\ Module`\ of\ the\ current\ \`{}Game\ Module`}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<EGE::Entity\ *>\ \_entities;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Container\ of\ entities\ which\ represents\ all\ the\ entities\ in\ the\ game.}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::map<std::string,\ std::string>>\ \_model;\ \textcolor{comment}{//\ Data\ model\ on\ which\ the\ entities\ are\ based\ on.}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \_savegame;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Path\ to\ the\ savegame\ file.}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\_GAME}}\ \_state;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ Game\ State.}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_score;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Point\ scored\ by\ the\ player.}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IText}{EGE::IText}}\ *\_scoreText;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Score\ displayed.}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IText}{EGE::IText}}\ *\_msgEnd;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Message\ displayed\ at\ the\ end\ of\ the\ game.}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parseEntities(\textcolor{keyword}{const}\ std::string\ \&path);\ \ \ \ \textcolor{comment}{//\ Creates\ the\ Data\ model\ by\ parsing\ the\ file\ given\ as\ parameter.}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ parseMap(\textcolor{keyword}{const}\ std::string\ \&path);\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Parses\ the\ file\ given\ as\ parameter\ to\ create\ entities.}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ loadSavegame()\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Loads\ the\ savegame.}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \};}
+\DoxyCodeLine{00102\ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AGAMEMODULE\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

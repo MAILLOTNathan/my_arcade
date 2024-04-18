@@ -1,0 +1,70 @@
+\doxysection{Rect.\+hpp}
+\hypertarget{Rect_8hpp_source}{}\label{Rect_8hpp_source}\index{library/engine/include/Maths/Rect.hpp@{library/engine/include/Maths/Rect.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Visual\ Studio\ Live\ Share\ (Workspace)}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Rect}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ RECT\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ RECT\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Vector.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }EGE\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1Rect}{Rect}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Rect_ac634075b63b8dea7953f3ca3e10f10dc}{Rect}}(T\ x,\ T\ y,\ T\ width,\ T\ height)\ :\ \_x(x),\ \_y(y),\ \_width(width),\ \_height(height)\ \{\};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Rect_ad5f69a3111198b65d434837cc0736ef2}{Rect}}()\ :\ \_x(0),\ \_y(0),\ \_width(0),\ \_height(0)\ \{\};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Rect}{\string~Rect}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{classEGE_1_1Rect_a033280e5d5e4afe263e4e0ba56f80e73}{getX}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_x;\ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{classEGE_1_1Rect_a6ba43962789fffc5b690d742713229d5}{getY}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_y;\ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{classEGE_1_1Rect_a0741bea58726ac165846951df0f3815f}{getWidth}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_width;\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{classEGE_1_1Rect_a5e7566e1553a7442a166aeb3f3f4a11b}{getHeight}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_height;\ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Rect_a641fd4beb8113b4441b3f5ab797efca9}{setX}}(T\ x)\ \{\ this-\/>\_x\ =\ x;\ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Rect_ad39ff47d97570d3399e1205a089349e9}{setY}}(T\ y)\ \{\ this-\/>\_y\ =\ y;\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Rect_a19096fc37185bd64e4fe84d59761fa42}{setWidth}}(T\ width)\ \{\ this-\/>\_width\ =\ width;\ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Rect_a27dbd7c7c412a67621056cee4b21a2d5}{setHeight}}(T\ height)\ \{\ this-\/>\_height\ =\ height;\ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEGE_1_1Rect_a504e6cef29589440ebd4d6f4bd7e6467}{contains}}(\mbox{\hyperlink{classEGE_1_1Vector}{Vector<T>}}\ point)\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (point.\mbox{\hyperlink{classEGE_1_1Vector_a68502040f413a80a28c5f19ecd7de342}{getX}}()\ >=\ this-\/>\_x\ \&\&\ point.\mbox{\hyperlink{classEGE_1_1Vector_a68502040f413a80a28c5f19ecd7de342}{getX}}()\ <=\ this-\/>\_x\ +\ this-\/>\_width\ \&\&\ point.\mbox{\hyperlink{classEGE_1_1Vector_aa28944d79044e2955c3df9d7e9e358fa}{getY}}()\ >=\ this-\/>\_y\ \&\&\ point.\mbox{\hyperlink{classEGE_1_1Vector_aa28944d79044e2955c3df9d7e9e358fa}{getY}}()\ <=\ this-\/>\_y\ +\ this-\/>\_height);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEGE_1_1Rect_a62f1f6c173db9d7b6d197123dd7c7673}{intersects}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Rect}{Rect<T>}}\ \&rect)\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (this-\/>\_x\ <\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a033280e5d5e4afe263e4e0ba56f80e73}{getX}}()\ +\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a0741bea58726ac165846951df0f3815f}{getWidth}}()\ \&\&\ this-\/>\_x\ +\ this-\/>\_width\ >\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a033280e5d5e4afe263e4e0ba56f80e73}{getX}}()\ \&\&\ this-\/>\_y\ <\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a6ba43962789fffc5b690d742713229d5}{getY}}()\ +\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a5e7566e1553a7442a166aeb3f3f4a11b}{getHeight}}()\ \&\&\ this-\/>\_y\ +\ this-\/>\_height\ >\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a6ba43962789fffc5b690d742713229d5}{getY}}());}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Rect_a68df7d0b8eaa890125ce70660e26082d}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Rect}{Rect<T>}}\ \&rect)\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_x\ =\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a033280e5d5e4afe263e4e0ba56f80e73}{getX}}();}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_y\ =\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a6ba43962789fffc5b690d742713229d5}{getY}}();}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_width\ =\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a0741bea58726ac165846951df0f3815f}{getWidth}}();}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_height\ =\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a5e7566e1553a7442a166aeb3f3f4a11b}{getHeight}}();}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEGE_1_1Rect_a6789fda732020a272965eafdb275fe1e}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Rect}{Rect<T>}}\ \&rect)\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (this-\/>\_x\ ==\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a033280e5d5e4afe263e4e0ba56f80e73}{getX}}()\ \&\&\ this-\/>\_y\ ==\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a6ba43962789fffc5b690d742713229d5}{getY}}()\ \&\&\ this-\/>\_width\ ==\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a0741bea58726ac165846951df0f3815f}{getWidth}}()\ \&\&\ this-\/>\_height\ ==\ rect.\mbox{\hyperlink{classEGE_1_1Rect_a5e7566e1553a7442a166aeb3f3f4a11b}{getHeight}}());}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \_x;\ \ \ \ \ \ \ \textcolor{comment}{//\ Position\ in\ x.}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \_y;\ \ \ \ \ \ \ \textcolor{comment}{//\ Position\ in\ y.}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \_width;\ \ \ \textcolor{comment}{//\ Width\ of\ the\ rectangle.}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ T\ \_height;\ \ \textcolor{comment}{//\ Height\ of\ the\ rectangle.}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00086\ \ \ \ \ \};}
+\DoxyCodeLine{00087\ \}}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !RECT\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

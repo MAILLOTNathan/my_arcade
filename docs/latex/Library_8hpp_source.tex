@@ -1,0 +1,91 @@
+\doxysection{Library.\+hpp}
+\hypertarget{Library_8hpp_source}{}\label{Library_8hpp_source}\index{include/Library.hpp@{include/Library.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ etib-\/game-\/engine\ [SSH:\ 10.106.0.254]}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Library}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ LIBRARY\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ LIBRARY\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}IDisplayModule.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}ADisplayModule.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}IGameModule.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}AGameModule.hpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <dlfcn.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}Error.hpp"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}Utils.hpp"{}}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ LOAD\_SYM(lib,\ var,\ sym,\ type)\ \(\backslash\)}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\ \ \ \ if\ ((type)dlsym(lib-\/>\_handles[path],\ sym)\ !=\ NULL)\ \(\backslash\)}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ var\ =\ (type)dlsym(lib-\/>\_handles[path],\ sym);\ \(\backslash\)}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{}}
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLibraryException}{LibraryException}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classError}{Error}}\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLibraryException}{LibraryException}}(\textcolor{keyword}{const}\ std::string\ \&message)\ :\ \mbox{\hyperlink{classError}{Error}}(message)\ \{\}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLibraryException}{\string~LibraryException}}()\ \{\}}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLibrary}{Library}}\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLibrary}{Library}}(\mbox{\hyperlink{classLibrary}{Library}}\ \&other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classLibrary}{Library}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classLibrary}{Library}}\ *\mbox{\hyperlink{classLibrary_a76aa65bf0c61ae5f5c1a2a099bdd5ee6}{getInstance}}(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keywordtype}{bool}\ force\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classLibrary}{Library}}\ *\mbox{\hyperlink{classLibrary_aaea5fd339ab67340f24270f7fcfee3a6}{getInstance}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *\mbox{\hyperlink{classLibrary_a11f071719b9dd34aa87807f1e8727562}{createDisplayModule}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibrary_a08349d2ec4ad9a8dd253464f05a71315}{destroyDisplayModule}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *\mbox{\hyperlink{classLibrary_ad3f5049fb2dab8e4c44d3c01e06dbaf5}{createGameModule}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibrary_a080211b064a2b94f89bfe8b0c0d6708b}{destroyGameModule}}(\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibrary_a36b747b8ae2256ee369ded3b66155d3b}{setCurrentLib}}(\textcolor{keyword}{const}\ std::string\ \&lib);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibrary_a9389863454c05c9a223a3bfa3cf28671}{setCurrentGameLib}}(\textcolor{keyword}{const}\ std::string\ \&lib);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classLibrary_a80821f367bc6905d0301587ac682024c}{getLibs}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ std::map<std::string,std::function<\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}*()>>\ \mbox{\hyperlink{classLibrary_a42142438bde0c2e7749aaeb2e0171afa}{getFunctions}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ std::map<std::string,std::function<\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *()>>\ \mbox{\hyperlink{classLibrary_ad27054b189b650e51ece161262dc0af6}{getGameFunctions}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLibrary}{Library}}(\textcolor{keyword}{const}\ std::string\&\ path)\ :\ \_currentLib(path)\ \{\}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLibrary}{\string~Library}}()\ \{\}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLibrary_a8e2619be8398b39f813a6f9d9d3fd324}{init}}();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ std::map<std::string,\ void\ *>\ \_handles;\ \ \ \ \ \textcolor{comment}{//\ Handled\ libraries.}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ std::string\ \_currentLib;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ \`{}graphical`\ library.}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ std::string\ \_currentGameLib;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ \`{}game`\ library.}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ std::vector<std::string>\ \_libs;\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ List\ of\ \`{}graphical`\ libraries.}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ std::vector<std::string>\ \_gameLibs;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ List\ of\ \`{}game`\ libraries.}}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ std::map<std::string,std::function<\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}*()>>\ \_createFunctions;\ \ \ \ \ \ \ \textcolor{comment}{//\ \`{}Graphical`\ creators\ functions.}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ std::map<std::string,std::function<void(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}*)>>\ \_destroyFunctions;\ \ \textcolor{comment}{//\ \`{}Graphical`\ destructors\ functions.}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ std::map<std::string,std::function<\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}*()>>\ \_createGameFunctions;\ \ \ \ \ \ \textcolor{comment}{//\ \`{}Game`\ creators\ functions.}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ std::map<std::string,std::function<void(\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}*)>>\ \_destroyGameFunctions;\ \textcolor{comment}{//\ \`{}Game`\ destructors\ functions.}}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classLibrary}{Library}}\ *\_instance;\ \ \textcolor{comment}{//\ Current\ instance\ of\ the\ \`{}library\ manager`.}}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ std::mutex\ \_mutex;\ \ \ \textcolor{comment}{//\ Mutex.}}
+\DoxyCodeLine{00103\ \};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !LIBRARY\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

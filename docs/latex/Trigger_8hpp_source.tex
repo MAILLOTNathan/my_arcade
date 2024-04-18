@@ -1,0 +1,242 @@
+\doxysection{Trigger.\+hpp}
+\hypertarget{Trigger_8hpp_source}{}\label{Trigger_8hpp_source}\index{library/engine/include/Trigger.hpp@{library/engine/include/Trigger.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Visual\ Studio\ Live\ Share\ (Workspace)}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Trigger}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ TRIGGER\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ TRIGGER\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }EGE\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{classEvent}{Event}}\ \{}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ Keyboard\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ Unknown\ =\ -\/1,\ \textcolor{comment}{//\ Unhandled\ key}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ A\ =\ 0,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ A\ key}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ B,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ B\ key}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ C,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ C\ key}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ D,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ D\ key}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ E,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ E\ key}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ F,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F\ key}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ G,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ G\ key}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ H,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ H\ key}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ I,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ I\ key}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ J,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ J\ key}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ K,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ K\ key}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ L,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ L\ key}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ M,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ M\ key}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ N,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ N\ key}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ O,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ O\ key}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ P,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ P\ key}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ Q,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Q\ key}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ R,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ R\ key}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ S,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ S\ key}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ T,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ T\ key}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ U,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ U\ key}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ V,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ V\ key}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ W,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ W\ key}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ X,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ X\ key}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ Y,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Y\ key}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ Z,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Z\ key}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ Num0,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ 0\ key}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ Num1,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ 1\ key}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ Num2,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ 2\ key}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ Num3,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ 3\ key}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ Num4,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ 4\ key}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ Num5,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ 5\ key}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ Num6,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ 6\ key}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ Num7,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ 7\ key}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ Num8,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ 8\ key}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ Num9,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ 9\ key}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ Escape,\ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Escape\ key}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ LControl,\ \ \ \ \ \textcolor{comment}{//\ The\ left\ Control\ key}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ LShift,\ \ \ \ \ \ \ \textcolor{comment}{//\ The\ left\ Shift\ key}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ LAlt,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ left\ Alt\ key}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ LSystem,\ \ \ \ \ \ \textcolor{comment}{//\ The\ left\ OS\ specific\ key:\ window\ (Windows\ and\ Linux),\ apple\ (MacOS\ X),\ ...}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ RControl,\ \ \ \ \ \textcolor{comment}{//\ The\ right\ Control\ key}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ RShift,\ \ \ \ \ \ \ \textcolor{comment}{//\ The\ right\ Shift\ key}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ RAlt,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ right\ Alt\ key}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ RSystem,\ \ \ \ \ \ \textcolor{comment}{//\ The\ right\ OS\ specific\ key:\ window\ (Windows\ and\ Linux),\ apple\ (MacOS\ X),\ ...}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ Menu,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Menu\ key}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ LBracket,\ \ \ \ \ \textcolor{comment}{//\ The\ [\ key}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ RBracket,\ \ \ \ \ \textcolor{comment}{//\ The\ ]\ key}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ Semicolon,\ \ \ \ \textcolor{comment}{//\ The\ ;\ key}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ Comma,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ ,\ key}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ Period,\ \ \ \ \ \ \ \textcolor{comment}{//\ The\ .\ key}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ Quote,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ '\ key}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ Slash,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ /\ key}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ Backslash,\ \ \ \ \textcolor{comment}{//\ The\ \(\backslash\)\ key}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ Tilde,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ \string~\ key}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ Equal,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ =\ key}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ Hyphen,\ \ \ \ \ \ \ \textcolor{comment}{//\ The\ -\/\ key\ (hyphen)}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ Space,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Space\ key}}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ Enter,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Enter/Return\ keys}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ Backspace,\ \ \ \ \textcolor{comment}{//\ The\ Backspace\ key}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ Tab,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Tabulation\ key}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ PageUp,\ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Page\ up\ key}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ PageDown,\ \ \ \ \ \textcolor{comment}{//\ The\ Page\ down\ key}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ End,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ End\ key}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ Home,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Home\ key}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ Insert,\ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Insert\ key}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ Delete,\ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Delete\ key}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ Add,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ +\ key}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ Subtract,\ \ \ \ \ \textcolor{comment}{//\ The\ -\/\ key\ (minus,\ usually\ from\ numpad)}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ Multiply,\ \ \ \ \ \textcolor{comment}{//\ The\ *\ key}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ Divide,\ \ \ \ \ \ \ \textcolor{comment}{//\ The\ /\ key}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ KeyLeft,\ \ \ \ \ \ \textcolor{comment}{//\ Left\ arrow}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ KeyRight,\ \ \ \ \ \textcolor{comment}{//\ Right\ arrow}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ KeyUp,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Up\ arrow}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ KeyDown,\ \ \ \ \ \ \textcolor{comment}{//\ Down\ arrow}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ Numpad0,\ \ \ \ \ \ \textcolor{comment}{//\ The\ numpad\ 0\ key}}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ Numpad1,\ \ \ \ \ \ \textcolor{comment}{//\ The\ numpad\ 1\ key}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ Numpad2,\ \ \ \ \ \ \textcolor{comment}{//\ The\ numpad\ 2\ key}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ Numpad3,\ \ \ \ \ \ \textcolor{comment}{//\ The\ numpad\ 3\ key}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ Numpad4,\ \ \ \ \ \ \textcolor{comment}{//\ The\ numpad\ 4\ key}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ Numpad5,\ \ \ \ \ \ \textcolor{comment}{//\ The\ numpad\ 5\ key}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ Numpad6,\ \ \ \ \ \ \textcolor{comment}{//\ The\ numpad\ 6\ key}}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ Numpad7,\ \ \ \ \ \ \textcolor{comment}{//\ The\ numpad\ 7\ key}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ Numpad8,\ \ \ \ \ \ \textcolor{comment}{//\ The\ numpad\ 8\ key}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ Numpad9,\ \ \ \ \ \ \textcolor{comment}{//\ The\ numpad\ 9\ key}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ F1,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F1\ key}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ F2,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F2\ key}}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ F3,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F3\ key}}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ F4,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F4\ key}}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ F5,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F5\ key}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ F6,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F6\ key}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ F7,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F7\ key}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ F8,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F8\ key}}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ F9,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F9\ key}}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ F10,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F10\ key}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ F11,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F11\ key}}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ F12,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F12\ key}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ F13,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F13\ key}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ F14,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F14\ key}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ F15,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ F15\ key}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ Pause,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ Pause\ key}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ KeyCount,\ \textcolor{comment}{//\ Keep\ last\ -\/-\/\ the\ total\ number\ of\ keyboard\ keys}}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Deprecated\ values:}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ Dash\ =\ Hyphen,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \(\backslash\)deprecated\ Use\ Hyphen\ instead}}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ BackSpace\ =\ Backspace,\ \textcolor{comment}{//\ \(\backslash\)deprecated\ Use\ Backspace\ instead}}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ BackSlash\ =\ Backslash,\ \textcolor{comment}{//\ \(\backslash\)deprecated\ Use\ Backslash\ instead}}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ SemiColon\ =\ Semicolon,\ \textcolor{comment}{//\ \(\backslash\)deprecated\ Use\ Semicolon\ instead}}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ Return\ =\ Enter\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \(\backslash\)deprecated\ Use\ Enter\ instead}}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ Mouse\ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ Left,\ \ \ \ \ \textcolor{comment}{//\ The\ left\ mouse\ trigger}}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ Right,\ \ \ \ \textcolor{comment}{//\ The\ right\ mouse\ trigger}}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ Middle,\ \ \ \textcolor{comment}{//\ The\ middle\ (wheel)\ mouse\ trigger}}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ XButton1,\ \textcolor{comment}{//\ The\ first\ extra\ mouse\ trigger}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ XButton2,\ \textcolor{comment}{//\ The\ second\ extra\ mouse\ trigger}}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ TriggerCount\ \textcolor{comment}{//\ Keep\ last\ -\/-\/\ the\ total\ number\ of\ mouse\ triggers}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ JoystickAxis\ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ LX,\ \textcolor{comment}{//\ The\ X\ axis\ of\ the\ left\ joystick}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ LY,\ \textcolor{comment}{//\ The\ Y\ axis\ of\ the\ left\ joystick}}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ RX,\ \textcolor{comment}{//\ The\ X\ axis\ of\ the\ right\ joystick}}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ RY,\ \textcolor{comment}{//\ The\ Y\ axis\ of\ the\ right\ joystick}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ LT,\ \textcolor{comment}{//\ The\ left\ index\ trigger}}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ RT,\ \textcolor{comment}{//\ The\ right\ index\ trigger}}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ JoystickTrigger\ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ JoystickA,\ \textcolor{comment}{//\ The\ A\ button}}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ JoystickB,\ \textcolor{comment}{//\ The\ B\ button}}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ JoystickX,\ \textcolor{comment}{//\ The\ X\ button}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ JoystickY,\ \textcolor{comment}{//\ The\ Y\ button}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ LB,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ left\ bumper}}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ RB,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ right\ bumper}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ SELECT,\ \ \ \ \textcolor{comment}{//\ The\ select\ button}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ START,\ \ \ \ \ \textcolor{comment}{//\ The\ start\ button}}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ L3,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ left\ stick\ button}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ R3,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ right\ stick\ button}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ UP,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ up\ button}}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ DOWN,\ \ \ \ \ \ \textcolor{comment}{//\ The\ down\ button}}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ LEFT,\ \ \ \ \ \ \textcolor{comment}{//\ The\ left\ button}}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ RIGHT,\ \ \ \ \ \textcolor{comment}{//\ The\ right\ button}}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ TriggerType\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ MOVED\ =\ 0,\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ *\ for\ joystick\ axis}}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ PRESSED\ =\ 1,\ \ \ \ \ \ \ \textcolor{comment}{//\ Triggered\ while\ the\ button\ is\ pressed}}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ JUST\_PRESSED\ =\ 2,\ \ \textcolor{comment}{//\ Triggered\ once\ when\ the\ button\ is\ pressed}}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ RELEASED\ =\ 4,\ \ \ \ \ \ \textcolor{comment}{//\ Triggered\ while\ the\ button\ is\ released}}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ JUST\_RELEASED\ =\ 8,\ \textcolor{comment}{//\ Triggered\ once\ when\ the\ button\ is\ released}}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{Trigger}}\ \{}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_acbcda069f7cf5f996f02d9b3f5bb30d1}{Trigger}}(T\ trigger,\ std::uint8\_t\ type,\ std::int8\_t\ joystickId\ =\ -\/1)}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_trigger\ =\ trigger;}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_joystickId\ =\ joystickId;}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_type\ =\ type;}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_pressed\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{\string~Trigger}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_a9303e9c64635f195fd28d54091e486ec}{setTrigger}}(T\ trigger)}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_trigger\ =\ trigger;}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_a6b33b65b95738ffb5244047eedae878a}{setJoystickId}}(std::uint8\_t\ joystickId)}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_joystickId\ =\ joystickId;}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_acdfa7167f2044b7fc254d16fad9df9d2}{setPressed}}(\textcolor{keywordtype}{bool}\ pressed)}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_pressed\ =\ pressed;}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_a83187d2b701999a076b382abb9900de9}{isPressed}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\_pressed;}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_a7799f242350eabc2e67ed710204177db}{setType}}(std::uint8\_t\ type)}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\_type\ =\ type;}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_adf25f7b66f79dbe9b0126fda73c6e5f4}{getTrigger}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\_trigger;}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::int8\_t\ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_a933392e32c5ffa4551a8ea9732647b63}{getJoystickId}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\_joystickId;}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::uint8\_t\ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger_a311637b40d30f9bc961ad2ae9e7d76d4}{getType}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\_type;}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ T\ \_trigger;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \`{}Graphical`\ type\ of\ the\ trigger.}}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::int8\_t\ \_joystickId;\ \ \ \ \textcolor{comment}{//\ ID\ of\ the\ joystick.}}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::uint8\_t\ \_type;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Type\ of\ the\ trigger.}}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_pressed;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Position\ of\ the\ trigger.}}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00256\ \ \ \ \ \};}
+\DoxyCodeLine{00257\ \};}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00259\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !TRIGGER\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

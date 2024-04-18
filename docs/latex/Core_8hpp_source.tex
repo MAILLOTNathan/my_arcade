@@ -1,0 +1,83 @@
+\doxysection{Core.\+hpp}
+\hypertarget{Core_8hpp_source}{}\label{Core_8hpp_source}\index{include/Core.hpp@{include/Core.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Visual\ Studio\ Live\ Share\ (Workspace)}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Core}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}IWindow.hpp"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}IDisplayModule.hpp"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}Library.hpp"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}GUI/RadioButton.hpp"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}GUI/Input.hpp"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}IGameModule.hpp"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCore}{Core}}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{classCore_aaa84046be93ef13416834b38ff26ac23}{STATE\_MACHINE}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ MENU,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Menu\ state.}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ GAME,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Game\ state.}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ RELOAD\_GAME,\ \ \ \ \textcolor{comment}{//\ Reload\ game\ state.}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ RELOAD\_MENU,\ \ \ \ \textcolor{comment}{//\ Reload\ menu\ state.}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ INIT\_GAME\ \ \ \ \ \ \ \textcolor{comment}{//\ Initialisation\ game\ state.}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ CHANGE\_GAME,\ \ \ \ \textcolor{comment}{//\ Switching\ game\ in\ progress.}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ EXIT\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Exiting\ the\ Core\ Program.}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCore_ac99e3fd78fc5c6b4d3a1b9ed895b9b4d}{Core}}(\textcolor{keyword}{const}\ std::string\&\ lib);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCore_a776f8c46504b14183883c6273f93eaed}{\string~Core}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_ad0f67d029fd8dfc1ad9c10dd939b6852}{loopMenu}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_a985d36bffde73ec0971e639adec1f0e7}{loopGame}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_a46f0e8875ec43747e1a8bdb8394bbc38}{chooseState}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_a6d790cc20ecf986fc0bc04d85fc1412a}{loop}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_a41e2aa8d4bb7d3600a6fcd679314260f}{switchLib}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_acd545b3a918c762f947f51dd650bdb33}{initEvent}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_a0b74b2d93ed19b38e61b2e4cfd6418d2}{initDrawable}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_a275db27400d38ef4548c13172e7d9ee8}{initGameEvent}}();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_a7dc1ce04d4aa3270d97fe53a0341f87f}{initGame}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_ade88e74c11de4750bbd097f530495b4c}{reloadMenu}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_a98dbd21736ebfdbb11a891fdd323cc0c}{reloadGame}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCore_a7777c9f75c3861f28d9233ed81b0ffc9}{destroyDrawable}}();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{classCore_aaa84046be93ef13416834b38ff26ac23}{STATE\_MACHINE}}\ \_state;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ \`{}state`\ of\ the\ core\ program.}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *\_game;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ \`{}Game\ Module`\ loaded.}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *\_dm;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ \`{}Graphic\ Module`\ loaded.}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1RadioButton}{EGE::RadioButton}}\ *\_rb;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Selector\ on\ graphics\ libraries.}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1RadioButton}{EGE::RadioButton}}\ *\_rbg;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Selector\ on\ games\ libraries.}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_libIndex;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Index\ of\ the\ graphic\ library\ in\ the\ list\ of\ libraries.}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ std::string\ \_newLib;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Name\ of\ the\ new\ library\ which\ will\ be\ loaded.}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ std::vector<EGE::IDrawable\ *>\ \_drawables;\ \ \ \textcolor{comment}{//\ List\ of\ drawables\ for\ the\ main\ menu.}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Input}{EGE::Input}}\ *\_inputName;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Input\ field\ which\ allows\ the\ user\ to\ set\ his\ username\ for\ the\ scoreboard.}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ std::vector<EGE::IGameModule\ *>\_games;\ \ \ \ \ \ \textcolor{comment}{//\ All\ the\ games\ loaded}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ std::vector<std::string>\ \_gamesNames;\ \ \ \ \ \ \ \textcolor{comment}{//\ All\ the\ games\ names\ loaded.}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_gameIndex;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Index\ of\ the\ current\ Game\ library.}}
+\DoxyCodeLine{00095\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,52 @@
+\doxysection{AButton.\+hpp}
+\hypertarget{AButton_8hpp_source}{}\label{AButton_8hpp_source}\index{library/engine/include/GUI/AButton.hpp@{library/engine/include/GUI/AButton.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ AButton}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}GUI/IButton.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}GUI/IText.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }EGE\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1AButton}{AButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1IButton}{IButton}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1AButton}{\string~AButton}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AButton_a172ddc65f32f391fdb09f98ee53f77eb}{draw}}(std::shared\_ptr<EGE::IWindow>\ window)\ =\ 0;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AButton_ad2de4bfd6a2c77e4204b6c95b1354e3c}{setText}}(\textcolor{keyword}{const}\ std::string\&\ text);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classEGE_1_1AButton_a33e40b95d670830369f9ebee07c8b026}{getText}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AButton_a3ee67581e64a2e35736c1e91c7a9ca36}{setPosition}}(\mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ position);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \mbox{\hyperlink{classEGE_1_1AButton_abe2f48a4364bd7580866f233a4da7995}{getPosition}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AButton_a7982703e576dbd186c40b08a0e865f9c}{normal}}()\ =\ 0;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AButton_a5295695f77eec79b937be0de54ccf6c3}{hover}}()\ =\ 0;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AButton_a80e1f1b62b66ef05988c15823c2229e5}{click}}()\ =\ 0;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AButton_aa9a891411c8e96a88bcd13b18559b55b}{setOnClick}}(std::function<\textcolor{keywordtype}{void}()>\ onClick);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1AButton_afd0ee047f5071f127b1f145db6a71afc}{setOnHover}}(std::function<\textcolor{keywordtype}{void}()>\ onHover);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \_position;\ \ \ \ \ \textcolor{comment}{//\ Position\ of\ the\ button.}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IText}{EGE::IText}}\ *\_text;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Text\ content\ of\ the\ button.}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ std::function<void()>\ \_onClick;\ \textcolor{comment}{//\ Function\ called\ when\ the\ button\ is\ clicked.}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ std::function<void()>\ \_onHover;\ \textcolor{comment}{//\ Function\ called\ when\ the\ button\ is\ hovered.}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_isHover;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ State\ of\ the\ button\ when\ it's\ hover.}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_isClick;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ State\ of\ the\ button\ when\ it's\ clicked.}}
+\DoxyCodeLine{00061\ \ \ \ \ \};}
+\DoxyCodeLine{00062\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,289 @@
+\doxysection{EGE\+::AButton Class Reference}
+\hypertarget{classEGE_1_1AButton}{}\label{classEGE_1_1AButton}\index{EGE::AButton@{EGE::AButton}}
+
+
+Abstract class representing a button.  
+
+
+
+
+{\ttfamily \#include $<$AButton.\+hpp$>$}
+
+Inheritance diagram for EGE\+::AButton\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classEGE_1_1AButton}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AButton_a172ddc65f32f391fdb09f98ee53f77eb}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the button. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AButton_ad2de4bfd6a2c77e4204b6c95b1354e3c}{set\+Text}} (const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Sets the {\ttfamily text} of the button. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classEGE_1_1AButton_a33e40b95d670830369f9ebee07c8b026}{get\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily text} of the button. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AButton_a3ee67581e64a2e35736c1e91c7a9ca36}{set\+Position}} (\mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ position)
+\begin{DoxyCompactList}\small\item\em Sets the {\ttfamily position} of the button. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \mbox{\hyperlink{classEGE_1_1AButton_abe2f48a4364bd7580866f233a4da7995}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily position} of the button. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AButton_a7982703e576dbd186c40b08a0e865f9c}{normal}} ()=0
+\begin{DoxyCompactList}\small\item\em Set the current {\ttfamily state} of the button to {\ttfamily normal}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AButton_a5295695f77eec79b937be0de54ccf6c3}{hover}} ()=0
+\begin{DoxyCompactList}\small\item\em Set the current {\ttfamily state} of the button to {\ttfamily hover}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AButton_a80e1f1b62b66ef05988c15823c2229e5}{click}} ()=0
+\begin{DoxyCompactList}\small\item\em Set the current {\ttfamily state} of the button to {\ttfamily click}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AButton_aa9a891411c8e96a88bcd13b18559b55b}{set\+On\+Click}} (std\+::function$<$ void()$>$ on\+Click)
+\begin{DoxyCompactList}\small\item\em Set a function when a button is {\ttfamily click}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AButton_afd0ee047f5071f127b1f145db6a71afc}{set\+On\+Hover}} (std\+::function$<$ void()$>$ on\+Hover)
+\begin{DoxyCompactList}\small\item\em Set a function when a button is {\ttfamily hover}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IButton_ad7c7d9b61f99e72867713fd793f8a9e5}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the button. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IButton_a482b0ae72ec356cb47dc29d19300a780}{set\+Text}} (const std\+::string \&text)=0
+\begin{DoxyCompactList}\small\item\em Sets the text of the button. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classEGE_1_1IButton_ab9f4e7b2b07582cf6a392e9e30398c75}{get\+Text}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily text} of the button. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IButton_ab332c4ae473426bef6a6a9a9a0ebf150}{set\+Position}} (\mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ position)=0
+\begin{DoxyCompactList}\small\item\em Sets the {\ttfamily position} of the button. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \mbox{\hyperlink{classEGE_1_1IButton_a628f9da769ff62d649f3ebcd13a6831f}{get\+Position}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily position} of the button. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IButton_a6c7bca52883fe9196019d3baacb11491}{hover}} ()=0
+\begin{DoxyCompactList}\small\item\em Set the current {\ttfamily state} of the button to {\ttfamily hover}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IButton_a8b277fd26c79ece48af4880f589b9b4f}{normal}} ()=0
+\begin{DoxyCompactList}\small\item\em Set the current {\ttfamily state} of the button to {\ttfamily normal}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IButton_a70a91c829db0cd00cbe301bd6670869b}{click}} ()=0
+\begin{DoxyCompactList}\small\item\em Set the current {\ttfamily state} of the button to {\ttfamily click}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AGUI_af3df66fef03c90f1098982e0391358a2}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the GUI object in the given {\ttfamily window}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AGUI_a5802ae8729e248af50df97ddd06f8652}{set\+Position}} (\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ position)
+\begin{DoxyCompactList}\small\item\em Sets the position of the GUI object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \mbox{\hyperlink{classEGE_1_1AGUI_a6001e2df80307e276039a443f9397fd1}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the position of the GUI object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGUI_a56dcb498a6898a6f75b4fef79b0d3057}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the GUI object in the given {\ttfamily window}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ADrawable_a74ebf5583e9147331f28bc39edda350c}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IDrawable_a36e7317ed65af6d19a323e991249ffef}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1AButton_ac7d5e5aada0dcd951cd0994831e285f6}\label{classEGE_1_1AButton_ac7d5e5aada0dcd951cd0994831e285f6} 
+\mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ {\bfseries \+\_\+position}
+\item 
+\Hypertarget{classEGE_1_1AButton_a4c0359d54c14bf12ebbea68de8c8b5f0}\label{classEGE_1_1AButton_a4c0359d54c14bf12ebbea68de8c8b5f0} 
+\mbox{\hyperlink{classEGE_1_1IText}{EGE\+::\+IText}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+text}
+\item 
+\Hypertarget{classEGE_1_1AButton_a4a84fd679a6a1af82d018b32ee1d1ee3}\label{classEGE_1_1AButton_a4a84fd679a6a1af82d018b32ee1d1ee3} 
+std\+::function$<$ void()$>$ {\bfseries \+\_\+on\+Click}
+\item 
+\Hypertarget{classEGE_1_1AButton_a13d03b9ec02d825f76588239ce84332a}\label{classEGE_1_1AButton_a13d03b9ec02d825f76588239ce84332a} 
+std\+::function$<$ void()$>$ {\bfseries \+\_\+on\+Hover}
+\item 
+\Hypertarget{classEGE_1_1AButton_a4097e5574d21ce21a69477dff85c9f7f}\label{classEGE_1_1AButton_a4097e5574d21ce21a69477dff85c9f7f} 
+bool {\bfseries \+\_\+is\+Hover}
+\item 
+\Hypertarget{classEGE_1_1AButton_a046b7e1304c2dafbecf45b42f05940a6}\label{classEGE_1_1AButton_a046b7e1304c2dafbecf45b42f05940a6} 
+bool {\bfseries \+\_\+is\+Click}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEGE_1_1AGUI}{EGE\+::\+AGUI}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ {\bfseries \+\_\+position}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class representing a button. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1AButton_a80e1f1b62b66ef05988c15823c2229e5}\label{classEGE_1_1AButton_a80e1f1b62b66ef05988c15823c2229e5} 
+\index{EGE::AButton@{EGE::AButton}!click@{click}}
+\index{click@{click}!EGE::AButton@{EGE::AButton}}
+\doxysubsubsection{\texorpdfstring{click()}{click()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+AButton\+::click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the current {\ttfamily state} of the button to {\ttfamily click}. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IButton_a70a91c829db0cd00cbe301bd6670869b}{EGE\+::\+IButton}}.
+
+
+
+Implemented in \mbox{\hyperlink{classButton_ae01ba481387462b8b42f6ec18668fffe}{Button}}, \mbox{\hyperlink{classButton_ae01ba481387462b8b42f6ec18668fffe}{Button}}, and \mbox{\hyperlink{classButton_ae01ba481387462b8b42f6ec18668fffe}{Button}}.
+
+\Hypertarget{classEGE_1_1AButton_a172ddc65f32f391fdb09f98ee53f77eb}\label{classEGE_1_1AButton_a172ddc65f32f391fdb09f98ee53f77eb} 
+\index{EGE::AButton@{EGE::AButton}!draw@{draw}}
+\index{draw@{draw}!EGE::AButton@{EGE::AButton}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+AButton\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draws the button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The window to draw the button on. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IButton_ad7c7d9b61f99e72867713fd793f8a9e5}{EGE\+::\+IButton}}.
+
+\Hypertarget{classEGE_1_1AButton_abe2f48a4364bd7580866f233a4da7995}\label{classEGE_1_1AButton_abe2f48a4364bd7580866f233a4da7995} 
+\index{EGE::AButton@{EGE::AButton}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!EGE::AButton@{EGE::AButton}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ EGE\+::\+AButton\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the {\ttfamily position} of the button. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IButton_a628f9da769ff62d649f3ebcd13a6831f}{EGE\+::\+IButton}}.
+
+\Hypertarget{classEGE_1_1AButton_a33e40b95d670830369f9ebee07c8b026}\label{classEGE_1_1AButton_a33e40b95d670830369f9ebee07c8b026} 
+\index{EGE::AButton@{EGE::AButton}!getText@{getText}}
+\index{getText@{getText}!EGE::AButton@{EGE::AButton}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily std\+::string EGE\+::\+AButton\+::get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the {\ttfamily text} of the button. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IButton_ab9f4e7b2b07582cf6a392e9e30398c75}{EGE\+::\+IButton}}.
+
+\Hypertarget{classEGE_1_1AButton_a5295695f77eec79b937be0de54ccf6c3}\label{classEGE_1_1AButton_a5295695f77eec79b937be0de54ccf6c3} 
+\index{EGE::AButton@{EGE::AButton}!hover@{hover}}
+\index{hover@{hover}!EGE::AButton@{EGE::AButton}}
+\doxysubsubsection{\texorpdfstring{hover()}{hover()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+AButton\+::hover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the current {\ttfamily state} of the button to {\ttfamily hover}. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IButton_a6c7bca52883fe9196019d3baacb11491}{EGE\+::\+IButton}}.
+
+
+
+Implemented in \mbox{\hyperlink{classButton_aed70b0389f98184e9132d5a986352de7}{Button}}, \mbox{\hyperlink{classButton_aed70b0389f98184e9132d5a986352de7}{Button}}, and \mbox{\hyperlink{classButton_aed70b0389f98184e9132d5a986352de7}{Button}}.
+
+\Hypertarget{classEGE_1_1AButton_a7982703e576dbd186c40b08a0e865f9c}\label{classEGE_1_1AButton_a7982703e576dbd186c40b08a0e865f9c} 
+\index{EGE::AButton@{EGE::AButton}!normal@{normal}}
+\index{normal@{normal}!EGE::AButton@{EGE::AButton}}
+\doxysubsubsection{\texorpdfstring{normal()}{normal()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+AButton\+::normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the current {\ttfamily state} of the button to {\ttfamily normal}. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IButton_a8b277fd26c79ece48af4880f589b9b4f}{EGE\+::\+IButton}}.
+
+
+
+Implemented in \mbox{\hyperlink{classButton_a50e96f2105aeda7c0381438fd2b2ee8a}{Button}}, \mbox{\hyperlink{classButton_a50e96f2105aeda7c0381438fd2b2ee8a}{Button}}, and \mbox{\hyperlink{classButton_a50e96f2105aeda7c0381438fd2b2ee8a}{Button}}.
+
+\Hypertarget{classEGE_1_1AButton_aa9a891411c8e96a88bcd13b18559b55b}\label{classEGE_1_1AButton_aa9a891411c8e96a88bcd13b18559b55b} 
+\index{EGE::AButton@{EGE::AButton}!setOnClick@{setOnClick}}
+\index{setOnClick@{setOnClick}!EGE::AButton@{EGE::AButton}}
+\doxysubsubsection{\texorpdfstring{setOnClick()}{setOnClick()}}
+{\footnotesize\ttfamily void EGE\+::\+AButton\+::set\+On\+Click (\begin{DoxyParamCaption}\item[{std\+::function$<$ void()$>$}]{on\+Click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set a function when a button is {\ttfamily click}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Click} & Function to be called when the button is clicked. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1AButton_afd0ee047f5071f127b1f145db6a71afc}\label{classEGE_1_1AButton_afd0ee047f5071f127b1f145db6a71afc} 
+\index{EGE::AButton@{EGE::AButton}!setOnHover@{setOnHover}}
+\index{setOnHover@{setOnHover}!EGE::AButton@{EGE::AButton}}
+\doxysubsubsection{\texorpdfstring{setOnHover()}{setOnHover()}}
+{\footnotesize\ttfamily void EGE\+::\+AButton\+::set\+On\+Hover (\begin{DoxyParamCaption}\item[{std\+::function$<$ void()$>$}]{on\+Hover }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set a function when a button is {\ttfamily hover}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Hover} & Function to be called when the button is hovered. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEGE_1_1AButton_a3ee67581e64a2e35736c1e91c7a9ca36}\label{classEGE_1_1AButton_a3ee67581e64a2e35736c1e91c7a9ca36} 
+\index{EGE::AButton@{EGE::AButton}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!EGE::AButton@{EGE::AButton}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void EGE\+::\+AButton\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the {\ttfamily position} of the button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to set. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IButton_ab332c4ae473426bef6a6a9a9a0ebf150}{EGE\+::\+IButton}}.
+
+\Hypertarget{classEGE_1_1AButton_ad2de4bfd6a2c77e4204b6c95b1354e3c}\label{classEGE_1_1AButton_ad2de4bfd6a2c77e4204b6c95b1354e3c} 
+\index{EGE::AButton@{EGE::AButton}!setText@{setText}}
+\index{setText@{setText}!EGE::AButton@{EGE::AButton}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily void EGE\+::\+AButton\+::set\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the {\ttfamily text} of the button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text to set. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IButton_a482b0ae72ec356cb47dc29d19300a780}{EGE\+::\+IButton}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classButton_a39d181d1c4ea1b3af1c252c0b63f96ce}{Button}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/\+GUI/AButton.\+hpp\item 
+library/engine/src/AButton.\+cpp\end{DoxyCompactItemize}

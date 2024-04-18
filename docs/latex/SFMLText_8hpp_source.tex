@@ -1,0 +1,38 @@
+\doxysection{SFMLText.\+hpp}
+\hypertarget{SFMLText_8hpp_source}{}\label{SFMLText_8hpp_source}\index{library/graphical/SFML/include/SFMLText.hpp@{library/graphical/SFML/include/SFMLText.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ SFMLText}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}GUI/AText.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}SFMLWindow.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}SFMLBitmapfont.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classText}{Text}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1AText}{EGE::AText}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classText_ad7f698250406d6f8074a8525d746da75}{Text}}(\textcolor{keyword}{const}\ std::string\ \&text,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \&pos,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Color}{EGE::Color}}\ \&color);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classText_a2d49e5c280e205125b149f7777ae30c7}{\string~Text}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classText_aff12bcb137b2303d1dc8d5b93a3510ed}{setText}}(\textcolor{keyword}{const}\ std::string\&\ text)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classText_a8d49d4d35793bfb0abcc3ab9dbb7aa65}{setPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\&\ position)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classText_a1a66de929bd43dfb7c44fde7c22eb969}{setColor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Color}{EGE::Color}}\ \&color)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classText_a8f8b4f7cf0dd0c74ae20281318940d9c}{draw}}(std::shared\_ptr<EGE::IWindow>\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::shared\_ptr<Bitmapfont>\ \_font;\ \ \textcolor{comment}{//\ Font\ of\ the\ SFML\ text.}}
+\DoxyCodeLine{00046\ \};}
+
+\end{DoxyCode}

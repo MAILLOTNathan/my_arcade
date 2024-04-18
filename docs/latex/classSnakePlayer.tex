@@ -1,0 +1,190 @@
+\doxysection{Snake\+Player Class Reference}
+\hypertarget{classSnakePlayer}{}\label{classSnakePlayer}\index{SnakePlayer@{SnakePlayer}}
+
+
+Player in Snake \doxylink{classGame}{Game}.  
+
+
+
+
+{\ttfamily \#include $<$Snake\+Player.\+hpp$>$}
+
+Inheritance diagram for Snake\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSnakePlayer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSnakePlayer_a04ac41616265534e6ae64a58b072a349}{Snake\+Player}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties, Type type=HEAD)
+\begin{DoxyCompactList}\small\item\em Create a player in Snake game. \end{DoxyCompactList}\item 
+\Hypertarget{classSnakePlayer_aca90feda0fc56e0cda8cdeef7e810711}\label{classSnakePlayer_aca90feda0fc56e0cda8cdeef7e810711} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Snake\+Player} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSnakePlayer_a1e686559c304c5c2356bfcca0991f9b0}{init}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module) override
+\begin{DoxyCompactList}\small\item\em Initialize the player ressources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSnakePlayer_a33f375cb19d1c1d946cd5c3a0ee33b0a}{update}} (std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&entities, \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module) override
+\begin{DoxyCompactList}\small\item\em Manage the state of the player (position, ...). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSnakePlayer_a9f92a11044620ac78a0510af05b17dbb}{is\+Colliding}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \&other) override
+\begin{DoxyCompactList}\small\item\em Returns if the player is currently colliding with another entity. \end{DoxyCompactList}\item 
+\Hypertarget{classSnakePlayer_a02bf993b9b7eebc87f72c4f5d3684cc6}\label{classSnakePlayer_a02bf993b9b7eebc87f72c4f5d3684cc6} 
+void {\bfseries move} ()
+\item 
+void \mbox{\hyperlink{classSnakePlayer_a4824a00b523b827e834559d812070ac0}{draw}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)
+\begin{DoxyCompactList}\small\item\em Draws the snake into the given {\ttfamily Display Module}. \end{DoxyCompactList}\item 
+\Hypertarget{classSnakePlayer_a35937eb7c63b68a5e591435421d2e15f}\label{classSnakePlayer_a35937eb7c63b68a5e591435421d2e15f} 
+void {\bfseries increase\+Size} (\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)
+\begin{DoxyCompactList}\small\item\em Increase the size of the player (when a player eat an apple). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a84894fc95232c2dedd139bebfc280d23}{draw}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)
+\begin{DoxyCompactList}\small\item\em Draws the entity with the given {\ttfamily Display Module}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Entity_abf4236a0ca0dabd139d9564f056bb459}{set\+Position}} (const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \&position)
+\begin{DoxyCompactList}\small\item\em Sets the entity position to the given \`{}position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEGE_1_1Entity_a42b2f7b47e2556fc2ca1021d408872be}{set\+Sprite}} (\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Sets a {\ttfamily sprite} to the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ {\bfseries get\+Position} () const
+\begin{DoxyCompactList}\small\item\em Returns the current {\ttfamily position} of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a71b9b27d7148903f6707e8237fdae4bd}{reload}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)
+\begin{DoxyCompactList}\small\item\em Reloads the entity with the given {\ttfamily Display Module}. Used when the {\ttfamily Display Module} changes and the {\ttfamily \doxylink{classCore}{Core}} reloads the games components. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1Entity_a428c011db3b44d5f8685a60e3281daee}{is\+Colliding}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \&other)
+\begin{DoxyCompactList}\small\item\em A simple and generic implementation of collision detection. Returns true if the {\ttfamily other} entity given is colliding with this entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a15a8c3e15d73e23304d727b0e242b2e4}{update}} (std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&entities, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)=0
+\begin{DoxyCompactList}\small\item\em An update {\ttfamily specific} for each {\ttfamily type} of entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1Entity_a6fa7d742a1d9e1fbb1b0638ea63baf1a}{init}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module, \mbox{\hyperlink{classEGE_1_1IGameModule}{IGame\+Module}} \texorpdfstring{$\ast$}{*}game\+Module)=0
+\begin{DoxyCompactList}\small\item\em Initialize the entity with his specified properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Sprite} () const
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily sprite} of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Entity\+::\+Type}} {\bfseries get\+Type} () const
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily type} of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}\label{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7} 
+enum \mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Type}} \{ {\bfseries PLAYER}
+, {\bfseries ENEMY}
+, {\bfseries ENVIRONMENT}
+, {\bfseries OBJECT}
+ \}
+\begin{DoxyCompactList}\small\item\em All the types an entity can be. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEGE_1_1ISprite}{ISprite}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+sprite}
+\item 
+\mbox{\hyperlink{classEGE_1_1Entity_a17103392d0a0dabebf03079fbcae09d7}{Type}} {\bfseries \+\_\+type}
+\item 
+\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ {\bfseries \+\_\+position}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Ressource}{Ressource}} $>$ {\bfseries \+\_\+ressource}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Player in Snake \doxylink{classGame}{Game}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSnakePlayer_a04ac41616265534e6ae64a58b072a349}\label{classSnakePlayer_a04ac41616265534e6ae64a58b072a349} 
+\index{SnakePlayer@{SnakePlayer}!SnakePlayer@{SnakePlayer}}
+\index{SnakePlayer@{SnakePlayer}!SnakePlayer@{SnakePlayer}}
+\doxysubsubsection{\texorpdfstring{SnakePlayer()}{SnakePlayer()}}
+{\footnotesize\ttfamily Snake\+Player\+::\+Snake\+Player (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties,  }\item[{Type}]{type = {\ttfamily HEAD} }\end{DoxyParamCaption})}
+
+
+
+Create a player in Snake game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Represents the properties of the player (ressources, char associated, specific properties). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSnakePlayer_a4824a00b523b827e834559d812070ac0}\label{classSnakePlayer_a4824a00b523b827e834559d812070ac0} 
+\index{SnakePlayer@{SnakePlayer}!draw@{draw}}
+\index{draw@{draw}!SnakePlayer@{SnakePlayer}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Snake\+Player\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws the snake into the given {\ttfamily Display Module}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} to draw the snake. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEGE_1_1Entity_a84894fc95232c2dedd139bebfc280d23}{EGE\+::\+Entity}}.
+
+\Hypertarget{classSnakePlayer_a1e686559c304c5c2356bfcca0991f9b0}\label{classSnakePlayer_a1e686559c304c5c2356bfcca0991f9b0} 
+\index{SnakePlayer@{SnakePlayer}!init@{init}}
+\index{init@{init}!SnakePlayer@{SnakePlayer}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Snake\+Player\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize the player ressources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} where the player will be displayed. \\
+\hline
+{\em game\+Module} & {\ttfamily \doxylink{classGame}{Game} Module} where the player is created. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1Entity_a6fa7d742a1d9e1fbb1b0638ea63baf1a}{EGE\+::\+Entity}}.
+
+\Hypertarget{classSnakePlayer_a9f92a11044620ac78a0510af05b17dbb}\label{classSnakePlayer_a9f92a11044620ac78a0510af05b17dbb} 
+\index{SnakePlayer@{SnakePlayer}!isColliding@{isColliding}}
+\index{isColliding@{isColliding}!SnakePlayer@{SnakePlayer}}
+\doxysubsubsection{\texorpdfstring{isColliding()}{isColliding()}}
+{\footnotesize\ttfamily bool Snake\+Player\+::is\+Colliding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns if the player is currently colliding with another entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other entity to check. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEGE_1_1Entity_a428c011db3b44d5f8685a60e3281daee}{EGE\+::\+Entity}}.
+
+\Hypertarget{classSnakePlayer_a33f375cb19d1c1d946cd5c3a0ee33b0a}\label{classSnakePlayer_a33f375cb19d1c1d946cd5c3a0ee33b0a} 
+\index{SnakePlayer@{SnakePlayer}!update@{update}}
+\index{update@{update}!SnakePlayer@{SnakePlayer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Snake\+Player\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} $>$ \&}]{entities,  }\item[{\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE\+::\+IGame\+Module}} \texorpdfstring{$\ast$}{*}}]{game\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Manage the state of the player (position, ...). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & All the entities in the game. \\
+\hline
+{\em game\+Module} & {\ttfamily \doxylink{classGame}{Game} Module} where the player is created. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/game/\+Snake/include/Snake\+Player.\+hpp\item 
+library/game/\+Snake/src/Snake\+Player.\+cpp\end{DoxyCompactItemize}

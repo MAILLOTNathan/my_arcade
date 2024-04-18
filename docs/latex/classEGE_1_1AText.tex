@@ -1,0 +1,230 @@
+\doxysection{EGE\+::AText Class Reference}
+\hypertarget{classEGE_1_1AText}{}\label{classEGE_1_1AText}\index{EGE::AText@{EGE::AText}}
+
+
+Abstract class of a text.  
+
+
+
+
+{\ttfamily \#include $<$AText.\+hpp$>$}
+
+Inheritance diagram for EGE\+::AText\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classEGE_1_1AText}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AText_a798033c1589a616dd66698d13202e1d7}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the text in the given {\ttfamily window}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AText_a76fc41b14975f27ca0cb9e6deaf04142}{set\+Text}} (const std\+::string \&text)=0
+\begin{DoxyCompactList}\small\item\em Sets the contents of the text. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classEGE_1_1AText_adc8b1000cba19147b4a8a9ee7f1ee5f9}{get\+Text}} () const
+\begin{DoxyCompactList}\small\item\em Returns the contents of the text. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AText_aa450fc5ff69e67f5339146a335c046dd}{set\+Position}} (const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \&position)=0
+\begin{DoxyCompactList}\small\item\em Sets the position of the text. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \mbox{\hyperlink{classEGE_1_1AText_abe21cf555d6c9c2ac8ef2259c1d8d99e}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current position of the text. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AText_a11d3a81b65c162fbd529c65633c13afc}{set\+Color}} (const \mbox{\hyperlink{classEGE_1_1Color}{Color}} \&color)=0
+\begin{DoxyCompactList}\small\item\em Sets a color to the text. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Color}{Color}} \mbox{\hyperlink{classEGE_1_1AText_a14af7d7ab05c3b8c90bc68c15506e128}{get\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current color of the text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IText_aa67902f2155d35487e49da1b3a62b624}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the text in the given {\ttfamily window}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IText_a641a552c463d68bb484a0905060c0c44}{set\+Text}} (const std\+::string \&text)=0
+\begin{DoxyCompactList}\small\item\em Sets the contents of the text. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classEGE_1_1IText_afa949e6472066a9813c0a6708f54f77e}{get\+Text}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the contents of the text. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IText_a5f7dff55273c8d2652a24e6e15ba375a}{set\+Position}} (const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \&position)=0
+\begin{DoxyCompactList}\small\item\em Sets the position of the text. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \mbox{\hyperlink{classEGE_1_1IText_ad75ddb1880464a43557e06fbf2e9ec91}{get\+Position}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the current position of the text. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IText_a1e6c6b5ed9224a3f81e3fadb4b9cac57}{set\+Color}} (const \mbox{\hyperlink{classEGE_1_1Color}{Color}} \&color)=0
+\begin{DoxyCompactList}\small\item\em Sets a color to the text. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Color}{Color}} \mbox{\hyperlink{classEGE_1_1IText_ad9d67c5ff25501d946814d7b0692249a}{get\+Color}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the current color of the text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEGE_1_1AGUI}{EGE\+::\+AGUI}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AGUI_af3df66fef03c90f1098982e0391358a2}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the GUI object in the given {\ttfamily window}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1AGUI_a5802ae8729e248af50df97ddd06f8652}{set\+Position}} (\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ position)
+\begin{DoxyCompactList}\small\item\em Sets the position of the GUI object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \mbox{\hyperlink{classEGE_1_1AGUI_a6001e2df80307e276039a443f9397fd1}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the position of the GUI object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGUI_a56dcb498a6898a6f75b4fef79b0d3057}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the GUI object in the given {\ttfamily window}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ADrawable_a74ebf5583e9147331f28bc39edda350c}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IDrawable_a36e7317ed65af6d19a323e991249ffef}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ window)=0
+\begin{DoxyCompactList}\small\item\em Draws the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1AText_a760d5f1cfef27ab1f6aa6a62c03e47c0}\label{classEGE_1_1AText_a760d5f1cfef27ab1f6aa6a62c03e47c0} 
+std\+::string {\bfseries \+\_\+text}
+\item 
+\Hypertarget{classEGE_1_1AText_a0a6154d62c804d324f43edf8b3b358d7}\label{classEGE_1_1AText_a0a6154d62c804d324f43edf8b3b358d7} 
+\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ {\bfseries \+\_\+position}
+\item 
+\Hypertarget{classEGE_1_1AText_afb6ad1ffe25a76d64a23d2f1acf6dadd}\label{classEGE_1_1AText_afb6ad1ffe25a76d64a23d2f1acf6dadd} 
+\mbox{\hyperlink{classEGE_1_1Color}{Color}} {\bfseries \+\_\+color}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEGE_1_1AGUI}{EGE\+::\+AGUI}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ {\bfseries \+\_\+position}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class of a text. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1AText_a798033c1589a616dd66698d13202e1d7}\label{classEGE_1_1AText_a798033c1589a616dd66698d13202e1d7} 
+\index{EGE::AText@{EGE::AText}!draw@{draw}}
+\index{draw@{draw}!EGE::AText@{EGE::AText}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+AText\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draws the text in the given {\ttfamily window}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \doxylink{classWindow}{Window} where the text will be drawn. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IText_aa67902f2155d35487e49da1b3a62b624}{EGE\+::\+IText}}.
+
+\Hypertarget{classEGE_1_1AText_a14af7d7ab05c3b8c90bc68c15506e128}\label{classEGE_1_1AText_a14af7d7ab05c3b8c90bc68c15506e128} 
+\index{EGE::AText@{EGE::AText}!getColor@{getColor}}
+\index{getColor@{getColor}!EGE::AText@{EGE::AText}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Color}{EGE\+::\+Color}} EGE\+::\+AText\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the current color of the text. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IText_ad9d67c5ff25501d946814d7b0692249a}{EGE\+::\+IText}}.
+
+\Hypertarget{classEGE_1_1AText_abe21cf555d6c9c2ac8ef2259c1d8d99e}\label{classEGE_1_1AText_abe21cf555d6c9c2ac8ef2259c1d8d99e} 
+\index{EGE::AText@{EGE::AText}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!EGE::AText@{EGE::AText}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ EGE\+::\+AText\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the current position of the text. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IText_ad75ddb1880464a43557e06fbf2e9ec91}{EGE\+::\+IText}}.
+
+\Hypertarget{classEGE_1_1AText_adc8b1000cba19147b4a8a9ee7f1ee5f9}\label{classEGE_1_1AText_adc8b1000cba19147b4a8a9ee7f1ee5f9} 
+\index{EGE::AText@{EGE::AText}!getText@{getText}}
+\index{getText@{getText}!EGE::AText@{EGE::AText}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily std\+::string EGE\+::\+AText\+::get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the contents of the text. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IText_afa949e6472066a9813c0a6708f54f77e}{EGE\+::\+IText}}.
+
+\Hypertarget{classEGE_1_1AText_a11d3a81b65c162fbd529c65633c13afc}\label{classEGE_1_1AText_a11d3a81b65c162fbd529c65633c13afc} 
+\index{EGE::AText@{EGE::AText}!setColor@{setColor}}
+\index{setColor@{setColor}!EGE::AText@{EGE::AText}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+AText\+::set\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEGE_1_1Color}{Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets a color to the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \doxylink{classEGE_1_1Color}{Color} to be set to the text. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IText_a1e6c6b5ed9224a3f81e3fadb4b9cac57}{EGE\+::\+IText}}.
+
+
+
+Implemented in \mbox{\hyperlink{classText_a1a66de929bd43dfb7c44fde7c22eb969}{Text}}, \mbox{\hyperlink{classText_a1a66de929bd43dfb7c44fde7c22eb969}{Text}}, and \mbox{\hyperlink{classText_a1a66de929bd43dfb7c44fde7c22eb969}{Text}}.
+
+\Hypertarget{classEGE_1_1AText_aa450fc5ff69e67f5339146a335c046dd}\label{classEGE_1_1AText_aa450fc5ff69e67f5339146a335c046dd} 
+\index{EGE::AText@{EGE::AText}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!EGE::AText@{EGE::AText}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+AText\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEGE_1_1Vector}{Vector}}$<$ int $>$ \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the position of the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Reprensents the value of the position of the text. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IText_a5f7dff55273c8d2652a24e6e15ba375a}{EGE\+::\+IText}}.
+
+
+
+Implemented in \mbox{\hyperlink{classText_aff0ea9b3cc5a1933e2d7a7e950e84977}{Text}}, \mbox{\hyperlink{classText_a8d49d4d35793bfb0abcc3ab9dbb7aa65}{Text}}, and \mbox{\hyperlink{classText_a8d49d4d35793bfb0abcc3ab9dbb7aa65}{Text}}.
+
+\Hypertarget{classEGE_1_1AText_a76fc41b14975f27ca0cb9e6deaf04142}\label{classEGE_1_1AText_a76fc41b14975f27ca0cb9e6deaf04142} 
+\index{EGE::AText@{EGE::AText}!setText@{setText}}
+\index{setText@{setText}!EGE::AText@{EGE::AText}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+AText\+::set\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the contents of the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Reprensents the value of the contents of the text. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IText_a641a552c463d68bb484a0905060c0c44}{EGE\+::\+IText}}.
+
+
+
+Implemented in \mbox{\hyperlink{classText_aff12bcb137b2303d1dc8d5b93a3510ed}{Text}}, \mbox{\hyperlink{classText_aff12bcb137b2303d1dc8d5b93a3510ed}{Text}}, and \mbox{\hyperlink{classText_aff12bcb137b2303d1dc8d5b93a3510ed}{Text}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/\+GUI/AText.\+hpp\item 
+library/engine/src/AText.\+cpp\end{DoxyCompactItemize}

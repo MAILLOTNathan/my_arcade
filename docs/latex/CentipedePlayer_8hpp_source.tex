@@ -1,0 +1,57 @@
+\doxysection{Centipede\+Player.\+hpp}
+\hypertarget{CentipedePlayer_8hpp_source}{}\label{CentipedePlayer_8hpp_source}\index{library/game/Centipede/include/CentipedePlayer.hpp@{library/game/Centipede/include/CentipedePlayer.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Visual\ Studio\ Live\ Share\ (Workspace)}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ CentipedePlayer}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ CentipedePLAYER\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ CentipedePLAYER\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Entity.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}IEvent.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}CentipedeBullet.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCentipedePlayer}{CentipedePlayer}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{classCentipedePlayer_a648ef475e9faf22e235ab700a3528ed8}{Direction}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ UP,\ \ \ \textcolor{comment}{//\ Player\ is\ going\ up.}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ DOWN,\ \textcolor{comment}{//\ Player\ is\ going\ down.}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ LEFT,\ \textcolor{comment}{//\ Player\ is\ going\ left.}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ RIGHT,\textcolor{comment}{//\ Player\ is\ going\ right.}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ NONE\ \ \textcolor{comment}{//\ Player\ not\ moving.}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00026\ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedePlayer}{CentipedePlayer}}(std::map<std::string,\ std::string>\ \&properties);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedePlayer_afb4560d66de01bd5d413ba7a5d5b5b1c}{\string~CentipedePlayer}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedePlayer_a6f4cc32f9638c05f32ef7362522f1055}{draw}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCentipedePlayer_a16fc2474bd2891ad4c9d9f31d9fd7497}{isColliding}}(\mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ \&other);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedePlayer_aea297bc1576ed63a360bc38b7590c323}{init}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedePlayer_a45d0bb6369c84cbd687d41a16d70ec27}{reload}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ \ \ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedePlayer_a5f45a7f5c5489f82abcc7f795094396b}{update}}(std::vector<EGE::Entity\ *>\ \&entities,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCentipedePlayer_a9c5b06845f24e08e553034ff97e2585c}{setShooting}}(\textcolor{keywordtype}{bool}\ shooting)\ \{\ \_shooting\ =\ shooting;\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCentipedePlayer_a1036719d1569ca7bfaa3e06fa57e2b44}{isShooting}}()\ \{\ \textcolor{keywordflow}{return}\ \_shooting;\ \}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ move(\mbox{\hyperlink{classCentipedePlayer_a648ef475e9faf22e235ab700a3528ed8}{Direction}}\ direction);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ std::shared\_ptr<CentipedeBullet>\ \_bullet;\ \ \ \textcolor{comment}{//\ Bullet\ thrown\ by\ the\ player.}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_shooting;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ State\ of\ the\ player\ (shooting\ or\ not).}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_alive;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ State\ of\ the\ player\ if\ he\ is\ alive.}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCentipedePlayer_a648ef475e9faf22e235ab700a3528ed8}{Direction}}\ \_direction;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Direction\ taken\ by\ the\ player.}}
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !CentipedePLAYER\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,49 @@
+\doxysection{ADisplay\+Module.\+hpp}
+\hypertarget{ADisplayModule_8hpp_source}{}\label{ADisplayModule_8hpp_source}\index{library/engine/include/ADisplayModule.hpp@{library/engine/include/ADisplayModule.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ ADisplayModule}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}IDisplayModule.hpp"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }EGE\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEGE_1_1ADisplayModule}{ADisplayModule}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1IDisplayModule}{IDisplayModule}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1ADisplayModule}{\string~ADisplayModule}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1ADisplayModule_aaf069e8442ca4d6be6bf5444f68c9271}{init}}()\ =\ 0;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEGE_1_1ADisplayModule_ae4e0b68c9565e2e72cba24f18ae66522}{windowIsOpen}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1ADisplayModule_a53ae1cc8a6b3b1805a0148a294ec0dc6}{windowClear}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1ADisplayModule_afa16c4ac284d8aa94d41803f63086762}{windowDisplay}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1ADisplayModule_a8a7c68d64fba5792a336252c04131105}{windowClose}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1ADisplayModule_acc1b0dbbae1739689cf134cad1c483ea}{windowPollEvent}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::shared\_ptr<EGE::IWindow>\ \mbox{\hyperlink{classEGE_1_1ADisplayModule_ad5b36ee242cea41e645a3ac8ca47d3af}{getWindow}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEGE_1_1ADisplayModule_ab26656839ddf8bb4b4a6735511779c8d}{bindKey}}(std::shared\_ptr<\mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE::Event::Trigger<EGE::Event::Keyboard>}}>\ trigger,\ std::function<\textcolor{keywordtype}{void}(\textcolor{keywordtype}{void})>\ func)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1IDrawable}{EGE::IDrawable}}\ *\mbox{\hyperlink{classEGE_1_1ADisplayModule_a8ac87267e4f128f7529f2506734da055}{createSprite}}(\mbox{\hyperlink{classEGE_1_1Ressource}{EGE::Ressource}}\ *ressource,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \&pos)\ =\ 0;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1IDrawable}{EGE::IDrawable}}\ *\mbox{\hyperlink{classEGE_1_1ADisplayModule_a8ac87267e4f128f7529f2506734da055}{createSprite}}(\mbox{\hyperlink{classEGE_1_1Ressource}{EGE::Ressource}}\ *ressource)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1IText}{EGE::IText}}\ *\mbox{\hyperlink{classEGE_1_1ADisplayModule_aa044ef6ceb2d2260f8f78827c52062cc}{createText}}(\textcolor{keyword}{const}\ std::string\ \&text,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \&pos,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Color}{EGE::Color}}\&\ color)\ =\ 0;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEGE_1_1IButton}{EGE::IButton}}\ *\mbox{\hyperlink{classEGE_1_1ADisplayModule_ace35186f7714a30b096462066390feee}{createButton}}(\textcolor{keyword}{const}\ std::string\ \&text,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\ \&pos)\ =\ 0;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<EGE::IWindow>\ \_window;\ \ \textcolor{comment}{//\ The\ window\ stored\ in\ the\ \`{}Display\ Module`.}}
+\DoxyCodeLine{00066\ \ \ \ \ \};}
+\DoxyCodeLine{00067\ \}}
+
+\end{DoxyCode}

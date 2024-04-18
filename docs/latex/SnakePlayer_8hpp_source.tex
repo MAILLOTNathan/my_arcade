@@ -1,0 +1,66 @@
+\doxysection{Snake\+Player.\+hpp}
+\hypertarget{SnakePlayer_8hpp_source}{}\label{SnakePlayer_8hpp_source}\index{library/game/Snake/include/SnakePlayer.hpp@{library/game/Snake/include/SnakePlayer.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Visual\ Studio\ Live\ Share\ (Workspace)}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ SnakePlayer}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ SNAKEPLAYER\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ SNAKEPLAYER\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Entity.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}IEvent.hpp"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}SnakeObject.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSnakePlayer}{SnakePlayer}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{enum}\ Direction\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ UP,\ \ \ \ \ \textcolor{comment}{//\ Player\ going\ up.}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ RIGHT,\ \ \textcolor{comment}{//\ Player\ going\ right.}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ DOWN,\ \ \ \textcolor{comment}{//\ Player\ going\ down.}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ LEFT\ \ \ \ \textcolor{comment}{//\ Player\ going\ left.}}
+\DoxyCodeLine{00024\ \ \ \ \ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{enum}\ Type\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ HEAD,\ \ \ \textcolor{comment}{//\ Head\ of\ the\ snake.}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ BODY\ \ \ \ \textcolor{comment}{//\ Other\ body\ part\ of\ the\ snake.}}
+\DoxyCodeLine{00030\ \ \ \ \ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSnakePlayer}{SnakePlayer}}(std::map<std::string,\ std::string>\ \&properties,\ Type\ type\ =\ HEAD);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSnakePlayer_aca90feda0fc56e0cda8cdeef7e810711}{\string~SnakePlayer}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakePlayer_a1e686559c304c5c2356bfcca0991f9b0}{init}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakePlayer_a33f375cb19d1c1d946cd5c3a0ee33b0a}{update}}(std::vector<EGE::Entity\ *>\ \&entities,\ \mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSnakePlayer_a9f92a11044620ac78a0510af05b17dbb}{isColliding}}(\mbox{\hyperlink{classEGE_1_1Entity}{EGE::Entity}}\ \&other)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @brief\ Move\ the\ player\ in\ the\ direction\ set.}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ move();}
+\DoxyCodeLine{00056\ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakePlayer_a4824a00b523b827e834559d812070ac0}{draw}}(\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *displayModule);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakePlayer_a35937eb7c63b68a5e591435421d2e15f}{increaseSize}}(\mbox{\hyperlink{classEGE_1_1IGameModule}{EGE::IGameModule}}\ *gameModule);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \_size;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ size\ of\ the\ player.}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1ISprite}{EGE::ISprite}}\ *\_tail;\ \ \ \ \textcolor{comment}{//\ Tail\ of\ the\ player.}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ Direction\ \_direction;\ \ \ \textcolor{comment}{//\ Direction\ of\ the\ player}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_alive;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Whether\ the\ player\ is\ alive.}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_currentSize;\ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ size\ of\ the\ player.}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ Type\ \_playerType;\ \ \ \ \ \ \ \textcolor{comment}{//\ Body\ part\ of\ the\ player\ (`HEAD`\ or\ \`{}BODY`)}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ Direction\ \_lastDirection;\ \ \ \textcolor{comment}{//\ Last\ direction\ taken\ by\ the\ player.}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ std::vector<SnakePlayer\ *>\ \_body;\ \ \ \textcolor{comment}{//\ All\ body\ parts\ of\ the\ player.}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE::IDisplayModule}}\ *\_displayModule;\ \ \textcolor{comment}{//\ Current\ \`{}Display\ Module`.}}
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !SNAKEPLAYER\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

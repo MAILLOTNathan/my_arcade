@@ -1,0 +1,95 @@
+\doxysection{Core Class Reference}
+\hypertarget{classCore}{}\label{classCore}\index{Core@{Core}}
+
+
+Class which handles the {\ttfamily behaviour} of {\ttfamily main} arcade program.  
+
+
+
+
+{\ttfamily \#include $<$Core.\+hpp$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCore_aaa84046be93ef13416834b38ff26ac23}\label{classCore_aaa84046be93ef13416834b38ff26ac23} 
+enum \mbox{\hyperlink{classCore_aaa84046be93ef13416834b38ff26ac23}{STATE\+\_\+\+MACHINE}} \{ \newline
+{\bfseries MENU}
+, {\bfseries GAME}
+, {\bfseries RELOAD\+\_\+\+GAME}
+, {\bfseries RELOAD\+\_\+\+MENU}
+, \newline
+{\bfseries CHANGE\+\_\+\+GAME}
+, {\bfseries EXIT}
+ \}
+\begin{DoxyCompactList}\small\item\em All the {\ttfamily states} which represent the state machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCore_ac99e3fd78fc5c6b4d3a1b9ed895b9b4d}{Core}} (const std\+::string \&lib)
+\begin{DoxyCompactList}\small\item\em Graphic and \doxylink{classGame}{Game} manager entity for the arcade project. \end{DoxyCompactList}\item 
+\Hypertarget{classCore_a776f8c46504b14183883c6273f93eaed}\label{classCore_a776f8c46504b14183883c6273f93eaed} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Core} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classCore}{Core} program. \end{DoxyCompactList}\item 
+\Hypertarget{classCore_ad0f67d029fd8dfc1ad9c10dd939b6852}\label{classCore_ad0f67d029fd8dfc1ad9c10dd939b6852} 
+void {\bfseries loop\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Loop which able the user to {\ttfamily choose} between the {\ttfamily games} and the {\ttfamily graphical libraries}. \end{DoxyCompactList}\item 
+\Hypertarget{classCore_a985d36bffde73ec0971e639adec1f0e7}\label{classCore_a985d36bffde73ec0971e639adec1f0e7} 
+void {\bfseries loop\+Game} ()
+\begin{DoxyCompactList}\small\item\em Loop on the {\ttfamily GAME} state. \end{DoxyCompactList}\item 
+\Hypertarget{classCore_a46f0e8875ec43747e1a8bdb8394bbc38}\label{classCore_a46f0e8875ec43747e1a8bdb8394bbc38} 
+void {\bfseries choose\+State} ()
+\begin{DoxyCompactList}\small\item\em Function that apply the {\ttfamily state machine}. \end{DoxyCompactList}\item 
+\Hypertarget{classCore_a6d790cc20ecf986fc0bc04d85fc1412a}\label{classCore_a6d790cc20ecf986fc0bc04d85fc1412a} 
+void {\bfseries loop} ()
+\begin{DoxyCompactList}\small\item\em Main loop on which the arcade will loop. It\textquotesingle{}s like the \"{}graphical routine\"{} (clear -\/\texorpdfstring{$>$}{>} poll\+Event -\/\texorpdfstring{$>$}{>} draw -\/\texorpdfstring{$>$}{>} display). \end{DoxyCompactList}\item 
+\Hypertarget{classCore_a41e2aa8d4bb7d3600a6fcd679314260f}\label{classCore_a41e2aa8d4bb7d3600a6fcd679314260f} 
+void {\bfseries switch\+Lib} ()
+\begin{DoxyCompactList}\small\item\em {\ttfamily Switch} graphical library in {\ttfamily real time}. \end{DoxyCompactList}\item 
+\Hypertarget{classCore_acd545b3a918c762f947f51dd650bdb33}\label{classCore_acd545b3a918c762f947f51dd650bdb33} 
+void {\bfseries init\+Event} ()
+\begin{DoxyCompactList}\small\item\em {\ttfamily Bind} keyboard events with actions. \end{DoxyCompactList}\item 
+\Hypertarget{classCore_a0b74b2d93ed19b38e61b2e4cfd6418d2}\label{classCore_a0b74b2d93ed19b38e61b2e4cfd6418d2} 
+void {\bfseries init\+Drawable} ()
+\begin{DoxyCompactList}\small\item\em Set core\textquotesingle{}s menu items which represents the {\ttfamily .so} files graphical libraries you can load. \end{DoxyCompactList}\item 
+\Hypertarget{classCore_a275db27400d38ef4548c13172e7d9ee8}\label{classCore_a275db27400d38ef4548c13172e7d9ee8} 
+void {\bfseries init\+Game\+Event} ()
+\begin{DoxyCompactList}\small\item\em Set core\textquotesingle{}s menu items which represents the {\ttfamily .so} files games you can load. \end{DoxyCompactList}\item 
+\Hypertarget{classCore_a7dc1ce04d4aa3270d97fe53a0341f87f}\label{classCore_a7dc1ce04d4aa3270d97fe53a0341f87f} 
+void {\bfseries init\+Game} ()
+\begin{DoxyCompactList}\small\item\em {\ttfamily Initialize} the game loaded. \end{DoxyCompactList}\item 
+\Hypertarget{classCore_ade88e74c11de4750bbd097f530495b4c}\label{classCore_ade88e74c11de4750bbd097f530495b4c} 
+void {\bfseries reload\+Menu} ()
+\begin{DoxyCompactList}\small\item\em {\ttfamily Reload} the menu (called after switching graphical library). \end{DoxyCompactList}\item 
+\Hypertarget{classCore_a98dbd21736ebfdbb11a891fdd323cc0c}\label{classCore_a98dbd21736ebfdbb11a891fdd323cc0c} 
+void {\bfseries reload\+Game} ()
+\begin{DoxyCompactList}\small\item\em {\ttfamily Reload} the game (called after switching graphical library). \end{DoxyCompactList}\item 
+\Hypertarget{classCore_a7777c9f75c3861f28d9233ed81b0ffc9}\label{classCore_a7777c9f75c3861f28d9233ed81b0ffc9} 
+void {\bfseries destroy\+Drawable} ()
+\begin{DoxyCompactList}\small\item\em Destroy core\textquotesingle{}s menu items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class which handles the {\ttfamily behaviour} of {\ttfamily main} arcade program. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCore_ac99e3fd78fc5c6b4d3a1b9ed895b9b4d}\label{classCore_ac99e3fd78fc5c6b4d3a1b9ed895b9b4d} 
+\index{Core@{Core}!Core@{Core}}
+\index{Core@{Core}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}}
+{\footnotesize\ttfamily Core\+::\+Core (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib }\end{DoxyParamCaption})}
+
+
+
+Graphic and \doxylink{classGame}{Game} manager entity for the arcade project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib} & Path to the graphic library file. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Core.\+hpp\end{DoxyCompactItemize}

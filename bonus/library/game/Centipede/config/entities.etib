@@ -1,0 +1,15 @@
+char:P
+sprite:library/game/Centipede/config/assets/player.png
+type:PLAYER
+#
+char:E
+sprite:library/game/Centipede/config/assets/enemy.png
+type:ENEMY
+#
+char:W
+sprite:library/game/Centipede/config/assets/wall.png
+type:ENVIRONMENT
+#
+char:A
+sprite:library/game/Centipede/config/assets/apple.png
+type:OBJECT

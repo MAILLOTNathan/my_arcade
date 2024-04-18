@@ -1,0 +1,54 @@
+\doxysection{NCURSEWindow.\+hpp}
+\hypertarget{NCURSEWindow_8hpp_source}{}\label{NCURSEWindow_8hpp_source}\index{library/graphical/NCURSE/include/NCURSEWindow.hpp@{library/graphical/NCURSE/include/NCURSEWindow.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ NCURSEWindow}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <ncurses.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}AWindow.hpp"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}NCURSEEvent.hpp"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ BUTTON\_NORMAL\ 1\ \ \ \ \ }\textcolor{comment}{//\ Color\ pair\ id\ for\ the\ normal\ state\ of\ the\ button.}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ BUTTON\_HOVER\ 2\ \ \ \ \ \ }\textcolor{comment}{//\ Color\ pair\ id\ for\ the\ hover\ state\ of\ the\ button.}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ BUTTON\_CLICKED\ 3\ \ \ \ }\textcolor{comment}{//\ Color\ pair\ id\ for\ the\ clicked\ state\ of\ the\ button.}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWindow}{Window}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEGE_1_1AWindow}{EGE::AWindow}}\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classWindow}{Window}}(\textcolor{keyword}{const}\ std::string\ \&title,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classWindow_a245d821e6016fa1f6970ccbbedd635f6}{\string~Window}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWindow_af968006adea3059a48fe6bf910edd1a6}{isOpen}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWindow_a19c59b1b8329e87fca420c4c3aaf55ae}{clear}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWindow_a3cb3508dd29a9f2cef44d5c903f5bd05}{display}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWindow_a5300767b36301835bb7aac0713e7efb2}{close}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWindow_aae07e27fc09bfb0ee31f3a7802b6644c}{pollEvent}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ WINDOW\ *\mbox{\hyperlink{classWindow_a2e6394e11544805125a628ff3e53cd67}{getWindow}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ WINDOW\ *\_window;\ \ \ \ \textcolor{comment}{//\ The\ window\ of\ this\ window.}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_opened;\ \ \ \ \ \ \ \textcolor{comment}{//\ The\ state\ of\ the\ window.}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ std::string\ \_title;\ \textcolor{comment}{//\ The\ title\ of\ the\ window.}}
+\DoxyCodeLine{00060\ \};}
+
+\end{DoxyCode}

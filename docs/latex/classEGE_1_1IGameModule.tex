@@ -1,0 +1,314 @@
+\doxysection{EGE\+::IGame\+Module Class Reference}
+\hypertarget{classEGE_1_1IGameModule}{}\label{classEGE_1_1IGameModule}\index{EGE::IGameModule@{EGE::IGameModule}}
+
+
+Interface for \doxylink{classGame}{Game} Module.  
+
+
+
+
+{\ttfamily \#include $<$IGame\+Module.\+hpp$>$}
+
+Inheritance diagram for EGE\+::IGame\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classEGE_1_1IGameModule}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}\label{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da} 
+enum \mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}} \{ {\bfseries LOSE}
+, {\bfseries WIN}
+, {\bfseries RUN}
+ \}
+\begin{DoxyCompactList}\small\item\em All the state a game can be. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a50235ece60286ee003c23b3dc4298c06}{get\+Next\+Frame}} ()=0
+\begin{DoxyCompactList}\small\item\em Displays the next frame of the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a771b4637b57c7f4daed5d2d5a24d425b}{load}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)=0
+\begin{DoxyCompactList}\small\item\em Load a {\ttfamily Display Module} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_ac39ab01e65d0f42539e8c00cd3248d14}{reload}} (\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}display\+Module)=0
+\begin{DoxyCompactList}\small\item\em Reload the entity from the new {\ttfamily Display Module} given. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a96923b0b5a87ae336d04bef6fc5df60a}{init}} (const std\+::string \&game\+Folder)=0
+\begin{DoxyCompactList}\small\item\em Initialize the {\ttfamily \doxylink{classGame}{Game} Module} from the given {\ttfamily game\+Folder}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IGameModule_a4dc4ccf6208be389f07eb2caa716b9e8}{create\+Player}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create a player entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IGameModule_a51bbaa0de489ef18984066a1cc29e405}{create\+Enemy}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create an enemy entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IGameModule_ac334c16b9c421df05ba8b099a83b761d}{create\+Environment}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create an environement entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IGameModule_ae23bfdacf3a581b5d3e830feff7abc9c}{create\+Object}} (std\+::map$<$ std\+::string, std\+::string $>$ \&properties)=0
+\begin{DoxyCompactList}\small\item\em Create an object entity from {\ttfamily properties} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a488c1bf1dc9519e232e7be59c5695904}{add\+Entity}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*}entity)=0
+\begin{DoxyCompactList}\small\item\em Add the given {\ttfamily entity} to the container of the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_adf1b78a66698c60bcd9985a17872d2f3}{remove\+Entity}} (\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*}entity)=0
+\begin{DoxyCompactList}\small\item\em Remove the given {\ttfamily entity} from the container of the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a48a7d0c8abdd7c3165cfbcb433227f06}{set\+Score}} (int score)=0
+\begin{DoxyCompactList}\small\item\em Change the score value. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classEGE_1_1IGameModule_accc516bc5a041eb96783cac3b6827ff5}{get\+Score}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the score value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IGameModule_a62615a55b5a314d7e1ac0732c0f766be}{set\+State}} (\mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}} state)=0
+\begin{DoxyCompactList}\small\item\em Change the state of the game to the given value. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}} \mbox{\hyperlink{classEGE_1_1IGameModule_abfa0b5499db16c0a1118336fefafd676}{get\+Stats}} (void)=0
+\begin{DoxyCompactList}\small\item\em Returns the current state of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for \doxylink{classGame}{Game} Module. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1IGameModule_a488c1bf1dc9519e232e7be59c5695904}\label{classEGE_1_1IGameModule_a488c1bf1dc9519e232e7be59c5695904} 
+\index{EGE::IGameModule@{EGE::IGameModule}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IGame\+Module\+::add\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add the given {\ttfamily entity} to the container of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & \doxylink{classEGE_1_1Entity}{Entity} which have to be added to the container. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AGameModule_a9a7830f221549182d83751a27d270f37}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_a51bbaa0de489ef18984066a1cc29e405}\label{classEGE_1_1IGameModule_a51bbaa0de489ef18984066a1cc29e405} 
+\index{EGE::IGameModule@{EGE::IGameModule}!createEnemy@{createEnemy}}
+\index{createEnemy@{createEnemy}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{createEnemy()}{createEnemy()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} EGE\+::\+IGame\+Module\+::create\+Enemy (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create an enemy entity from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of an entity \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classGame_ad735ed8979d8890445b40637bc995ead}{Game}}, \mbox{\hyperlink{classGame_ad735ed8979d8890445b40637bc995ead}{Game}}, and \mbox{\hyperlink{classEGE_1_1AGameModule_a21304e75166ae30ba29c8c344bd61578}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_ac334c16b9c421df05ba8b099a83b761d}\label{classEGE_1_1IGameModule_ac334c16b9c421df05ba8b099a83b761d} 
+\index{EGE::IGameModule@{EGE::IGameModule}!createEnvironment@{createEnvironment}}
+\index{createEnvironment@{createEnvironment}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{createEnvironment()}{createEnvironment()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} EGE\+::\+IGame\+Module\+::create\+Environment (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create an environement entity from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of an entity \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classGame_af36ebf04bce8cd42306863f5dd9d1980}{Game}}, \mbox{\hyperlink{classGame_af36ebf04bce8cd42306863f5dd9d1980}{Game}}, and \mbox{\hyperlink{classEGE_1_1AGameModule_abe60f11b742978a16f500df0e3cb1aba}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_ae23bfdacf3a581b5d3e830feff7abc9c}\label{classEGE_1_1IGameModule_ae23bfdacf3a581b5d3e830feff7abc9c} 
+\index{EGE::IGameModule@{EGE::IGameModule}!createObject@{createObject}}
+\index{createObject@{createObject}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{createObject()}{createObject()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} EGE\+::\+IGame\+Module\+::create\+Object (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create an object entity from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of an entity \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classGame_a686a5688766c4f2ab75886ffb4bad59b}{Game}}, \mbox{\hyperlink{classGame_a686a5688766c4f2ab75886ffb4bad59b}{Game}}, and \mbox{\hyperlink{classEGE_1_1AGameModule_ab2f2ca8a8b146682c3d5df88c90af9e1}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_a4dc4ccf6208be389f07eb2caa716b9e8}\label{classEGE_1_1IGameModule_a4dc4ccf6208be389f07eb2caa716b9e8} 
+\index{EGE::IGameModule@{EGE::IGameModule}!createPlayer@{createPlayer}}
+\index{createPlayer@{createPlayer}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{createPlayer()}{createPlayer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*} EGE\+::\+IGame\+Module\+::create\+Player (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a player entity from {\ttfamily properties} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & Description of an entity \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classGame_a881f8ed99be99173c74cfa32d468f302}{Game}}, \mbox{\hyperlink{classGame_a881f8ed99be99173c74cfa32d468f302}{Game}}, and \mbox{\hyperlink{classEGE_1_1AGameModule_a44aef1764ee1dbdd80ac10af3dc820ae}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_a50235ece60286ee003c23b3dc4298c06}\label{classEGE_1_1IGameModule_a50235ece60286ee003c23b3dc4298c06} 
+\index{EGE::IGameModule@{EGE::IGameModule}!getNextFrame@{getNextFrame}}
+\index{getNextFrame@{getNextFrame}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{getNextFrame()}{getNextFrame()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IGame\+Module\+::get\+Next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Displays the next frame of the game. 
+
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AGameModule_a5693f5fe815cd36e4f690739b6496840}{EGE\+::\+AGame\+Module}}, \mbox{\hyperlink{classGame_a1930a05f23f7560dbeaaae876b7a7bd2}{Game}}, and \mbox{\hyperlink{classGame_a1930a05f23f7560dbeaaae876b7a7bd2}{Game}}.
+
+\Hypertarget{classEGE_1_1IGameModule_accc516bc5a041eb96783cac3b6827ff5}\label{classEGE_1_1IGameModule_accc516bc5a041eb96783cac3b6827ff5} 
+\index{EGE::IGameModule@{EGE::IGameModule}!getScore@{getScore}}
+\index{getScore@{getScore}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily virtual int EGE\+::\+IGame\+Module\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the score value. 
+
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AGameModule_aa9ab5148aec7c42b38f99506859e36c0}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_abfa0b5499db16c0a1118336fefafd676}\label{classEGE_1_1IGameModule_abfa0b5499db16c0a1118336fefafd676} 
+\index{EGE::IGameModule@{EGE::IGameModule}!getStats@{getStats}}
+\index{getStats@{getStats}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{getStats()}{getStats()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}} EGE\+::\+IGame\+Module\+::get\+Stats (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current state of the game. 
+
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AGameModule_a21006244250787c2d1b266137ae43957}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_a96923b0b5a87ae336d04bef6fc5df60a}\label{classEGE_1_1IGameModule_a96923b0b5a87ae336d04bef6fc5df60a} 
+\index{EGE::IGameModule@{EGE::IGameModule}!init@{init}}
+\index{init@{init}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IGame\+Module\+::init (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{game\+Folder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initialize the {\ttfamily \doxylink{classGame}{Game} Module} from the given {\ttfamily game\+Folder}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Folder} & Path to a folder containing the configuration files of the game. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AGameModule_a62823344b8e9a50c77e0c30cd9d1d87a}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_a771b4637b57c7f4daed5d2d5a24d425b}\label{classEGE_1_1IGameModule_a771b4637b57c7f4daed5d2d5a24d425b} 
+\index{EGE::IGameModule@{EGE::IGameModule}!load@{load}}
+\index{load@{load}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IGame\+Module\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Load a {\ttfamily Display Module} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & {\ttfamily Display Module} used to display the elements of the game. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classGame_a1507f2da83bf542c2068df102c943d3d}{Game}}, \mbox{\hyperlink{classGame_a5395b5555dbfef1534fd14732d1914ab}{Game}}, and \mbox{\hyperlink{classEGE_1_1AGameModule_a29d8247a446f7d522caf9cb8dfb9d41d}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_ac39ab01e65d0f42539e8c00cd3248d14}\label{classEGE_1_1IGameModule_ac39ab01e65d0f42539e8c00cd3248d14} 
+\index{EGE::IGameModule@{EGE::IGameModule}!reload@{reload}}
+\index{reload@{reload}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IGame\+Module\+::reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IDisplayModule}{EGE\+::\+IDisplay\+Module}} \texorpdfstring{$\ast$}{*}}]{display\+Module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reload the entity from the new {\ttfamily Display Module} given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Module} & new {\ttfamily Display Module} used to display the elements of the game. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AGameModule_af5b0b06912cdae043a35e29794ab2ec9}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_adf1b78a66698c60bcd9985a17872d2f3}\label{classEGE_1_1IGameModule_adf1b78a66698c60bcd9985a17872d2f3} 
+\index{EGE::IGameModule@{EGE::IGameModule}!removeEntity@{removeEntity}}
+\index{removeEntity@{removeEntity}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{removeEntity()}{removeEntity()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IGame\+Module\+::remove\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1Entity}{EGE\+::\+Entity}} \texorpdfstring{$\ast$}{*}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove the given {\ttfamily entity} from the container of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & \doxylink{classEGE_1_1Entity}{Entity} which have to be removed of the container. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AGameModule_a5f494fd9d2645d0f2d996b208e47ecc4}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_a48a7d0c8abdd7c3165cfbcb433227f06}\label{classEGE_1_1IGameModule_a48a7d0c8abdd7c3165cfbcb433227f06} 
+\index{EGE::IGameModule@{EGE::IGameModule}!setScore@{setScore}}
+\index{setScore@{setScore}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IGame\+Module\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the score value. 
+
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AGameModule_a28a0bcecdbc699e135d1dde2e4c256b3}{EGE\+::\+AGame\+Module}}.
+
+\Hypertarget{classEGE_1_1IGameModule_a62615a55b5a314d7e1ac0732c0f766be}\label{classEGE_1_1IGameModule_a62615a55b5a314d7e1ac0732c0f766be} 
+\index{EGE::IGameModule@{EGE::IGameModule}!setState@{setState}}
+\index{setState@{setState}!EGE::IGameModule@{EGE::IGameModule}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IGame\+Module\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IGameModule_a48ce65bcbb620313e74616c7002e18da}{STATE\+\_\+\+GAME}}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the state of the game to the given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & State to be set. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AGameModule_a8e5fc8c43d6b2a2f846edc1a876188c5}{EGE\+::\+AGame\+Module}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/IGame\+Module.\+hpp\end{DoxyCompactItemize}

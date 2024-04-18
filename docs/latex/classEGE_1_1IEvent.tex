@@ -1,0 +1,372 @@
+\doxysection{EGE\+::IEvent Class Reference}
+\hypertarget{classEGE_1_1IEvent}{}\label{classEGE_1_1IEvent}\index{EGE::IEvent@{EGE::IEvent}}
+
+
+Interface for events.  
+
+
+
+
+{\ttfamily \#include $<$IEvent.\+hpp$>$}
+
+Inheritance diagram for EGE\+::IEvent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classEGE_1_1IEvent}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_a551ef41bd7398f6d3a97a30f54e013a3}{set\+Keyboard\+Enabled}} (bool enabled)=0
+\begin{DoxyCompactList}\small\item\em Change the state of {\ttfamily \+\_\+keyboard\+Enabled}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_a1fd7aaaf417693c0f9a7079be521d42f}{set\+Mouse\+Enabled}} (bool enabled)=0
+\begin{DoxyCompactList}\small\item\em Change the state of {\ttfamily \+\_\+mouse\+Enabled}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_ac0261b2c85dbf9e15972f3c2f10b77c4}{set\+Mouse\+Hidden}} (bool hidden)=0
+\begin{DoxyCompactList}\small\item\em Change the state of {\ttfamily \+\_\+mouse\+Hidden}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1IEvent_ad667cb63cb92b9cb04aca6a2f9712852}{is\+Keyboard\+Enabled}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Returns if the keyboard is enabled or not. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1IEvent_aa04af468d1cb6c68545d21c608e94e1e}{is\+Mouse\+Enabled}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Returns if the mouse is enabled or not. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1IEvent_a797f8a1b25f8de2fde03eba7007a6702}{is\+Mouse\+Hidden}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Returns if the mouse is hidden or not. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_a509d98b9855caf0c5c2a22072c78bd92}{bind\+Key}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Keyboard $>$ $>$ trigger, std\+::function$<$ void(void)$>$ func)=0
+\begin{DoxyCompactList}\small\item\em Bind a {\ttfamily key} to an {\ttfamily action} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_aff2d8026d96e6b78edc4b27053598221}{bind\+Mouse}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Mouse $>$ $>$ trigger, std\+::function$<$ void(void)$>$ func)=0
+\begin{DoxyCompactList}\small\item\em Bind mouse actions. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_a8bb62dee7532e24d1d4b7b12718ffb96}{bind\+Mouse\+Scroll}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{IWindow}} $>$ window, std\+::function$<$ void(std\+::double\+\_\+t, std\+::double\+\_\+t)$>$ func)=0
+\begin{DoxyCompactList}\small\item\em Unbind an action set on a key. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_a73b617d21bf75ea53709851fbbb1b83c}{unbind\+Key}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Keyboard $>$ $>$ trigger)=0
+\begin{DoxyCompactList}\small\item\em Unbind an action set on a key. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_a5cb26db4b6da8ec897f000795843cc85}{unbind\+Mouse}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Mouse $>$ $>$ trigger)=0
+\begin{DoxyCompactList}\small\item\em Unbind an action set on the mouse. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_aefa0a215968503ab449b6241a78e79bb}{unbind\+Mouse\+Scroll}} (void)=0
+\begin{DoxyCompactList}\small\item\em Unbind an action set on the mouse scroll. \end{DoxyCompactList}\item 
+virtual std\+::uint32\+\_\+t \mbox{\hyperlink{classEGE_1_1IEvent_a373639ff9c25b7a9c3648f7272b221ff}{keyboard\+Translate}} (EGE\+::\+Event\+::\+Keyboard trigger)=0
+\begin{DoxyCompactList}\small\item\em Translates a {\ttfamily Key} to a specific {\ttfamily \doxylink{classLibrary}{Library} key} (for example\+: between SFML and SDL events are not the sames). \end{DoxyCompactList}\item 
+virtual std\+::uint32\+\_\+t \mbox{\hyperlink{classEGE_1_1IEvent_a522a54a77709802355f8413fee94bb31}{mouse\+Translate}} (EGE\+::\+Event\+::\+Mouse trigger)=0
+\begin{DoxyCompactList}\small\item\em Translates mouse events to a specific {\ttfamily Mouse event} (for example\+: between SFML and SDL are not the sames). \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_ae8821ac83d3814376620fc99bd3025dc}{manage\+Keyboard\+Event}} (\mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} \texorpdfstring{$\ast$}{*}window)=0
+\begin{DoxyCompactList}\small\item\em Manages Keyboard events on a specific {\ttfamily Graphical \doxylink{classLibrary}{Library}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_a965e62f1e28e4f900591b981afbefd5d}{manage\+Mouse\+Event}} (\mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} \texorpdfstring{$\ast$}{*}window)=0
+\begin{DoxyCompactList}\small\item\em Manages Mouse events on a specific {\ttfamily Graphical \doxylink{classLibrary}{Library}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IEvent_a91acb5fc7be87c28c2489e643fa7b533}{manage\+Event}} (\mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} \texorpdfstring{$\ast$}{*}window)=0
+\begin{DoxyCompactList}\small\item\em Manages events on a specific {\ttfamily Graphical \doxylink{classLibrary}{Library}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for events. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1IEvent_a509d98b9855caf0c5c2a22072c78bd92}\label{classEGE_1_1IEvent_a509d98b9855caf0c5c2a22072c78bd92} 
+\index{EGE::IEvent@{EGE::IEvent}!bindKey@{bindKey}}
+\index{bindKey@{bindKey}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{bindKey()}{bindKey()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::bind\+Key (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Keyboard $>$ $>$}]{trigger,  }\item[{std\+::function$<$ void(void)$>$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bind a {\ttfamily key} to an {\ttfamily action} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger} & {\ttfamily Key} or {\ttfamily Trigger} to be bound. \\
+\hline
+{\em func} & {\ttfamily Action} launched when the trigger is triggered. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AEvent_ac705ac861ee4188fd8e08548a0484aa0}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_aff2d8026d96e6b78edc4b27053598221}\label{classEGE_1_1IEvent_aff2d8026d96e6b78edc4b27053598221} 
+\index{EGE::IEvent@{EGE::IEvent}!bindMouse@{bindMouse}}
+\index{bindMouse@{bindMouse}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{bindMouse()}{bindMouse()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::bind\+Mouse (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Mouse $>$ $>$}]{trigger,  }\item[{std\+::function$<$ void(void)$>$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bind mouse actions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger} & Trigger to be bound. \\
+\hline
+{\em func} & Action to be executed when the trigger is triggered. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AEvent_a99b74fabb18b46aecd4629d1b904b77c}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_a8bb62dee7532e24d1d4b7b12718ffb96}\label{classEGE_1_1IEvent_a8bb62dee7532e24d1d4b7b12718ffb96} 
+\index{EGE::IEvent@{EGE::IEvent}!bindMouseScroll@{bindMouseScroll}}
+\index{bindMouseScroll@{bindMouseScroll}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{bindMouseScroll()}{bindMouseScroll()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::bind\+Mouse\+Scroll (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{IWindow}} $>$}]{window,  }\item[{std\+::function$<$ void(std\+::double\+\_\+t, std\+::double\+\_\+t)$>$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unbind an action set on a key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger} & Trigger to be unbound. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEvent_ae4a29a1d4582e8865c06032c12fdc7f5}{Event}}, \mbox{\hyperlink{classEvent_a1447cd3e7179a6a5b1641773eb0ad46a}{Event}}, and \mbox{\hyperlink{classEvent_ae4a29a1d4582e8865c06032c12fdc7f5}{Event}}.
+
+\Hypertarget{classEGE_1_1IEvent_ad667cb63cb92b9cb04aca6a2f9712852}\label{classEGE_1_1IEvent_ad667cb63cb92b9cb04aca6a2f9712852} 
+\index{EGE::IEvent@{EGE::IEvent}!isKeyboardEnabled@{isKeyboardEnabled}}
+\index{isKeyboardEnabled@{isKeyboardEnabled}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{isKeyboardEnabled()}{isKeyboardEnabled()}}
+{\footnotesize\ttfamily virtual bool EGE\+::\+IEvent\+::is\+Keyboard\+Enabled (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns if the keyboard is enabled or not. 
+
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AEvent_a99f08b298cbc875b296dfaa2aeb9ebe0}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_aa04af468d1cb6c68545d21c608e94e1e}\label{classEGE_1_1IEvent_aa04af468d1cb6c68545d21c608e94e1e} 
+\index{EGE::IEvent@{EGE::IEvent}!isMouseEnabled@{isMouseEnabled}}
+\index{isMouseEnabled@{isMouseEnabled}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{isMouseEnabled()}{isMouseEnabled()}}
+{\footnotesize\ttfamily virtual bool EGE\+::\+IEvent\+::is\+Mouse\+Enabled (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns if the mouse is enabled or not. 
+
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AEvent_aa157e0e7cf4db463abc29427f3900d98}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_a797f8a1b25f8de2fde03eba7007a6702}\label{classEGE_1_1IEvent_a797f8a1b25f8de2fde03eba7007a6702} 
+\index{EGE::IEvent@{EGE::IEvent}!isMouseHidden@{isMouseHidden}}
+\index{isMouseHidden@{isMouseHidden}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{isMouseHidden()}{isMouseHidden()}}
+{\footnotesize\ttfamily virtual bool EGE\+::\+IEvent\+::is\+Mouse\+Hidden (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns if the mouse is hidden or not. 
+
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AEvent_a511f67478c8070403c9bc68395f7c739}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_a373639ff9c25b7a9c3648f7272b221ff}\label{classEGE_1_1IEvent_a373639ff9c25b7a9c3648f7272b221ff} 
+\index{EGE::IEvent@{EGE::IEvent}!keyboardTranslate@{keyboardTranslate}}
+\index{keyboardTranslate@{keyboardTranslate}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{keyboardTranslate()}{keyboardTranslate()}}
+{\footnotesize\ttfamily virtual std\+::uint32\+\_\+t EGE\+::\+IEvent\+::keyboard\+Translate (\begin{DoxyParamCaption}\item[{EGE\+::\+Event\+::\+Keyboard}]{trigger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Translates a {\ttfamily Key} to a specific {\ttfamily \doxylink{classLibrary}{Library} key} (for example\+: between SFML and SDL events are not the sames). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger} & {\ttfamily Key} to be translated. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEvent_adc3f5de91f8b85873f922db33ff933ed}{Event}}, \mbox{\hyperlink{classEGE_1_1AEvent_a15eddbf48f3f28bc3eb1bf79a0ce934b}{EGE\+::\+AEvent}}, and \mbox{\hyperlink{classEvent_af1a052fc278ff96b1b222f01ab9d2cef}{Event}}.
+
+\Hypertarget{classEGE_1_1IEvent_a91acb5fc7be87c28c2489e643fa7b533}\label{classEGE_1_1IEvent_a91acb5fc7be87c28c2489e643fa7b533} 
+\index{EGE::IEvent@{EGE::IEvent}!manageEvent@{manageEvent}}
+\index{manageEvent@{manageEvent}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{manageEvent()}{manageEvent()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::manage\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Manages events on a specific {\ttfamily Graphical \doxylink{classLibrary}{Library}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \doxylink{classWindow}{Window} where we have to manage events. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEvent_a00a31ccf0cfa871b4147f42cc182fbff}{Event}}, \mbox{\hyperlink{classEvent_a5880bc809f0a095f8ce874dd86117fd0}{Event}}, \mbox{\hyperlink{classEvent_a00a31ccf0cfa871b4147f42cc182fbff}{Event}}, and \mbox{\hyperlink{classEGE_1_1AEvent_ac4269be1d2fae1b4fc8b47c19b4512da}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_ae8821ac83d3814376620fc99bd3025dc}\label{classEGE_1_1IEvent_ae8821ac83d3814376620fc99bd3025dc} 
+\index{EGE::IEvent@{EGE::IEvent}!manageKeyboardEvent@{manageKeyboardEvent}}
+\index{manageKeyboardEvent@{manageKeyboardEvent}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{manageKeyboardEvent()}{manageKeyboardEvent()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::manage\+Keyboard\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Manages Keyboard events on a specific {\ttfamily Graphical \doxylink{classLibrary}{Library}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \doxylink{classWindow}{Window} where we have to manage keyboard events. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEvent_a2eff79589cec998867982695223317fe}{Event}}, \mbox{\hyperlink{classEvent_ab98f02d2159418812c3c225ad538a1a6}{Event}}, \mbox{\hyperlink{classEvent_a2eff79589cec998867982695223317fe}{Event}}, and \mbox{\hyperlink{classEGE_1_1AEvent_a849c1c53807eabbd46927191785c5cad}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_a965e62f1e28e4f900591b981afbefd5d}\label{classEGE_1_1IEvent_a965e62f1e28e4f900591b981afbefd5d} 
+\index{EGE::IEvent@{EGE::IEvent}!manageMouseEvent@{manageMouseEvent}}
+\index{manageMouseEvent@{manageMouseEvent}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{manageMouseEvent()}{manageMouseEvent()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::manage\+Mouse\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Manages Mouse events on a specific {\ttfamily Graphical \doxylink{classLibrary}{Library}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \doxylink{classWindow}{Window} where we have to manage mouse events. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEvent_a821bd4e323183498f3b42973fed44544}{Event}}, \mbox{\hyperlink{classEvent_af81c27211ad25ab711ef2d8a68221f79}{Event}}, \mbox{\hyperlink{classEvent_a821bd4e323183498f3b42973fed44544}{Event}}, and \mbox{\hyperlink{classEGE_1_1AEvent_a3fe565befd2d9c39a42447ebca5b610e}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_a522a54a77709802355f8413fee94bb31}\label{classEGE_1_1IEvent_a522a54a77709802355f8413fee94bb31} 
+\index{EGE::IEvent@{EGE::IEvent}!mouseTranslate@{mouseTranslate}}
+\index{mouseTranslate@{mouseTranslate}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{mouseTranslate()}{mouseTranslate()}}
+{\footnotesize\ttfamily virtual std\+::uint32\+\_\+t EGE\+::\+IEvent\+::mouse\+Translate (\begin{DoxyParamCaption}\item[{EGE\+::\+Event\+::\+Mouse}]{trigger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Translates mouse events to a specific {\ttfamily Mouse event} (for example\+: between SFML and SDL are not the sames). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger} & \doxylink{classEvent}{Event} to be translated \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEvent_a134ca27dcb01509d4d075fa0001cffde}{Event}}, \mbox{\hyperlink{classEGE_1_1AEvent_a253399a3b9b7d64c9e847711b19c0502}{EGE\+::\+AEvent}}, and \mbox{\hyperlink{classEvent_af339d2b331364936006234612943bedb}{Event}}.
+
+\Hypertarget{classEGE_1_1IEvent_a551ef41bd7398f6d3a97a30f54e013a3}\label{classEGE_1_1IEvent_a551ef41bd7398f6d3a97a30f54e013a3} 
+\index{EGE::IEvent@{EGE::IEvent}!setKeyboardEnabled@{setKeyboardEnabled}}
+\index{setKeyboardEnabled@{setKeyboardEnabled}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{setKeyboardEnabled()}{setKeyboardEnabled()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::set\+Keyboard\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the state of {\ttfamily \+\_\+keyboard\+Enabled}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & New state to be set. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AEvent_af98cddd931e582611f74f463fdf8e5e4}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_a1fd7aaaf417693c0f9a7079be521d42f}\label{classEGE_1_1IEvent_a1fd7aaaf417693c0f9a7079be521d42f} 
+\index{EGE::IEvent@{EGE::IEvent}!setMouseEnabled@{setMouseEnabled}}
+\index{setMouseEnabled@{setMouseEnabled}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{setMouseEnabled()}{setMouseEnabled()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::set\+Mouse\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the state of {\ttfamily \+\_\+mouse\+Enabled}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & New state to be set. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AEvent_a7704a307fdd35f8745468b09451dc934}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_ac0261b2c85dbf9e15972f3c2f10b77c4}\label{classEGE_1_1IEvent_ac0261b2c85dbf9e15972f3c2f10b77c4} 
+\index{EGE::IEvent@{EGE::IEvent}!setMouseHidden@{setMouseHidden}}
+\index{setMouseHidden@{setMouseHidden}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{setMouseHidden()}{setMouseHidden()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::set\+Mouse\+Hidden (\begin{DoxyParamCaption}\item[{bool}]{hidden }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Change the state of {\ttfamily \+\_\+mouse\+Hidden}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hidden} & New state to be set. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AEvent_a8dbef8e0df4c4c9fb989ff111b942585}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_a73b617d21bf75ea53709851fbbb1b83c}\label{classEGE_1_1IEvent_a73b617d21bf75ea53709851fbbb1b83c} 
+\index{EGE::IEvent@{EGE::IEvent}!unbindKey@{unbindKey}}
+\index{unbindKey@{unbindKey}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{unbindKey()}{unbindKey()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::unbind\+Key (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Keyboard $>$ $>$}]{trigger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unbind an action set on a key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger} & Trigger to be unbound. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AEvent_a457db40c75b5a06e0aa17ef814f78a8e}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_a5cb26db4b6da8ec897f000795843cc85}\label{classEGE_1_1IEvent_a5cb26db4b6da8ec897f000795843cc85} 
+\index{EGE::IEvent@{EGE::IEvent}!unbindMouse@{unbindMouse}}
+\index{unbindMouse@{unbindMouse}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{unbindMouse()}{unbindMouse()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::unbind\+Mouse (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Mouse $>$ $>$}]{trigger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unbind an action set on the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger} & Trigger to be unbound. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEGE_1_1AEvent_ae8d4f44ffaef4462a0110993de51296f}{EGE\+::\+AEvent}}.
+
+\Hypertarget{classEGE_1_1IEvent_aefa0a215968503ab449b6241a78e79bb}\label{classEGE_1_1IEvent_aefa0a215968503ab449b6241a78e79bb} 
+\index{EGE::IEvent@{EGE::IEvent}!unbindMouseScroll@{unbindMouseScroll}}
+\index{unbindMouseScroll@{unbindMouseScroll}!EGE::IEvent@{EGE::IEvent}}
+\doxysubsubsection{\texorpdfstring{unbindMouseScroll()}{unbindMouseScroll()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+IEvent\+::unbind\+Mouse\+Scroll (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unbind an action set on the mouse scroll. 
+
+
+
+Implemented in \mbox{\hyperlink{classEvent_a9398ddcd5d663171ee05e24f31134ad9}{Event}}, \mbox{\hyperlink{classEvent_a9398ddcd5d663171ee05e24f31134ad9}{Event}}, \mbox{\hyperlink{classEvent_a9398ddcd5d663171ee05e24f31134ad9}{Event}}, and \mbox{\hyperlink{classEGE_1_1AEvent_a60c66fb52353f13390f31da5ae730d93}{EGE\+::\+AEvent}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/IEvent.\+hpp\end{DoxyCompactItemize}

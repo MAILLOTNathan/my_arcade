@@ -1,0 +1,307 @@
+\doxysection{EGE\+::ADisplay\+Module Class Reference}
+\hypertarget{classEGE_1_1ADisplayModule}{}\label{classEGE_1_1ADisplayModule}\index{EGE::ADisplayModule@{EGE::ADisplayModule}}
+
+
+Abstract class which represents a {\ttfamily Display Module}.  
+
+
+
+
+{\ttfamily \#include $<$ADisplay\+Module.\+hpp$>$}
+
+Inheritance diagram for EGE\+::ADisplay\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classEGE_1_1ADisplayModule}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ADisplayModule_aaf069e8442ca4d6be6bf5444f68c9271}{init}} ()=0
+\begin{DoxyCompactList}\small\item\em {\ttfamily Initializes} the module with the specific values. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1ADisplayModule_ae4e0b68c9565e2e72cba24f18ae66522}{window\+Is\+Open}} () override
+\begin{DoxyCompactList}\small\item\em Returns if the {\ttfamily window} of the module is currently {\ttfamily open}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ADisplayModule_a53ae1cc8a6b3b1805a0148a294ec0dc6}{window\+Clear}} () override
+\begin{DoxyCompactList}\small\item\em {\ttfamily Clears} the {\ttfamily window} of the module. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ADisplayModule_afa16c4ac284d8aa94d41803f63086762}{window\+Display}} () override
+\begin{DoxyCompactList}\small\item\em {\ttfamily Display} the content given to the module on the {\ttfamily window}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ADisplayModule_a8a7c68d64fba5792a336252c04131105}{window\+Close}} () override
+\begin{DoxyCompactList}\small\item\em {\ttfamily Close} the {\ttfamily window} of the module. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ADisplayModule_acc1b0dbbae1739689cf134cad1c483ea}{window\+Poll\+Event}} () override
+\begin{DoxyCompactList}\small\item\em {\ttfamily Catches} and {\ttfamily manages} {\ttfamily events} in the module\textquotesingle{}s {\ttfamily window}. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ \mbox{\hyperlink{classEGE_1_1ADisplayModule_ad5b36ee242cea41e645a3ac8ca47d3af}{get\+Window}} () override
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily window} of the module. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1ADisplayModule_ab26656839ddf8bb4b4a6735511779c8d}{bind\+Key}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Keyboard $>$ $>$ trigger, std\+::function$<$ void(void)$>$ func) override
+\begin{DoxyCompactList}\small\item\em {\ttfamily Bind} a {\ttfamily trigger} to an {\ttfamily action}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1IDrawable}{EGE\+::\+IDrawable}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1ADisplayModule_a8ac87267e4f128f7529f2506734da055}{create\+Sprite}} (\mbox{\hyperlink{classEGE_1_1Ressource}{EGE\+::\+Ressource}} \texorpdfstring{$\ast$}{*}ressource, const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&pos)=0
+\begin{DoxyCompactList}\small\item\em Create a sprite using the current library loaded {\ttfamily without knowing} which library it is. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1IDrawable}{EGE\+::\+IDrawable}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1ADisplayModule_a01c6f6233c03143d8316dfcfcf9190b8}{create\+Sprite}} (\mbox{\hyperlink{classEGE_1_1Ressource}{EGE\+::\+Ressource}} \texorpdfstring{$\ast$}{*}ressource) override
+\begin{DoxyCompactList}\small\item\em Create a sprite using the current library loaded {\ttfamily without knowing} which library it is. It is like a call of {\ttfamily create\+Sprite(\texorpdfstring{$\ast$}{*}ressource\texorpdfstring{$\ast$}{*}, \doxylink{classEGE_1_1Vector}{EGE\+::\+Vector}\texorpdfstring{$<$}{<}int\texorpdfstring{$>$}{>}(0,0))} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1IText}{EGE\+::\+IText}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1ADisplayModule_aa044ef6ceb2d2260f8f78827c52062cc}{create\+Text}} (const std\+::string \&text, const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&pos, const \mbox{\hyperlink{classEGE_1_1Color}{EGE\+::\+Color}} \&color)=0
+\begin{DoxyCompactList}\small\item\em Create a text using the current library loaded {\ttfamily without knowing} which library it is. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1IButton}{EGE\+::\+IButton}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1ADisplayModule_ace35186f7714a30b096462066390feee}{create\+Button}} (const std\+::string \&text, const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&pos)=0
+\begin{DoxyCompactList}\small\item\em Create a button using the current library loaded {\ttfamily without knowing} which library it is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IDisplayModule_a98324ad40cd4b041d5ea04ea51c972d4}{init}} ()=0
+\begin{DoxyCompactList}\small\item\em {\ttfamily Initializes} the module with the specific values. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEGE_1_1IDisplayModule_a03b71c5c7dd856f1f6f7d14a13b2c7e7}{window\+Is\+Open}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns if the {\ttfamily window} of the module is currently {\ttfamily open}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IDisplayModule_ab73375a0e3c995d8c0d2d472eef6523f}{window\+Clear}} ()=0
+\begin{DoxyCompactList}\small\item\em {\ttfamily Clears} the {\ttfamily window} of the module. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IDisplayModule_a65e78bdc4ecc69326b807cb6267ed2d2}{window\+Display}} ()=0
+\begin{DoxyCompactList}\small\item\em {\ttfamily Display} the content given to the module on the {\ttfamily window}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IDisplayModule_a04e46c1c0f94d1010889b3c5b139975a}{window\+Close}} ()=0
+\begin{DoxyCompactList}\small\item\em {\ttfamily Close} the {\ttfamily window} of the module. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IDisplayModule_a9a6ec56d7c490e89afe03e55f59c529c}{window\+Poll\+Event}} ()=0
+\begin{DoxyCompactList}\small\item\em {\ttfamily Catches} and {\ttfamily manages} {\ttfamily events} in the module\textquotesingle{}s {\ttfamily window}. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ \mbox{\hyperlink{classEGE_1_1IDisplayModule_a91daa0164db300e3ae02f18a27556d56}{get\+Window}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily window} of the module. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEGE_1_1IDisplayModule_a80cda456cc7edcd320ee5b1b07a89108}{bind\+Key}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Keyboard $>$ $>$ trigger, std\+::function$<$ void(void)$>$ func)=0
+\begin{DoxyCompactList}\small\item\em {\ttfamily Bind} a {\ttfamily trigger} to an {\ttfamily action}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1IDrawable}{EGE\+::\+IDrawable}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IDisplayModule_a75ea2455e542b6f3d5b2cae695d41d0b}{create\+Sprite}} (\mbox{\hyperlink{classEGE_1_1Ressource}{EGE\+::\+Ressource}} \texorpdfstring{$\ast$}{*}ressource, const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&pos)=0
+\begin{DoxyCompactList}\small\item\em {\ttfamily Bind} a {\ttfamily trigger} to an {\ttfamily action}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1IDrawable}{EGE\+::\+IDrawable}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IDisplayModule_a921b44b03e90ce4e84692dfde106e7a6}{create\+Sprite}} (\mbox{\hyperlink{classEGE_1_1Ressource}{EGE\+::\+Ressource}} \texorpdfstring{$\ast$}{*}ressource)=0
+\begin{DoxyCompactList}\small\item\em Create a sprite using the current library loaded {\ttfamily without knowing} which library it is. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1IText}{EGE\+::\+IText}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IDisplayModule_af2b571248051be2b0f0cd838e89f4c5a}{create\+Text}} (const std\+::string \&text, const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&pos, const \mbox{\hyperlink{classEGE_1_1Color}{EGE\+::\+Color}} \&color)=0
+\begin{DoxyCompactList}\small\item\em Create a text using the current library loaded {\ttfamily without knowing} which library it is. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEGE_1_1IButton}{EGE\+::\+IButton}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classEGE_1_1IDisplayModule_a6f500544e8998c6aa89258413ed18dd6}{create\+Button}} (const std\+::string \&text, const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&pos)=0
+\begin{DoxyCompactList}\small\item\em Create a button using the current library loaded {\ttfamily without knowing} which library it is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1ADisplayModule_a92efb21f9368de26b8ada805b8a3e42e}\label{classEGE_1_1ADisplayModule_a92efb21f9368de26b8ada805b8a3e42e} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ {\bfseries \+\_\+window}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class which represents a {\ttfamily Display Module}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEGE_1_1ADisplayModule_ab26656839ddf8bb4b4a6735511779c8d}\label{classEGE_1_1ADisplayModule_ab26656839ddf8bb4b4a6735511779c8d} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!bindKey@{bindKey}}
+\index{bindKey@{bindKey}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{bindKey()}{bindKey()}}
+{\footnotesize\ttfamily void EGE\+::\+ADisplay\+Module\+::bind\+Key (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Event_1_1Trigger}{EGE\+::\+Event\+::\+Trigger}}$<$ EGE\+::\+Event\+::\+Keyboard $>$ $>$}]{trigger,  }\item[{std\+::function$<$ void(void)$>$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+{\ttfamily Bind} a {\ttfamily trigger} to an {\ttfamily action}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger} & Trigger to be {\ttfamily assigned} to an action. \\
+\hline
+{\em func} & Function to be called when the trigger is {\ttfamily triggered}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_a80cda456cc7edcd320ee5b1b07a89108}{EGE\+::\+IDisplay\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_ace35186f7714a30b096462066390feee}\label{classEGE_1_1ADisplayModule_ace35186f7714a30b096462066390feee} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!createButton@{createButton}}
+\index{createButton@{createButton}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{createButton()}{createButton()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEGE_1_1IButton}{EGE\+::\+IButton}} \texorpdfstring{$\ast$}{*} EGE\+::\+ADisplay\+Module\+::create\+Button (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a button using the current library loaded {\ttfamily without knowing} which library it is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \doxylink{classText}{Text} showed on the button. \\
+\hline
+{\em pos} & Position of the button. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_a6f500544e8998c6aa89258413ed18dd6}{EGE\+::\+IDisplay\+Module}}.
+
+
+
+Implemented in \mbox{\hyperlink{classDisplayModule_a246d75ce6c56b7e9477f44ba844a895b}{Display\+Module}}, \mbox{\hyperlink{classDisplayModule_a246d75ce6c56b7e9477f44ba844a895b}{Display\+Module}}, and \mbox{\hyperlink{classDisplayModule_a246d75ce6c56b7e9477f44ba844a895b}{Display\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_a01c6f6233c03143d8316dfcfcf9190b8}\label{classEGE_1_1ADisplayModule_a01c6f6233c03143d8316dfcfcf9190b8} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!createSprite@{createSprite}}
+\index{createSprite@{createSprite}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{createSprite()}{createSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEGE_1_1IDrawable}{EGE\+::\+IDrawable}} \texorpdfstring{$\ast$}{*} EGE\+::\+ADisplay\+Module\+::create\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1Ressource}{EGE\+::\+Ressource}} \texorpdfstring{$\ast$}{*}}]{ressource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a sprite using the current library loaded {\ttfamily without knowing} which library it is. It is like a call of {\ttfamily create\+Sprite(\texorpdfstring{$\ast$}{*}ressource\texorpdfstring{$\ast$}{*}, \doxylink{classEGE_1_1Vector}{EGE\+::\+Vector}\texorpdfstring{$<$}{<}int\texorpdfstring{$>$}{>}(0,0))} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ressource} & {\ttfamily \doxylink{classEGE_1_1Ressource}{Ressource}} which represents the {\ttfamily source} of the content of the sprite. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_a921b44b03e90ce4e84692dfde106e7a6}{EGE\+::\+IDisplay\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_a8ac87267e4f128f7529f2506734da055}\label{classEGE_1_1ADisplayModule_a8ac87267e4f128f7529f2506734da055} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!createSprite@{createSprite}}
+\index{createSprite@{createSprite}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{createSprite()}{createSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEGE_1_1IDrawable}{EGE\+::\+IDrawable}} \texorpdfstring{$\ast$}{*} EGE\+::\+ADisplay\+Module\+::create\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEGE_1_1Ressource}{EGE\+::\+Ressource}} \texorpdfstring{$\ast$}{*}}]{ressource,  }\item[{const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a sprite using the current library loaded {\ttfamily without knowing} which library it is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ressource} & {\ttfamily \doxylink{classEGE_1_1Ressource}{Ressource}} which represents the {\ttfamily source} of the content of the sprite. \\
+\hline
+{\em pos} & {\ttfamily Position} of the sprite. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_a75ea2455e542b6f3d5b2cae695d41d0b}{EGE\+::\+IDisplay\+Module}}.
+
+
+
+Implemented in \mbox{\hyperlink{classDisplayModule_a709b2c76c0f915c7b283c57dff763146}{Display\+Module}}, \mbox{\hyperlink{classDisplayModule_a709b2c76c0f915c7b283c57dff763146}{Display\+Module}}, and \mbox{\hyperlink{classDisplayModule_a709b2c76c0f915c7b283c57dff763146}{Display\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_aa044ef6ceb2d2260f8f78827c52062cc}\label{classEGE_1_1ADisplayModule_aa044ef6ceb2d2260f8f78827c52062cc} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!createText@{createText}}
+\index{createText@{createText}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{createText()}{createText()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEGE_1_1IText}{EGE\+::\+IText}} \texorpdfstring{$\ast$}{*} EGE\+::\+ADisplay\+Module\+::create\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{const \mbox{\hyperlink{classEGE_1_1Vector}{EGE\+::\+Vector}}$<$ int $>$ \&}]{pos,  }\item[{const \mbox{\hyperlink{classEGE_1_1Color}{EGE\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a text using the current library loaded {\ttfamily without knowing} which library it is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Content of the text. \\
+\hline
+{\em pos} & Position of the text. \\
+\hline
+{\em color} & \doxylink{classEGE_1_1Color}{Color} to be set on the text. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_af2b571248051be2b0f0cd838e89f4c5a}{EGE\+::\+IDisplay\+Module}}.
+
+
+
+Implemented in \mbox{\hyperlink{classDisplayModule_a3bac5d1fc0a1948e37da005fae38a6e2}{Display\+Module}}, \mbox{\hyperlink{classDisplayModule_a3bac5d1fc0a1948e37da005fae38a6e2}{Display\+Module}}, and \mbox{\hyperlink{classDisplayModule_a3bac5d1fc0a1948e37da005fae38a6e2}{Display\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_ad5b36ee242cea41e645a3ac8ca47d3af}\label{classEGE_1_1ADisplayModule_ad5b36ee242cea41e645a3ac8ca47d3af} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1IWindow}{EGE\+::\+IWindow}} $>$ EGE\+::\+ADisplay\+Module\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the {\ttfamily window} of the module. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_a91daa0164db300e3ae02f18a27556d56}{EGE\+::\+IDisplay\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_aaf069e8442ca4d6be6bf5444f68c9271}\label{classEGE_1_1ADisplayModule_aaf069e8442ca4d6be6bf5444f68c9271} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!init@{init}}
+\index{init@{init}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void EGE\+::\+ADisplay\+Module\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+{\ttfamily Initializes} the module with the specific values. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_a98324ad40cd4b041d5ea04ea51c972d4}{EGE\+::\+IDisplay\+Module}}.
+
+
+
+Implemented in \mbox{\hyperlink{classDisplayModule_a7619f791ae52aab1490fa6ec82d3410a}{Display\+Module}}, \mbox{\hyperlink{classDisplayModule_a7619f791ae52aab1490fa6ec82d3410a}{Display\+Module}}, and \mbox{\hyperlink{classDisplayModule_a7619f791ae52aab1490fa6ec82d3410a}{Display\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_a53ae1cc8a6b3b1805a0148a294ec0dc6}\label{classEGE_1_1ADisplayModule_a53ae1cc8a6b3b1805a0148a294ec0dc6} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!windowClear@{windowClear}}
+\index{windowClear@{windowClear}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{windowClear()}{windowClear()}}
+{\footnotesize\ttfamily void EGE\+::\+ADisplay\+Module\+::window\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+{\ttfamily Clears} the {\ttfamily window} of the module. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_ab73375a0e3c995d8c0d2d472eef6523f}{EGE\+::\+IDisplay\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_a8a7c68d64fba5792a336252c04131105}\label{classEGE_1_1ADisplayModule_a8a7c68d64fba5792a336252c04131105} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!windowClose@{windowClose}}
+\index{windowClose@{windowClose}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{windowClose()}{windowClose()}}
+{\footnotesize\ttfamily void EGE\+::\+ADisplay\+Module\+::window\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+{\ttfamily Close} the {\ttfamily window} of the module. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_a04e46c1c0f94d1010889b3c5b139975a}{EGE\+::\+IDisplay\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_afa16c4ac284d8aa94d41803f63086762}\label{classEGE_1_1ADisplayModule_afa16c4ac284d8aa94d41803f63086762} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!windowDisplay@{windowDisplay}}
+\index{windowDisplay@{windowDisplay}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{windowDisplay()}{windowDisplay()}}
+{\footnotesize\ttfamily void EGE\+::\+ADisplay\+Module\+::window\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+{\ttfamily Display} the content given to the module on the {\ttfamily window}. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_a65e78bdc4ecc69326b807cb6267ed2d2}{EGE\+::\+IDisplay\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_ae4e0b68c9565e2e72cba24f18ae66522}\label{classEGE_1_1ADisplayModule_ae4e0b68c9565e2e72cba24f18ae66522} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!windowIsOpen@{windowIsOpen}}
+\index{windowIsOpen@{windowIsOpen}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{windowIsOpen()}{windowIsOpen()}}
+{\footnotesize\ttfamily bool EGE\+::\+ADisplay\+Module\+::window\+Is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns if the {\ttfamily window} of the module is currently {\ttfamily open}. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_a03b71c5c7dd856f1f6f7d14a13b2c7e7}{EGE\+::\+IDisplay\+Module}}.
+
+\Hypertarget{classEGE_1_1ADisplayModule_acc1b0dbbae1739689cf134cad1c483ea}\label{classEGE_1_1ADisplayModule_acc1b0dbbae1739689cf134cad1c483ea} 
+\index{EGE::ADisplayModule@{EGE::ADisplayModule}!windowPollEvent@{windowPollEvent}}
+\index{windowPollEvent@{windowPollEvent}!EGE::ADisplayModule@{EGE::ADisplayModule}}
+\doxysubsubsection{\texorpdfstring{windowPollEvent()}{windowPollEvent()}}
+{\footnotesize\ttfamily void EGE\+::\+ADisplay\+Module\+::window\+Poll\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+{\ttfamily Catches} and {\ttfamily manages} {\ttfamily events} in the module\textquotesingle{}s {\ttfamily window}. 
+
+
+
+Implements \mbox{\hyperlink{classEGE_1_1IDisplayModule_a9a6ec56d7c490e89afe03e55f59c529c}{EGE\+::\+IDisplay\+Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/engine/include/ADisplay\+Module.\+hpp\item 
+library/engine/src/ADisplay\+Module.\+cpp\end{DoxyCompactItemize}

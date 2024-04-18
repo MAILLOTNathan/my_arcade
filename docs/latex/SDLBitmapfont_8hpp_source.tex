@@ -1,0 +1,55 @@
+\doxysection{SDLBitmapfont.\+hpp}
+\hypertarget{SDLBitmapfont_8hpp_source}{}\label{SDLBitmapfont_8hpp_source}\index{library/graphical/SDL2/include/SDLBitmapfont.hpp@{library/graphical/SDL2/include/SDLBitmapfont.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/RUN-\/4-\/1-\/arcade-\/nathan.maillot}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ SDLBitmapfont}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ SDLBITMAPFONT\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ SDLBITMAPFONT\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_image.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}Maths/Rect.hpp"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}SDLWindow.hpp"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}GUI/Color.hpp"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBitmapfont}{Bitmapfont}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBitmapfont_a3877eb236f9c498cf7a649bfcd8fe811}{Bitmapfont}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBitmapfont_a42b153b8ec1c3f14e16a25f6d1618db5}{\string~Bitmapfont}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classBitmapfont_a65f9dd88be023b637f6810b3edfab16b}{getWidth}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classBitmapfont_a737c600c221a20653d1917425f87c622}{getHeight}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBitmapfont_acd3d8e892018f2c1feeddf0e19e86ce0}{draw}}(\mbox{\hyperlink{classEGE_1_1IWindow}{EGE::IWindow}}\ *window,\ \textcolor{keywordtype}{char}\ c,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Vector}{EGE::Vector<int>}}\&\ pos);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBitmapfont_a97e0b400608f8ea5ca29f6f0a1e86ffb}{setColor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classEGE_1_1Color}{EGE::Color}}\&\ color);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Rect}{EGE::Rect<int>}}\ \mbox{\hyperlink{classBitmapfont_a20d598298743e2dafbc95c3451f87230}{getCharPos}}(\textcolor{keywordtype}{char}\ c);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ std::vector<EGE::Rect<int>>\ \mbox{\hyperlink{classBitmapfont_a6bc5f7cd62b50f711af09d5262307226}{getStringPos}}(\textcolor{keyword}{const}\ std::string\&\ str);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ std::vector<EGE::Rect<int>>\ \_charPos;\ \textcolor{comment}{//\ All\ characters\ positions.}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEGE_1_1Color}{EGE::Color}}\ \_color;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Color\ of\ the\ text.}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ SDL\_Surface\ *\_sprite;\ \ \ \ \ \ \ \textcolor{comment}{//\ Surface\ of\ the\ font.}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ SDL\_Texture\ *\_texture;\ \ \ \ \ \ \textcolor{comment}{//\ Texture\ of\ the\ font.}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ SDL\_Rect\ \_rect;\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Rect\ of\ the\ font.}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_width;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Width\ of\ the\ font.}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_height;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Height\ of\ the\ font.}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !SDLBITMAPFONT\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
